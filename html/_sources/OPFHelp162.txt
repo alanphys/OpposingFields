@@ -1,0 +1,119 @@
+
+.. index:: Calculations; Single beam
+.. index:: Quality Assurance; Single beam
+
+Quality assurance on single beam treatments
+-------------------------------------------
+
+
+Isocentric treatments
+~~~~~~~~~~~~~~~~~~~~~
+
+Treatments that are not carried out at a SSD of 100 cm are best calculated
+using TMR's, as percentage depth dose tables are not usually available for
+other SSD's. For a *single* field the relation between monitor units and dose
+to the isocentre is as follows:
+
+.. math::
+   :label: eq1
+
+   MU = \cfrac{ID \cdot 100}{TMR(d,r_d) \cdot S 
+   \cdot \left( \cfrac {SCD}{SAD} \right)^2}
+
+where:
+
+- MU are the monitor units
+- ID is the isocentre dose in Gy
+- TMR(d,rd) is the tissue maximum ratio at depth d and field size r at depth d
+- S is the output factor
+- SCD is the source calibration distance, usually 100 + dmax cm.
+- SAD is the source axis distance, usually 100 cm.
+
+
+
+
+For the sake of simplicity no tray, table or compensator factors have been
+included in the equation given above. When a factor is used, divide through
+by the appropriate factor.
+
+
+
+Variable SSD treatments
+~~~~~~~~~~~~~~~~~~~~~~~
+
+For variable SSD treatment equation :eq:`eq1` can be
+extended to:
+
+.. math::
+   :label: eq2
+
+   MU = \cfrac{TD \cdot 100}{TMR(d,r_d) \cdot S 
+   \cdot \left( \cfrac {SCD}{STD} \right)^2}
+
+where: 
+
+- STD is the source treatment distance (STD = SSD + d)
+- TD is the tumour dose in Gy
+- d is the treatment depth
+
+
+
+
+Fixed SSD treatments
+~~~~~~~~~~~~~~~~~~~~
+
+While fixed SSD (SSD = 100cm) treatments can certainly be checked using the
+methods outlined above the medical physicist may find it easier to use
+percentage depth doses (**%DD**). This is a more suitable quantity for calculations
+involving SSD techniques. The monitor units MU necessary to deliver a tumour
+dose **TD** in Gy at a depth **d** for a field size **r** is:
+
+.. math::
+   :label: eq3
+
+   MU = \cfrac{TD \cdot 100}{{\cfrac{\%DD_{d}}{100}} \cdot S 
+   \cdot \left( \cfrac {SCD}{SSD + d_{max}} \right)^2}
+
+When the SSD = 100 cm and SSD + dmax = SCD then equation :eq:`eq3` simplifies to:
+
+.. math::
+   :label: eq4
+
+   MU = \cfrac{TD \cdot 100}{\cfrac{\%DD_{d}}{100} \cdot S}
+
+
+
+
+Dose at maximum build-up prescriptions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Normally the dose at maximum build-up prescription is not used for isocentric
+treatments, particularly for single beams. However, should such a situation
+occur the isocentric technique may be adapted as follows:
+
+
+
+
+The accelerator is calibrated to give 1 MU/cGy at maximum build-up for a
+10x10 field at the SCD, i.e. TMR(dmax,10) = 1.0. For any other field size and
+SSD equation :eq:`eq2` becomes:
+
+.. math::
+   :label: eq5
+
+   MU = \cfrac{MD \cdot 100}{S \cdot \left( \cfrac {SCD}{SSD + d_{max}} \right)^2}
+
+where **MD** is the dose at maximum build-up in Gy for a *single* beam.
+
+
+
+
+When the SSD is fixed at 100 cm the situation is even simpler. Equation
+:eq:`eq5` becomes:
+
+.. math::
+   :label: eq6
+
+   MU = \cfrac{MD \cdot 100}{S}
+
+

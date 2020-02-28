@@ -1,0 +1,11 @@
+
+.. index:: Comment
+
+Comment
+~~~~~~~~~
+
+Enter in any comment that you want about the patient this field. This field
+is optional and does not have to be filled in. A maximum of 255 characters
+may be entered in this field.
+
+

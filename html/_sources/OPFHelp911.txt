@@ -1,0 +1,8 @@
+
+.. index:: Patient Name
+
+Patient Name
+~~~~~~~~~~~~
+
+This field is optional; however, we recommend that you enter the name of the
+patient in this field. The patient's name can be as long as 255 characters.

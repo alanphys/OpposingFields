@@ -1,0 +1,11 @@
+
+Field Size
+~~~~~~~~~~
+
+'Field size' is a compulsory numeric field that must be entered. The field
+size must be between 3 cm and 40 cm. Any value outside this will result in an
+error dialogue box appearing, and you will not be allowed to continue until
+you have entered in a correct value. Enter in the Y or length value, and then
+the breadth or X value.
+
+

@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quality assurance on single beam treatments &mdash; Opposing Fields Help v3.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/naturesticky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Opposing Fields Help v3.1.1 documentation" href="index.html" />
+    <link rel="up" title="For the Medical Physicist" href="OPFHelp16.html" />
+    <link rel="next" title="Quality assurance on parallel opposing beam treatments" href="OPFHelp163.html" />
+    <link rel="prev" title="Quality Assurance Procedures" href="OPFHelp161.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="OPFHelp163.html" title="Quality assurance on parallel opposing beam treatments"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp161.html" title="Quality Assurance Procedures"
+             accesskey="P">previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" accesskey="U">For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-0"></span><div class="section" id="quality-assurance-on-single-beam-treatments">
+<span id="index-1"></span><h1>Quality assurance on single beam treatments<a class="headerlink" href="#quality-assurance-on-single-beam-treatments" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="isocentric-treatments">
+<h2>Isocentric treatments<a class="headerlink" href="#isocentric-treatments" title="Permalink to this headline">¶</a></h2>
+<p>Treatments that are not carried out at a SSD of 100 cm are best calculated
+using TMR&#8217;s, as percentage depth dose tables are not usually available for
+other SSD&#8217;s. For a <em>single</em> field the relation between monitor units and dose
+to the isocentre is as follows:</p>
+<div class="math" id="equation-eq1">
+<p><span class="eqno">(1)</span><img src="_images/math/2471fd40ca9c0b12726d7091339a378e4c179dd8.png" alt="MU = \cfrac{ID \cdot 100}{TMR(d,r_d) \cdot S
+\cdot \left( \cfrac {SCD}{SAD} \right)^2}" /></p>
+</div><p>where:</p>
+<ul class="simple">
+<li>MU are the monitor units</li>
+<li>ID is the isocentre dose in Gy</li>
+<li>TMR(d,rd) is the tissue maximum ratio at depth d and field size r at depth d</li>
+<li>S is the output factor</li>
+<li>SCD is the source calibration distance, usually 100 + dmax cm.</li>
+<li>SAD is the source axis distance, usually 100 cm.</li>
+</ul>
+<p>For the sake of simplicity no tray, table or compensator factors have been
+included in the equation given above. When a factor is used, divide through
+by the appropriate factor.</p>
+</div>
+<div class="section" id="variable-ssd-treatments">
+<h2>Variable SSD treatments<a class="headerlink" href="#variable-ssd-treatments" title="Permalink to this headline">¶</a></h2>
+<p>For variable SSD treatment equation <a href="#equation-eq1">(1)</a> can be
+extended to:</p>
+<div class="math" id="equation-eq2">
+<p><span class="eqno">(2)</span><img src="_images/math/86f999f1d328ceb1c07b73837c337d249a1ca8bb.png" alt="MU = \cfrac{TD \cdot 100}{TMR(d,r_d) \cdot S
+\cdot \left( \cfrac {SCD}{STD} \right)^2}" /></p>
+</div><p>where:</p>
+<ul class="simple">
+<li>STD is the source treatment distance (STD = SSD + d)</li>
+<li>TD is the tumour dose in Gy</li>
+<li>d is the treatment depth</li>
+</ul>
+</div>
+<div class="section" id="fixed-ssd-treatments">
+<h2>Fixed SSD treatments<a class="headerlink" href="#fixed-ssd-treatments" title="Permalink to this headline">¶</a></h2>
+<p>While fixed SSD (SSD = 100cm) treatments can certainly be checked using the
+methods outlined above the medical physicist may find it easier to use
+percentage depth doses (<strong>%DD</strong>). This is a more suitable quantity for calculations
+involving SSD techniques. The monitor units MU necessary to deliver a tumour
+dose <strong>TD</strong> in Gy at a depth <strong>d</strong> for a field size <strong>r</strong> is:</p>
+<div class="math" id="equation-eq3">
+<p><span class="eqno">(3)</span><img src="_images/math/2a4e127de1a4a438d1d51e8df9738c24d3b1d362.png" alt="MU = \cfrac{TD \cdot 100}{{\cfrac{\%DD_{d}}{100}} \cdot S
+\cdot \left( \cfrac {SCD}{SSD + d_{max}} \right)^2}" /></p>
+</div><p>When the SSD = 100 cm and SSD + dmax = SCD then equation <a href="#equation-eq3">(3)</a> simplifies to:</p>
+<div class="math" id="equation-eq4">
+<p><span class="eqno">(4)</span><img src="_images/math/bcb81f7194fffdd9a0e28ee22fdecdee7a8a6157.png" alt="MU = \cfrac{TD \cdot 100}{\cfrac{\%DD_{d}}{100} \cdot S}" /></p>
+</div></div>
+<div class="section" id="dose-at-maximum-build-up-prescriptions">
+<h2>Dose at maximum build-up prescriptions<a class="headerlink" href="#dose-at-maximum-build-up-prescriptions" title="Permalink to this headline">¶</a></h2>
+<p>Normally the dose at maximum build-up prescription is not used for isocentric
+treatments, particularly for single beams. However, should such a situation
+occur the isocentric technique may be adapted as follows:</p>
+<p>The accelerator is calibrated to give 1 MU/cGy at maximum build-up for a
+10x10 field at the SCD, i.e. TMR(dmax,10) = 1.0. For any other field size and
+SSD equation <a href="#equation-eq2">(2)</a> becomes:</p>
+<div class="math" id="equation-eq5">
+<p><span class="eqno">(5)</span><img src="_images/math/6d7e33b849139f0a9dfc158525b0c6c2cd64cb05.png" alt="MU = \cfrac{MD \cdot 100}{S \cdot \left( \cfrac {SCD}{SSD + d_{max}} \right)^2}" /></p>
+</div><p>where <strong>MD</strong> is the dose at maximum build-up in Gy for a <em>single</em> beam.</p>
+<p>When the SSD is fixed at 100 cm the situation is even simpler. Equation
+<a href="#equation-eq5">(5)</a> becomes:</p>
+<div class="math" id="equation-eq6">
+<p><span class="eqno">(6)</span><img src="_images/math/e39030bbb734db9d8e1f4e6711911d0eee2cfa98.png" alt="MU = \cfrac{MD \cdot 100}{S}" /></p>
+</div></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="OPFHelp.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quality assurance on single beam treatments</a><ul>
+<li><a class="reference internal" href="#isocentric-treatments">Isocentric treatments</a></li>
+<li><a class="reference internal" href="#variable-ssd-treatments">Variable SSD treatments</a></li>
+<li><a class="reference internal" href="#fixed-ssd-treatments">Fixed SSD treatments</a></li>
+<li><a class="reference internal" href="#dose-at-maximum-build-up-prescriptions">Dose at maximum build-up prescriptions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="OPFHelp161.html"
+                        title="previous chapter">Quality Assurance Procedures</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="OPFHelp163.html"
+                        title="next chapter">Quality assurance on parallel opposing beam treatments</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/OPFHelp162.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="OPFHelp163.html" title="Quality assurance on parallel opposing beam treatments"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp161.html" title="Quality Assurance Procedures"
+             >previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" >For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, AC Chamberlain.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

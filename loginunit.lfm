@@ -1,0 +1,86 @@
+object LoginForm: TLoginForm
+  Left = 313
+  Height = 199
+  Top = 121
+  Width = 317
+  Caption = 'Login'
+  ClientHeight = 199
+  ClientWidth = 317
+  DesignTimePPI = 95
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object ebPass: TEdit
+    Left = 13
+    Height = 25
+    Top = 145
+    Width = 180
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 13
+    Height = 17
+    Top = 68
+    Width = 43
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 13
+    Height = 17
+    Top = 125
+    Width = 66
+    Caption = 'Password:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 13
+    Height = 17
+    Top = 10
+    Width = 292
+    Caption = 'Welcome to the Eye Plaque Planning System'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 79
+    Height = 17
+    Top = 34
+    Width = 160
+    Caption = 'Please log in to continue'
+    ParentColor = False
+  end
+  object bbEnter: TBitBtn
+    Left = 225
+    Height = 80
+    Top = 88
+    Width = 80
+    Caption = 'Log in'
+    Default = True
+    OnClick = ebPassClick
+    TabOrder = 2
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 22
+    Top = 177
+    Width = 317
+    Panels = <    
+      item
+        Style = psOwnerDraw
+        Width = 50
+      end>
+    SimplePanel = False
+    OnDrawPanel = StatusBarDrawPanel
+  end
+  object cbName: TComboBox
+    Left = 13
+    Height = 25
+    Top = 88
+    Width = 180
+    AutoComplete = True
+    AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 17
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,22 @@
+
+.. index:: Technique
+
+Treatment technique
+~~~~~~~~~~~~~~~~~~~
+
+This is also a selection field. You may select between three types of
+treatment; isocentric treatment, fixed SSD or variable SSD. Isocentric
+treatment is the conventional treatment for a Source Axis Distance (SAD) of
+one hundred centimetres (SAD = 100cm). Normally the tumour is placed at the
+isocentre. The fixed SSD treatment sets the Source Surface Distance (SSD) to
+one hundred centimetres (SSD = 100 cm). The variable SSD treatment allows you
+to specify the SSD. Again you may select the different options either by
+pressing the first letter of the option, or by using the mouse, or by using
+the <up> and <down> arrow keys. You will notice that according to the options
+you select; the patient diameter, treatment depth, and SSD fields will be
+greyed or enabled according to the options you chose. For the isocentric and
+fixed SSD treatment, you will only be able to enter in the patient diameter.
+However, for the variable SSD treatment you will be able to enter the patient
+diameter and the SSD.
+
+

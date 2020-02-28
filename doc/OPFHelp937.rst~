@@ -1,0 +1,8 @@
+
+Compensator depth
+~~~~~~~~~~~~~~~~~
+
+This is the tissue equivalent thickness of the compensator. A depth of 0 cm
+has the same effect as deselecting the 'Compensator' field.
+
+

@@ -1,0 +1,12 @@
+
+.. index:: 
+   pair: Factor; Wedge
+
+Wedge factor
+~~~~~~~~~~~~
+
+This is the factor for any wedges or any other beam modifiers that may be
+used. It should be between zero and one and should be calculated by your
+medical physicist. If no wedges are being used, this factor should remain
+one.
+

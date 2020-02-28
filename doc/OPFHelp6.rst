@@ -1,0 +1,14 @@
+
+.. index:: 
+   pair: OPF; Running
+
+Running the Opposing Fields Program
+===================================
+
+Select 'Start', 'Programs', 'Opposing Fields' on the start menu.
+Alternatively, double click the Opposing Fields icon |Run|
+on the Windows desktop. A window should appear containing the screen of
+the Opposing Fields program.
+
+
+.. |Run| image:: _static/OPFHelp6_html_m16796ebc.png

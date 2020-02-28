@@ -1,0 +1,1210 @@
+object Resform: TResform
+  Left = 231
+  Height = 908
+  Top = 15
+  Width = 619
+  HorzScrollBar.Page = 587
+  VertScrollBar.Page = 613
+  Caption = 'Results'
+  ClientHeight = 886
+  ClientWidth = 619
+  DesignTimePPI = 95
+  Menu = MainMenu1
+  OnCreate = ResformCreate
+  LCLVersion = '2.0.6.0'
+  object ScrollBox: TScrollBox
+    Left = 0
+    Height = 860
+    Top = 26
+    Width = 619
+    HorzScrollBar.Page = 597
+    VertScrollBar.Page = 842
+    Align = alClient
+    ClientHeight = 858
+    ClientWidth = 617
+    TabOrder = 0
+    object PRPage: TPRPage
+      Left = 1
+      Height = 842
+      Top = 0
+      Width = 596
+      MarginTop = 32
+      MarginLeft = 32
+      MarginRight = 32
+      MarginBottom = 32
+      Caption = 'PRPage'
+      object prlpHeader: TPRLayoutPanel
+        Left = 33
+        Height = 68
+        Top = 33
+        Width = 530
+        Align = alTop
+        object PRRect5: TPRRect
+          Left = 0
+          Height = 56
+          Top = 0
+          Width = 530
+          Align = alTop
+          LineWidth = 0
+          LineStyle = psSolid
+          FillColor = clCream
+          Radius = 0
+        end
+        object PRLabel1: TPRLabel
+          Left = 193
+          Height = 22
+          Top = 11
+          Width = 139
+          FontName = fnArial
+          FontSize = 16
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Opposing Fields v2'
+        end
+        object prlTitle: TPRLabel
+          Left = 0
+          Height = 13
+          Top = 32
+          Width = 525
+          FontName = fnArial
+          FontSize = 14
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Site name here'
+          Alignment = taCenter
+        end
+      end
+      object prlpPatientP: TPRLayoutPanel
+        Left = 33
+        Height = 100
+        Top = 101
+        Width = 530
+        Align = alTop
+        Caption = 'Patient Particulars'
+        object PRLabel2: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 20
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Name:'
+        end
+        object PRLabel3: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 35
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'DR Number:'
+        end
+        object PRLabel4: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 50
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Date of birth:'
+        end
+        object PRLabel5: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 65
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Diagnosis:'
+        end
+        object PRLabel6: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 80
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Comment:'
+        end
+        object prlName: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 20
+          Width = 110
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlName'
+        end
+        object prlDRNo: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 35
+          Width = 110
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDRNo'
+        end
+        object prlBDate: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 50
+          Width = 110
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlBDate'
+        end
+        object prlDiagnosis: TPRLabel
+          Left = 120
+          Height = 22
+          Top = 65
+          Width = 410
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDiagnosis'
+        end
+        object prlComment: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 80
+          Width = 405
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlComment'
+        end
+      end
+      object prlpPrescription: TPRLayoutPanel
+        Left = 33
+        Height = 100
+        Top = 201
+        Width = 531
+        Caption = 'Prescription'
+        object PRLabel8: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 20
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Total Dose:'
+        end
+        object PRLabel9: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 35
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Dose per fraction:'
+        end
+        object PRLabel10: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 50
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Prescription type:'
+        end
+        object prlTDose: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 20
+          Width = 150
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTDose'
+        end
+        object prlPType: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 50
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlPType'
+        end
+        object prlDPF: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 35
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDPF'
+        end
+        object PRLabel24: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 65
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Fields'
+        end
+        object prlFType: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 65
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlFType'
+        end
+        object PRLabel25: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 80
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Treatment type:'
+        end
+        object prlTType: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 80
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTType'
+        end
+      end
+      object prlpTreatment: TPRLayoutPanel
+        Left = 33
+        Height = 224
+        Top = 304
+        Width = 526
+        Caption = 'Treatment Parameters'
+        object prlEnergyLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 35
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Energy:'
+        end
+        object prlAPLATLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 50
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Presentation:'
+        end
+        object prlXYLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 65
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Field size:'
+        end
+        object prlSSDLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 125
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Treatment distance:'
+        end
+        object prlDiamLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 95
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Patient diameter:'
+        end
+        object prlEnergy: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 35
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlEnergy'
+        end
+        object prlAPLAT: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 50
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlAPLAT'
+        end
+        object prlSSD: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 125
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlSSD'
+        end
+        object prlDiam: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 95
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDiam'
+        end
+        object prlXY: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 65
+          Width = 290
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlXY'
+        end
+        object prlTULabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 20
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Treatment Unit:'
+        end
+        object prlMachine: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 20
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMachine'
+        end
+        object prlEQSLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 80
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Equivalent square:'
+        end
+        object prlEQS: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 80
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlEQS'
+        end
+        object prlDepthLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 110
+          Width = 90
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Treatment depth:'
+        end
+        object prlDepth: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 110
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDepth'
+        end
+        object prlTMRLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 140
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Tmr at depth:'
+        end
+        object prlOPFLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 155
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Output factor:'
+        end
+        object prlNormLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 170
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Normalisation'
+        end
+        object prlTableLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 185
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Table factor:'
+        end
+        object prlTMR: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 140
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTMR'
+        end
+        object prlOPF: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 155
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlOPF'
+        end
+        object prlNorm: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 170
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlNorm'
+        end
+        object prlTable: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 185
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTable'
+        end
+        object prlWedgeLabel: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 200
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Wedge factor:'
+        end
+        object prlWedge: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 200
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlWedge'
+        end
+      end
+      object prlpResults: TPRLayoutPanel
+        Left = 33
+        Height = 281
+        Top = 528
+        Width = 530
+        Align = alBottom
+        Caption = 'Dose Results'
+        object PRLabel16: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 80
+          Width = 19
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Day'
+        end
+        object PRLabel17: TPRLabel
+          Left = 142
+          Height = 15
+          Top = 80
+          Width = 74
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Monitor Units'
+        end
+        object prlDose1: TPRLabel
+          Left = 245
+          Height = 15
+          Top = 81
+          Width = 75
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Tumour Dose'
+        end
+        object PRLabel19: TPRLabel
+          Left = 449
+          Height = 15
+          Top = 80
+          Width = 77
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Reference Dose'
+        end
+        object prlIso: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 160
+          Width = 170
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Total dose at maximum buildup:'
+        end
+        object prlUser: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 210
+          Width = 251
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Calculated by:'
+        end
+        object PRLabel22: TPRLabel
+          Left = 280
+          Height = 15
+          Top = 210
+          Width = 80
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Controlled by:'
+        end
+        object prlDay1: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 100
+          Width = 100
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDay1'
+        end
+        object prlMU1: TPRLabel
+          Left = 142
+          Height = 15
+          Top = 100
+          Width = 68
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMU1'
+        end
+        object prlTD1: TPRLabel
+          Left = 250
+          Height = 15
+          Top = 100
+          Width = 78
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTD1'
+        end
+        object prlRD1: TPRLabel
+          Left = 449
+          Height = 15
+          Top = 100
+          Width = 100
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlRD1'
+        end
+        object prlMD: TPRLabel
+          Left = 170
+          Height = 15
+          Top = 160
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMD'
+        end
+        object PRRect7: TPRRect
+          Left = 5
+          Height = 1
+          Top = 95
+          Width = 530
+          LineWidth = 0
+          LineStyle = psSolid
+          Radius = 0
+        end
+        object PRRect6: TPRRect
+          Left = 5
+          Height = 1
+          Top = 130
+          Width = 530
+          LineWidth = 0
+          LineStyle = psSolid
+          Radius = 0
+        end
+        object PRRect1: TPRRect
+          Left = 71
+          Height = 1
+          Top = 225
+          Width = 180
+          LineWidth = 0
+          LineStyle = psSolid
+          Radius = 0
+        end
+        object PRRect2: TPRRect
+          Left = 350
+          Height = 1
+          Top = 225
+          Width = 180
+          LineWidth = 0
+          LineStyle = psSolid
+          Radius = 0
+        end
+        object prlDate: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 230
+          Width = 232
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Date:'
+        end
+        object prlTime: TPRLabel
+          Left = 280
+          Height = 15
+          Top = 230
+          Width = 208
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Time:'
+        end
+        object PRLabel30: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 180
+          Width = 188
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Total approximate dose at the skin:'
+        end
+        object prlTSD: TPRLabel
+          Left = 170
+          Height = 15
+          Top = 180
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTSD'
+        end
+        object PRLabel31: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 20
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = '% approx skin dose:'
+        end
+        object PRLabel32: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 35
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = '% tumour dose:'
+        end
+        object PRLabel33: TPRLabel
+          Left = 20
+          Height = 15
+          Top = 50
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = '% maximum dose:'
+        end
+        object PRLabel34: TPRLabel
+          Left = 70
+          Height = 15
+          Top = 80
+          Width = 26
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Field'
+        end
+        object prlField1: TPRLabel
+          Left = 70
+          Height = 15
+          Top = 100
+          Width = 52
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlField1'
+        end
+        object prlDose2: TPRLabel
+          Left = 355
+          Height = 15
+          Top = 80
+          Width = 80
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'Max Dose'
+        end
+        object prlMaxD1: TPRLabel
+          Left = 355
+          Height = 15
+          Top = 100
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMaxD1'
+        end
+        object prlDay2: TPRLabel
+          Left = 5
+          Height = 15
+          Top = 115
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlDay2'
+        end
+        object prlField2: TPRLabel
+          Left = 70
+          Height = 15
+          Top = 115
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlField2'
+        end
+        object prlMU2: TPRLabel
+          Left = 142
+          Height = 15
+          Top = 115
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMU2'
+        end
+        object prlTD2: TPRLabel
+          Left = 250
+          Height = 15
+          Top = 115
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlTD2'
+        end
+        object prlRD2: TPRLabel
+          Left = 449
+          Height = 15
+          Top = 115
+          Width = 60
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlRD2'
+        end
+        object prlPASD: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 20
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlPASD'
+        end
+        object prlPTD: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 35
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlPTD'
+        end
+        object prlPMD: TPRLabel
+          Left = 120
+          Height = 15
+          Top = 50
+          Width = 100
+          FontName = fnArial
+          FontSize = 10
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlPMD'
+        end
+        object prlMaxD2: TPRLabel
+          Left = 355
+          Height = 15
+          Top = 115
+          Width = 100
+          FontName = fnArial
+          FontSize = 11
+          CharSpace = 0
+          WordSpace = 0
+          Caption = 'prlMaxD2'
+        end
+        object PRLabel7: TPRLabel
+          Left = 360
+          Height = 15
+          Top = 248
+          Width = 170
+          FontName = fnArial
+          FontSize = 9
+          CharSpace = 0
+          WordSpace = 0
+          Caption = '(c) Yenzakahle Medical Physics Inc 2020'
+          Alignment = taRightJustify
+        end
+        object prlFileName: TPRLabel
+          Left = 0
+          Height = 15
+          Top = 248
+          Width = 320
+          FontName = fnArial
+          FontSize = 9
+          CharSpace = 0
+          WordSpace = 0
+        end
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 619
+    Caption = 'ToolBar'
+    Images = ImageList
+    TabOrder = 1
+    object tbPDF: TToolButton
+      Left = 1
+      Top = 2
+      Caption = 'tbPDF'
+      ImageIndex = 0
+      OnClick = tbPDFClick
+    end
+    object ToolButton2: TToolButton
+      Left = 24
+      Height = 22
+      Top = 2
+      Caption = 'ToolButton2'
+      Style = tbsSeparator
+    end
+    object tbSave: TToolButton
+      Left = 32
+      Top = 2
+      Caption = 'tbSave'
+      ImageIndex = 1
+      OnClick = PrintMenuClick
+    end
+    object ToolButton4: TToolButton
+      Left = 55
+      Height = 22
+      Top = 2
+      Caption = 'ToolButton4'
+      Style = tbsSeparator
+    end
+    object tbExit: TToolButton
+      Left = 63
+      Top = 2
+      Caption = 'tbExit'
+      ImageIndex = 2
+      OnClick = ExitMenuClick
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 528
+    top = 8
+    object miSavePDF: TMenuItem
+      Caption = '&Save PDF'
+    end
+    object PrintMenu: TMenuItem
+      Caption = '&Print'
+      OnClick = PrintMenuClick
+    end
+    object ExitMenu: TMenuItem
+      Caption = 'E&xit'
+      ShortCut = 16472
+      ShortCutKey2 = 16472
+      OnClick = ExitMenuClick
+    end
+  end
+  object PrintDialog: TPrintDialog
+    left = 528
+    top = 48
+  end
+  object PReport: TPReport
+    FileName = 'default.pdf'
+    CreationDate = 41926.6712297106
+    ModDate = 0
+    UseOutlines = False
+    ViewerPreference = []
+    left = 528
+    top = 112
+  end
+  object ImageList: TImageList
+    left = 528
+    top = 176
+    Bitmap = {
+      4C69030000001000000010000000FFFFFF00FFFFFF00F0F0F0FFC0C0C0FFC0C0
+      C0FFC0C0C0FFC0C0C0FFC0C0C0FFC0C0C0FFC0C0C0FFC0C0C0FFC0C0C0FFC0C0
+      C0FFC0C0C0FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C0FF7C7C7BFFA6A5
+      A5FFA6A5A5FFA6A5A5FFA6A5A5FFA6A5A5FFA6A5A5FFA6A5A5FFA6A5A5FF7C7C
+      7BFF140F85FF84839DFFFFFFFF00241CEDFF241CEDFF241CEDFF241CEDFF241C
+      EDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF524CE8FFA6A5
+      A5FF1B15B1FF1F18CFFF84839DFF241CEDFF241CEDFF241CEDFF241CEDFF241C
+      EDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF524CE8FFA6A5
+      A5FF0D0A58FF120E76FF09073BFF241CEDFF241CEDFF241CEDFF241CEDFF241C
+      EDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF241CEDFF524CE8FFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFF5B55F2FF5B55F2FF4B44E1FF443EDBFF524C
+      E8FF524CE8FF524CE8FF524CE8FF2F28EBFF4640E9FF524CE8FF7570E5FFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFFDEDDDCFF817CE4FFAFACE0FFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFFDEDDDCFF6964E6FFAFACE0FFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFFDEDDDCFF6964E6FFAFACE0FFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFFDEDDDCFF6964E6FF9894E2FFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFFD2D0DDFF524CE8FF524CE8FFD2D0DDFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFDEDDDCFF817CE4FF9894E2FFBBB8DFFF524CE8FFC6C4DEFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFDEDDDCFFD2D0DDFF5E58E7FFBBB8DFFF817CE4FF6964E6FF4640E9FF241C
+      EDFF4640E9FF6964E6FF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FFDEDD
+      DCFFD2D0DDFF6964E6FF817CE4FFAFACE0FFDEDDDCFFDEDDDCFFDEDDDCFFC6C4
+      DEFF8C88E3FF524CE8FF63626FFFFFFFFF00FFFFFF00C0C0C0FFA6A5A5FF9894
+      E2FF524CE8FF7570E5FFDEDDDCFFDEDDDCFFDEDDDCFFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00C0C0C0FF8F8DA7FF4640
+      E9FF524CE8FFDEDDDCFFDEDDDCFFDEDDDCFFDEDDDCFFDEDDDCFFDEDDDCFFDEDD
+      DCFFDEDDDCFFDEDDDCFF6F6E6EFFFFFFFF00FFFFFF00FFFFFF00E8CEB9C3D7AA
+      7CCDC88C50FEC88C4FFFCA9155F7CB9055F7C5894DFEDDAF8DC1FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C5884DFAF7F2
+      ECFFF8F4EEFFF8F3EDFFF8F3EDFFF8F2ECFFF2E6D7FFE2B27DFFDB9569F6FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C88D52F6F9F5
+      F1FFFCE3CDFFFBE3CDFFF9E0C8FFF8DCC2FFFDFBF8FFFCE6CDFFE2B684FFD5A8
+      84C5FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C88D51F7F9F5
+      F1FFFCE3CFFFFCE4CFFFFAE1CAFFF9DDC4FFF4E9DFFFF7F2ECFFF5EFE9FFC380
+      48FBFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C68C4FF9F9F4
+      F0FFFCE6D3FFFDE7D3FFFBE3CDFFFAE0C8FFF5D6BBFFF3D4B5FFF8F4F0FFC485
+      4AF9FFFFFF00FFFFFF00FFFFFF00FFFFFF00CECECEC2878787F4C5894CFFF9F4
+      EFFFFEE7D7FFFDE7D5FFFCE6D2FFFBE1CCFFF8DCC2FFF6DABDFFFAF4EFFFC483
+      48FF616161F4BCBCBCC2FFFFFF00DDDDDDCD9A9A9AFFCCCCCCFFC78B4EFFF9F4
+      EDFFFEE8D8FFFEE8D7FFFDE5D3FFFCE4D1FFFAE0C7FFF9DDC3FFFAF4EDFFC785
+      4AFFC3C3C3FF747474FFCDCDCDCD979797DAD2D2D2FFE8E8E8FF7D7D7DFF7D7D
+      7DFF7D7D7DFF7D7D7DFF7D7D7DFF7D7D7DFF7D7D7DFF7D7D7DFF7D7D7DFF7D7D
+      7DFFE8E8E8FFC4C4C4FF6D6D6DE1848484F9FCFCFCFFFCFCFCFFCBCBCBFFF2F2
+      F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFC6C6
+      C6FFFCFCFCFFFCFCFCFF717171FE7E7E7EFFF9F9F9FFF9F9F9FFABABABFFDFDF
+      DFFFCBCBCBFFCBCBCBFFCBCBCBFFCBCBCBFFCBCBCBFFCBCBCBFFDFDFDFFFA3A3
+      A3FFF9F9F9FFF9F9F9FF616161FF7A7A7AFFD7D7D7FFD7D7D7FF979797FFD8D8
+      D8FFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFD7D7D7FF8E8E
+      8EFFD7D7D7FFD7D7D7FF3F3F3FFF757575FFBBBBBBFFBBBBBBFF8D8D8DFFD4D4
+      D4FFB9B9B9FFB9B9B9FFB9B9B9FFB9B9B9FFB9B9B9FFB9B9B9FFD3D3D3FF8383
+      83FFBBBBBBFFBBBBBBFF2A2A2AFF707070FFB5B5B5FFB5B5B5FF959595FF8181
+      81FF818181FF797979FF6E6E6EFF616161FF525252FF434343FF424242FF6E6E
+      6EFFB5B5B5FFB5B5B5FF252525FF6B6B6BFDA7A7A7FFB5B5B5FF818181FFAFAC
+      AAFFC5C0BDFFC5C0BDFFC5C0BDFFC5C0BDFFC5C0BDFFC5C0BDFFADAAA8FF2C2C
+      2CFFB5B5B5FF9B9B9BFF232323FFA1A1A1C27A7A7ADA585858FFC79561FFF9F7
+      F6FFF9F1ECFFF9F1EBFFF8F0E9FFF7EDE6FFF4EAE1FFF2E8DEFFFAF8F6FFC794
+      61FF242424FF4B4B4BD9969696BFFFFFFF00FFFFFF00FFFFFF00C89662FDCA98
+      65FFCA9765FFCA9765FFCA9765FFCA9764FFC99764FFC99764FFCA9865FFC895
+      62FDFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF006D9CD4896A9AD2FB6697CFEEFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00709ED6DB6D9C
+      D4FF85B1DAFF5A91B9FF6093CBEAFFFFFF00FFFFFF00808080FF7E7E7EFF7C7C
+      7CFF7A7A7AFF777777FF757575FF727272FF719ED4FF6F9ED6FF87B2DCFFABD3
+      E8FFA9D0E6FF5890B8FF598EC6EAFFFFFF00FFFFFF007D7D7DFF999999FF9999
+      99FF9A9A9AFF9A9A9AFF9B9B9BFF9B9B9BFF6F9DD3FFAAD1E7FFABD1E7FF98C7
+      E1FF91C2DEFF568FB7FF5289C1EAFFFFFF00FFFFFF007A7A7AFF999999FF5291
+      59FF999A99FF9B9B9BFF9C9C9CFF9C9C9CFF6C9AD0FFA7CEE5FF8FC1DFFF89BD
+      DCFF8BBDDCFF538DB6FF4B84BCEAFFFFFF00FFFFFF00777777FF9A9A9AFF3D8A
+      45FF498A4FFF9C9C9CFF9D9D9DFF9D9D9DFF6696CCFFA2CBE3FF89BDDCFF83B9
+      DAFF84B9DAFF518BB5FF437EB6EA44944DFF42914BFF3F8D48FF3D8945FF5DA4
+      65FF5AA061FF45834BFF9E9E9EFF9E9E9EFF6092C9FF9EC7E2FF83B8DAFF7DB4
+      D7FF7EB3D7FF4F89B4FF3B79B1EA41904AFF94D29FFF91D09AFF8DCD96FF89CB
+      92FF84C88DFF519858FF417C46FF9F9F9FFF5A8EC4FF98C3E0FF7CB3D7FF74AF
+      D6FF5EC4EDFF4B88B3FF3473ABEA3E8B46FF8FCE99FF7DC687FF78C381FF73C0
+      7CFF74C07CFF79C281FF49904FFF547F57FF5489BFFF94BFDDFF75ADD4FF63B8
+      E1FF4BD4FFFF428BB8FF2C6EA6EA3B8742FF89CB92FF84C88DFF80C688FF7BC3
+      83FF77C17FFF478F4DFF3B743FFFA1A1A1FF4C84BAFF8DBBDBFF6EA8D1FF66A6
+      D1FF5FB4DFFF4785B1FF2569A1EA37823EFF347E3BFF317937FF2E7534FF4991
+      50FF468F4CFF39733DFFA1A1A1FFA2A2A2FF457EB4FF88B7D9FF67A3CFFF619E
+      CCFF639FCCFF4583B1FF1F649CEAFFFFFF00FFFFFF00606060FFA0A0A0FF3D76
+      41FF367139FFA2A2A2FFA2A2A2FFA3A3A3FF3D79B0FF82B3D7FF629FCCFF5A9A
+      C9FF5E9BCAFF4381AFFF196098EAFFFFFF00FFFFFF005C5C5CFFA1A1A1FF3C73
+      40FFA0A1A1FFA3A3A3FFA3A3A3FFA4A4A4FF3674AAFF7DAFD4FF5B9AC9FF5495
+      C7FF5896C8FF4180AEFF135C94EAFFFFFF00FFFFFF00585858FFA2A2A2FFA2A2
+      A2FFA3A3A3FFA4A4A4FFA4A4A4FFA5A5A5FF2F6FA5FF78ABD2FF78ABD3FF73A7
+      D1FF69A0CDFF407FAEFF0F5991EA999999FF717171FF545454FF515151FF4F4F
+      4FFF4C4C4CFF4A4A4AFF474747FF454545FF25679DFF3274A8FF3D7CAFFF4784
+      B5FF4E8ABAFF3E7EADFF0C578FEAFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF001D639B1619609839145D9562105A
+      92880D5890A4135C92FC0C578FED
+    }
+  end
+  object SaveDialog: TSaveDialog
+    Title = 'Save PDF as'
+    DefaultExt = '.pdf'
+    Filter = 'PDF files|*.pdf|All files|*'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    left = 528
+    top = 240
+  end
+end

@@ -1,0 +1,43 @@
+
+Fields
+------
+
+A field is an area where you enter data. There are two types of fields; edit
+boxes and selection boxes. An edit box allows you to type in data such as the
+name of the patient.
+
+
+
+
+
+Edit Boxes
+~~~~~~~~~~
+
+To enter data into an edit box click on the white area of the edit box with
+the mouse. A thin vertical line will appear in the white area of the edit
+box. This line is called the cursor and shows where any characters will
+appear when you type. If the edit box already contains data which you want to
+over write or change you can either press the backspace or delete keys to
+erase the data or double click the characters with the mouse so that they are
+highlighted in blue. You can also press <TAB> until the interior of the edit
+box is highlighted in blue. Anything that you type now will replace the
+highlighted characters.
+
+
+
+
+
+Selection Boxes
+~~~~~~~~~~~~~~~
+
+A selection field allows you to select an item from a list. They can be
+distinguished by the small down pointing arrowhead |Down|
+on the right-hand side of the field. The list can be accessed by either
+clicking on the arrowhead with the mouse cursor, or by pressing the down
+arrow on the cursor keypad. If you already know what the options are you can
+also select them by pressing the first letter of the item. Some selection
+fields allow you enter data or to select it from a list. These are known as
+combo-boxes.
+
+
+.. |Down| image:: _static/OPFHelp8_html_756e3ec2.png

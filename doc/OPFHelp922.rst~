@@ -1,0 +1,14 @@
+
+Total Dose
+~~~~~~~~~~
+
+This is the total dose specified for the patient. It is a numeric field. The
+dose is restricted to between 0 and 100 Gy. Should you enter a value outside
+these limits, a dialogue box will appear giving you an error message and
+warning you that your value should be between 0 and 100 Gy. Press the 'OK'
+button to acknowledge the dialogue box and then enter in the correct value
+into the 'Total dose' field. You will not be allowed to enter any other data
+into any other fields until you have created a correct value for the total
+dose. This field is compulsory.
+
+

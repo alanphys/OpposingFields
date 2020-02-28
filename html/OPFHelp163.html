@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quality assurance on parallel opposing beam treatments &mdash; Opposing Fields Help v3.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/naturesticky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Opposing Fields Help v3.1.1 documentation" href="index.html" />
+    <link rel="up" title="For the Medical Physicist" href="OPFHelp16.html" />
+    <link rel="next" title="Calculation of dose parameters" href="OPFHelp164.html" />
+    <link rel="prev" title="Quality assurance on single beam treatments" href="OPFHelp162.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="OPFHelp164.html" title="Calculation of dose parameters"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp162.html" title="Quality assurance on single beam treatments"
+             accesskey="P">previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" accesskey="U">For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-0"></span><div class="section" id="quality-assurance-on-parallel-opposing-beam-treatments">
+<span id="index-1"></span><h1>Quality assurance on parallel opposing beam treatments<a class="headerlink" href="#quality-assurance-on-parallel-opposing-beam-treatments" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="isocentric-treatments">
+<h2>Isocentric treatments<a class="headerlink" href="#isocentric-treatments" title="Permalink to this headline">¶</a></h2>
+<p>For parallel opposing beams the dose to the isocentre <strong>ID</strong> in Gy is divided
+equally between the beams giving:</p>
+<div class="math" id="equation-eq7">
+<p><span class="eqno">(1)</span><img src="_images/math/f8f131d9b5cc859d68a49233333f39a643a72f0f.png" alt="MU = \cfrac{ID \cdot 100}{2 \cdot TMR(d,r_d) \cdot S
+\cdot \left( \cfrac {SCD}{SAD} \right)^2}" /></p>
+</div><p>for each beam.</p>
+</div>
+<div class="section" id="variable-ssd-treatments">
+<h2>Variable SSD treatments<a class="headerlink" href="#variable-ssd-treatments" title="Permalink to this headline">¶</a></h2>
+<p>A similar equation holds for variable SSD treatments:</p>
+<div class="math" id="equation-eq8">
+<p><span class="eqno">(2)</span><img src="_images/math/ba4d79228d028eb2e20a28d1147aa5b34ccee6fd.png" alt="MU = \cfrac{TD \cdot 100}{2 \cdot TMR(d,r_d) \cdot S
+\cdot \left( \cfrac {SCD}{STD} \right)^2}" /></p>
+</div><p>where:</p>
+<ul class="simple">
+<li>STD is the source treatment distance (STD = SSD + d)</li>
+<li>TD is the tumour dose in Gy</li>
+<li>d is the treatment depth</li>
+</ul>
+</div>
+<div class="section" id="fixed-ssd-treatments">
+<h2>Fixed SSD treatments<a class="headerlink" href="#fixed-ssd-treatments" title="Permalink to this headline">¶</a></h2>
+<p>For parallel opposing fields the tumour dose <strong>TD</strong> in Gy is divided equally
+between the two beams giving:</p>
+<div class="math" id="equation-eq9">
+<p><span class="eqno">(3)</span><img src="_images/math/8dc1eea2ca0dcd5235eda373a038c915aaac1d93.png" alt="MU = \cfrac{TD \cdot 100}{2 \cdot\cfrac{\%DD_{d}}{100} \cdot S}" /></p>
+</div></div>
+<div class="section" id="dose-at-maximum-build-up-prescriptions">
+<h2>Dose at maximum build-up prescriptions<a class="headerlink" href="#dose-at-maximum-build-up-prescriptions" title="Permalink to this headline">¶</a></h2>
+<p>For parallel opposing beams the situation is a little more complex.
+Fortunately the dose at maximum build-up prescription is not normally used
+for parallel opposing beams. The dose at maximum buildup, Equation 5, from
+the previous section must
+be modified to take into account the contribution from the opposing beam
+giving:</p>
+<div class="math" id="equation-eq10">
+<p><span class="eqno">(4)</span><img src="_images/math/a3d6f4392e799e75488480a81bb1de49c98f1853.png" alt="MU = \cfrac{MD \cdot 100}{S \cdot \left[ \left( \cfrac {SCD}{SSD + d_{max}} \right)^2
++ TMR(d,r_{d_{max}}) \cdot \left( \cfrac {SCD}{SSD + d} \right)^2 \right]}" /></p>
+</div><p>where <strong>d</strong> = patient diameter - dmax. It is recommend that this equation be used
+for isocentric, variable SSD and fixed SSD treatments.</p>
+<p>For the sake of simplicity no tray, table or compensator factors have been
+included in the equations given above. When a factor is used, divide through
+by the appropriate factor.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="OPFHelp.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quality assurance on parallel opposing beam treatments</a><ul>
+<li><a class="reference internal" href="#isocentric-treatments">Isocentric treatments</a></li>
+<li><a class="reference internal" href="#variable-ssd-treatments">Variable SSD treatments</a></li>
+<li><a class="reference internal" href="#fixed-ssd-treatments">Fixed SSD treatments</a></li>
+<li><a class="reference internal" href="#dose-at-maximum-build-up-prescriptions">Dose at maximum build-up prescriptions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="OPFHelp162.html"
+                        title="previous chapter">Quality assurance on single beam treatments</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="OPFHelp164.html"
+                        title="next chapter">Calculation of dose parameters</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/OPFHelp163.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="OPFHelp164.html" title="Calculation of dose parameters"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp162.html" title="Quality assurance on single beam treatments"
+             >previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" >For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, AC Chamberlain.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

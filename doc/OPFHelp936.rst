@@ -1,0 +1,15 @@
+
+.. index:: Compensator
+
+Compensator
+~~~~~~~~~~~
+
+Check this field if you want to use compensators in the beam. Make sure you
+are familiar with the way the Opposing Fields program handles compensators
+before checking this option. Selecting this field causes the 'Compensator
+depth' field to be enabled. The 'Treatment fields' is disabled and set to the
+default option of 'Single Field' as a compensator can only be used with a
+single field. Selecting the 'Single' option causes the 'Prescription type' to
+be disabled and set to 'Tumour dose' as described for the 'Treatment fields'.
+
+

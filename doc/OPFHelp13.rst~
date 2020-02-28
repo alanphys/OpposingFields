@@ -1,0 +1,60 @@
+
+Using Compensators
+==================
+
+The Opposing Fields program caters for compensators in the beam. As there are
+a number of way of using compensators it is important to understand how the
+Opposing Fields program implements them.
+
+
+
+
+A compensator is a mass of material placed in the beam contoured so as to
+provide a homogeneous dose distribution in the tumour volume. The compensator
+is place as close to the head of the accelerator as possible to reduce
+electron contamination of the photon beam. A wide variety of material may be
+used to construct the compensator, among them lead, brass, aluminium,
+polystyrene and other tissue equivalent plastics. The thickness of the
+compensator is specified in terms of its tissue equivalent thickness along
+the central beam axis because of the variation in attenuation between the
+different materials. The tissue equivalent thickness is the amount of tissue
+that the compensator is intended to replace or fill in.
+
+
+
+
+When planning a compensator most books recommend that the SSD be taken from
+the highest point on the patient in the field. While this is quite easy to do
+when using bolus to fill in any irregularities in practice it is quite
+difficult to do using compensators. Normally the highest point on the patient
+is not on the central axis of the beam. This makes patient positioning more
+difficult. Also patients are normally positioned using the distance indicator
+on the central axis.
+
+
+
+
+A related problem is that a compensator plan quite often originates from a
+prescription requiring opposing fields place isocentrically. For these
+reasons the Opposing Fields program always takes the SSD as the distance from
+the source to the patients skin on the *central* beam axis no matter if
+compensators are used or not.
+
+
+
+
+The compensator depth is the tissue equivalent thickness of the compensator
+on the central axis of the beam. This depth is subtracted internally in the
+program from the given SSD and added to the treatment depth so that the
+effective SSD is to the highest point of the patient.
+
+
+
+
+To prevent confusion compensators may only be used on single beams. Selecting
+the compensator field will cause the 'Treatment Fields' to default to single.
+This will in turn inactivate the 'Prescription Type' and 'Patient diameter'
+fields. If other values have been selected various warnings will be generated
+before the defaults are set.
+
+

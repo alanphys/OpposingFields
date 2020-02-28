@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Beam Data File formats &mdash; Opposing Fields Help v3.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/naturesticky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Opposing Fields Help v3.1.1 documentation" href="index.html" />
+    <link rel="up" title="For the Medical Physicist" href="OPFHelp16.html" />
+    <link rel="next" title="References" href="OPFHelp166.html" />
+    <link rel="prev" title="Calculation of dose parameters" href="OPFHelp164.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="OPFHelp166.html" title="References"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp164.html" title="Calculation of dose parameters"
+             accesskey="P">previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" accesskey="U">For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="beam-data-file-formats">
+<span id="index-0"></span><h1>Beam Data File formats<a class="headerlink" href="#beam-data-file-formats" title="Permalink to this headline">¶</a></h1>
+<p>Since the 2003 version the Opposing Fields program caters for sites with more
+than one linear accelerator. Each machine is defined by a beam data file
+containing a list of photon energies with their associated parameters. The
+name of the file defines the name of the machine. When it initialises the
+program looks in the program directory for files with the extension &#8216;.bdf&#8217;
+and places these names in a list.</p>
+<p>Since 2011 the data has been stored in text format. Although the data may be
+examined using any text editor it should only be altered
+using the &#8216;Beam&#8217; program in the program directory. This program calculates
+a check sum. If the calculated and stored check sums do not match the
+Opposing Fields program will not start.</p>
+<p>Only a medical
+physicist or authorised person should use the Beam program and utmost care
+should be exercise to avoid accidentally altering the beam data.</p>
+<p>The beam data format is as follows:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="92%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Line</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>Title</td>
+</tr>
+<tr><td>2</td>
+<td>Short machine name</td>
+</tr>
+<tr><td>3</td>
+<td>Number of photon energies</td>
+</tr>
+<tr><td>4</td>
+<td>Program expiry date</td>
+</tr>
+<tr><td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Repeating block for each photon energy</td>
+</tr>
+<tr><td>5</td>
+<td>Energy</td>
+</tr>
+<tr><td>6</td>
+<td>Depth of d<sub>max</sub></td>
+</tr>
+<tr><td>7</td>
+<td>Table factor</td>
+</tr>
+<tr><td>8</td>
+<td>5 Tray factors</td>
+</tr>
+<tr><td>9</td>
+<td>Regression parameters of the output factor curve</td>
+</tr>
+<tr><td>10</td>
+<td>Number of lines of TMR values</td>
+</tr>
+<tr><td>11</td>
+<td>Number of columns of TMR values</td>
+</tr>
+<tr><td>12</td>
+<td>Field sizes for TMR table</td>
+</tr>
+<tr><td>13</td>
+<td>Depth and TMR values</td>
+</tr>
+<tr><td>.</td>
+<td>.</td>
+</tr>
+<tr><td>.</td>
+<td>.</td>
+</tr>
+<tr><td>.</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="OPFHelp164.html"
+                        title="previous chapter">Calculation of dose parameters</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="OPFHelp166.html"
+                        title="next chapter">References</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/OPFHelp165.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="OPFHelp166.html" title="References"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp164.html" title="Calculation of dose parameters"
+             >previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" >For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, AC Chamberlain.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+.. index:: Requirements
+
+System Requirements
+===================
+
+The Opposing Fields program can run on any machine that can run Windows XP or
+higher. Thus, the program can be run with 512 MB of RAM. The program
+needs approximately 5 MB of disk space to install. For ease of use we
+recommend that you do not use a system smaller than a Pentium 6 1 GHz with
+1 GB of RAM. A 15" monitor or larger is not essential but will make viewing
+easier. Opposing Fields is best viewed at a resolution of 1024x768, but can
+be viewed at resolutions down to 600x680. To store patient files we recommend
+that you have at least 100 MB of disk space free. Versions for Linux and Windows
+64 bit are available.
+
+

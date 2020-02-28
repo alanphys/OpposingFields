@@ -1,0 +1,17 @@
+
+.. index:: Type
+
+Type:
+~~~~~
+
+This field is a selection field. There are two options; tumour dose and
+maximum dose. The tumour dose is the dose specified to the tumour while the
+maximum dose is the dose specified at maximum build-up. Select whichever is
+appropriate for your treatment by clicking on the down arrow button |Down|
+or alternatively by pressing the first letter of each option. For example,
+press 'm' to choose maximum dose or choose 't' to choose tumour dose. The
+options may also be selected by pressing the <down arrow> or <up arrow> keys.
+You may not type any data in this field.
+
+
+.. |Down| image:: _static/OPFHelp9_html_756e3ec2.png

@@ -1,0 +1,27 @@
+
+.. index:: 
+   pair: Plan; Opening
+
+Opening an existing plan
+------------------------
+
+There are two ways of opening an existing plan, either by selecting 'File',
+'Open' on the menu bar, or by clicking on the 'Open patient' speed button |Open| 
+. This will cause the 'Open File' dialogue box to be displayed. See Error:
+Reference source not found below. The dialogue box contains a list of
+available files that you can select from. Select your file either by clicking
+on it and then clicking on 'OK' or pressing <Enter> or by double-clicking the
+file name. The dialogue box will close and the fields in the data entry
+screen will contain the data from the file. You can now either use this data
+as is or you can change it and create a new plan from this previously
+existing data. If you have certain plans that are commonly used, you may want
+to create template files containing the parameters that you use often, which
+you can open and edit according to your needs.
+
+.. |Open| image:: _static/OPFHelp10_html_m421fe98c.png
+
+
+.. image:: _static/OPFHelp10_html_m35725d52.png
+
+
+**Figure 6: The 'Open patient' dialogue box.**

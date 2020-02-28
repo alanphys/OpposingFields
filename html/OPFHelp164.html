@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Calculation of dose parameters &mdash; Opposing Fields Help v3.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/naturesticky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Opposing Fields Help v3.1.1 documentation" href="index.html" />
+    <link rel="up" title="For the Medical Physicist" href="OPFHelp16.html" />
+    <link rel="next" title="Beam Data File formats" href="OPFHelp165.html" />
+    <link rel="prev" title="Quality assurance on parallel opposing beam treatments" href="OPFHelp163.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="OPFHelp165.html" title="Beam Data File formats"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp163.html" title="Quality assurance on parallel opposing beam treatments"
+             accesskey="P">previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" accesskey="U">For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="calculation-of-dose-parameters">
+<span id="index-0"></span><h1>Calculation of dose parameters<a class="headerlink" href="#calculation-of-dose-parameters" title="Permalink to this headline">¶</a></h1>
+<p>In addition to the given monitor units a number of other parameters are also
+calculated. These can generally be derived from the equations given
+previously but for completeness will be given here.</p>
+<div class="section" id="approximate-percentage-skin-dose-calculation">
+<h2>Approximate percentage skin dose calculation.<a class="headerlink" href="#approximate-percentage-skin-dose-calculation" title="Permalink to this headline">¶</a></h2>
+<p>Equation 3 from Quality Assurance on Single Beam treatments is used to calculate the
+proportion of dose at 1 mm below the skin surface. The result is expressed as
+a percentage. Contributions from all beams are considered giving:</p>
+<div class="math" id="equation-eq11">
+<p><span class="eqno">(1)</span><img src="_images/math/bc9b3e36b20f94b5c2b25a3d2e611cdd4b6ca8f8.png" alt="SK = 100 \cdot \left[ \left(TMR(d,r_{0.1}) \cfrac {SCD}{SSD + 0.1} \right)^2
++ TMR(d,r_{diam}) \cdot \left( \cfrac {SCD}{SSD + diam} \right)^2 \right]" /></p>
+</div><p>This result should be viewed as an approximation only as the TMR&#8217;s can be
+quite inaccurate near the skin surface.</p>
+</div>
+<div class="section" id="percentage-tumour-dose-calculation">
+<h2>Percentage tumour dose calculation<a class="headerlink" href="#percentage-tumour-dose-calculation" title="Permalink to this headline">¶</a></h2>
+<p>This is an estimate of the percentage depth dose to the tumour. For a single
+field it is:</p>
+<div class="math" id="equation-eq12">
+<p><span class="eqno">(2)</span><img src="_images/math/e3c684302a544ec6daabe5f157d373330e80d3cf.png" alt="\%DD_{TD} = 100 \cdot TMR(d,r) \left (\cfrac{SCD}{SSD+d} \right )^2" /></p>
+</div><p>For opposing fields it is:</p>
+<div class="math" id="equation-eq13">
+<p><span class="eqno">(3)</span><img src="_images/math/fee7d877e0e92ca8b45081b06b31b7bbab6a50e0.png" alt="\%DD_{TD} = 200 \cdot TMR(d,r) \left (\cfrac{SCD}{SSD+d} \right )^2" /></p>
+</div></div>
+<div class="section" id="percentage-maximum-dose-calculation">
+<h2>Percentage maximum dose calculation<a class="headerlink" href="#percentage-maximum-dose-calculation" title="Permalink to this headline">¶</a></h2>
+<p>For a single field the percentage maximum dose <strong>%DD</strong> is the dose at Dmax. For
+other SSD&#8217;s an inverse square correction factor needs to be made giving:</p>
+<div class="math" id="equation-eq14">
+<p><span class="eqno">(4)</span><img src="_images/math/e694d97cff90a653f561c001e65c261ae7d1744e.png" alt="\%DD_{d_{max}} = 100 \cdot \left (\cfrac{SCD}{SSD + d_{max}} \right )^2" /></p>
+</div><p>When parallel opposing fields are used the contribution from the other beam
+must be taken into account and equation 4 from Quality assurance on parallel
+opposing beam treatments holds, giving:</p>
+<div class="math" id="equation-eq15">
+<p><span class="eqno">(5)</span><img src="_images/math/83a8babb188e5855ed9b5067e94f0e6bd50385f4.png" alt="\%DD_{d_{max}} = 100 + 100 \cdot TMR(d,r_{d_{max}})
+\left (\cfrac{SCD}{SSD + diam - d_{max}} \right )^2" /></p>
+</div></div>
+<div class="section" id="absolute-maximum-dose-calculation">
+<h2>Absolute maximum dose calculation<a class="headerlink" href="#absolute-maximum-dose-calculation" title="Permalink to this headline">¶</a></h2>
+<p>This is the dose at dmax. For parallel opposing fields the contribution from
+both beams must be taken into account.</p>
+<div class="math" id="equation-eq16">
+<p><span class="eqno">(6)</span><img src="_images/math/e3f90006dc686a10f31bf8375d4ac1256d14cd1c.png" alt="MD = \cfrac{Dose \cdot \%DD_{D_{max}}}{\%DD_r}" /></p>
+</div><p>Note that if compensators are used the maximum dose and the reference dose
+are adjusted for the attenuation due to the compensator.</p>
+</div>
+<div class="section" id="reference-dose-calculation">
+<h2>Reference dose calculation.<a class="headerlink" href="#reference-dose-calculation" title="Permalink to this headline">¶</a></h2>
+<p>The reference dose is the dose at dmax for one beam. Thus, for single beam
+treatments the maximum dose and the reference dose will be the same. For
+parallel opposed treatments the reference dose is the dose at dmax for the
+given beam without any other contributions. This should correspond to the in-
+vivo diode reading assuming the diodes have been calibrated to give a reading
+of 100 cGy at 100 cm SSD for a 10x10 cm field.</p>
+<div class="math" id="equation-eq17">
+<p><span class="eqno">(7)</span><img src="_images/math/4278b6a5df34b8739954f8ad8b611a6b589868e9.png" alt="RD = \cfrac{Dose}{\%DD_r}" /></p>
+</div></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="OPFHelp.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Calculation of dose parameters</a><ul>
+<li><a class="reference internal" href="#approximate-percentage-skin-dose-calculation">Approximate percentage skin dose calculation.</a></li>
+<li><a class="reference internal" href="#percentage-tumour-dose-calculation">Percentage tumour dose calculation</a></li>
+<li><a class="reference internal" href="#percentage-maximum-dose-calculation">Percentage maximum dose calculation</a></li>
+<li><a class="reference internal" href="#absolute-maximum-dose-calculation">Absolute maximum dose calculation</a></li>
+<li><a class="reference internal" href="#reference-dose-calculation">Reference dose calculation.</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="OPFHelp163.html"
+                        title="previous chapter">Quality assurance on parallel opposing beam treatments</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="OPFHelp165.html"
+                        title="next chapter">Beam Data File formats</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/OPFHelp164.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="OPFHelp165.html" title="Beam Data File formats"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="OPFHelp163.html" title="Quality assurance on parallel opposing beam treatments"
+             >previous</a> |</li>
+        <li><a href="OPFHelp.html">Opposing Fields Help v3.1.1 documentation</a> &raquo;</li>
+          <li><a href="OPFHelp16.html" >For the Medical Physicist</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, AC Chamberlain.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

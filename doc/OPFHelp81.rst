@@ -1,0 +1,19 @@
+
+.. index:: Title Bar
+
+Title Bar
+---------
+
+At the top of the Opposing Fields window is the title bar. This tells you
+where you are. Currently it should be displaying the name of your centre. It
+also contains the icon for the Opposing Fields program on the right hand side
+of the title bar and the standard three Windows buttons; 'Minimise',
+'Maximise' and 'Close' on the right hand side. Directly underneath the title
+bar is the menu bar. This contains the options 'File' and 'Calculate'. You
+can either select a menu item by clicking on it with the mouse, or by using
+the <ALT> key and the underlined letter. For example, if you want to access
+the File menu, press <ALT>-<F> and the 'File' menu will appear. To access one
+of the options on this menu, simply press the underlined letter again. For
+example, press <O> to open a file.
+
+

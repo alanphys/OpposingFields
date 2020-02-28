@@ -1,0 +1,103 @@
+
+Calculation of dose parameters
+------------------------------
+
+In addition to the given monitor units a number of other parameters are also
+calculated. These can generally be derived from the equations given
+previously but for completeness will be given here.
+
+
+Approximate percentage skin dose calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Equation 3 from Quality Assurance on Single Beam treatments is used to calculate the
+proportion of dose at 1 mm below the skin surface. The result is expressed as
+a percentage. Contributions from all beams are considered giving:
+
+.. math::
+   :label: eq11
+
+   SK = 100 \cdot \left[ \left(TMR(d,r_{0.1}) \cfrac {SCD}{SSD + 0.1} \right)^2
+   + TMR(d,r_{diam}) \cdot \left( \cfrac {SCD}{SSD + diam} \right)^2 \right]
+
+
+This result should be viewed as an approximation only as the TMR's can be
+quite inaccurate near the skin surface.
+
+
+Percentage tumour dose calculation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is an estimate of the percentage depth dose to the tumour. For a single
+field it is:
+
+.. math::
+   :label: eq12
+
+   \%DD_{TD} = 100 \cdot TMR(d,r) \left (\cfrac{SCD}{SSD+d} \right )^2
+
+For opposing fields it is:
+
+.. math::
+   :label: eq13
+
+   \%DD_{TD} = 200 \cdot TMR(d,r) \left (\cfrac{SCD}{SSD+d} \right )^2
+
+
+
+Percentage maximum dose calculation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For a single field the percentage maximum dose **%DD** is the dose at Dmax. For
+other SSD's an inverse square correction factor needs to be made giving:
+
+.. math::
+   :label: eq14
+
+   \%DD_{d_{max}} = 100 \cdot \left (\cfrac{SCD}{SSD + d_{max}} \right )^2
+
+
+When parallel opposing fields are used the contribution from the other beam
+must be taken into account and equation 4 from Quality assurance on parallel
+opposing beam treatments holds, giving:
+
+.. math::
+   :label: eq15
+
+   \%DD_{d_{max}} = 100 + 100 \cdot TMR(d,r_{d_{max}})
+   \left (\cfrac{SCD}{SSD + diam - d_{max}} \right )^2
+
+
+
+Absolute maximum dose calculation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the dose at dmax. For parallel opposing fields the contribution from
+both beams must be taken into account.
+
+.. math::
+   :label: eq16
+
+   MD = \cfrac{Dose \cdot \%DD_{D_{max}}}{\%DD_r}
+
+Note that if compensators are used the maximum dose and the reference dose
+are adjusted for the attenuation due to the compensator.
+
+
+Reference dose calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The reference dose is the dose at dmax for one beam. Thus, for single beam
+treatments the maximum dose and the reference dose will be the same. For
+parallel opposed treatments the reference dose is the dose at dmax for the
+given beam without any other contributions. This should correspond to the in-
+vivo diode reading assuming the diodes have been calibrated to give a reading
+of 100 cGy at 100 cm SSD for a 10x10 cm field.
+
+.. math::
+   :label: eq17
+
+   RD = \cfrac{Dose}{\%DD_r}
+
+
+

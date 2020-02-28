@@ -1,0 +1,10 @@
+
+.. index:: Date
+
+Date
+~~~~
+
+This is the current date. You may enter the date in any format that you wish
+but the field is constrained to a maximum of 10 characters.
+
+

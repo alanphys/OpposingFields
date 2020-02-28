@@ -1,0 +1,30 @@
+
+.. index:: Fields; Moving between
+
+Moving between Fields
+---------------------
+
+You can either press the <TAB> key to move you from one field to the next, or
+you can select each field by clicking on it with the mouse. If the field
+already contains data, you can select that data by double clicking that
+field. The data will then appear highlighted in blue and any typing will now
+will erase all the data. The easier method is to use the <TAB> key. This
+automatically highlights data in the field, and then you can either overwrite
+it or retain the data.
+
+
+
+
+To move between fields click on the next field with the mouse cursor or press
+the <TAB> key. Data can only be entered into a field when it is displayed
+in white. When the field is displayed as a dark grey colour it is disabled or
+greyed and you will not be able to access the field. When the colour of the
+field changes from grey to white it is enabled and you can now enter data
+into it.
+
+
+
+
+We are now ready to discuss the meaning of each field.
+
+

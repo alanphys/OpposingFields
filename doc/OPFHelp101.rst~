@@ -1,0 +1,13 @@
+
+Creating a new plan
+-------------------
+
+There are two ways of creating a new plan, either click on the 'New patient'
+speed button |New|
+, or select the 'File', 'New' menu option. When the program is first run the
+fields will be greyed, and before you can continue you must either create a
+new plan or open an existing plan. Once you have created a new plan the
+fields will become white, indicating that you can now enter data.
+
+
+.. |New| image:: _static/OPFHelp10_html_m7fadf393.png

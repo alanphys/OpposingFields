@@ -1,0 +1,18 @@
+
+.. index:: Normalisation
+
+Normalisation Factor
+~~~~~~~~~~~~~~~~~~~~
+
+This is a general adjustment factor for any beam weighting, or modifiers such
+as trays that may be used in the beam.
+The number should be between zero (0) and one (1). It is a selection field. However,
+you may also type the factor into this field. Commonly used normalisation factors
+should already be entered into the program and by using the mouse or the
+<down> and <up> arrow keys you should be able to select the appropriate
+factor. The factor changes according to the photon energy that has been
+chosen. Make sure that the correct energy is chosen before you choose the
+normalisation factor. If you are not using normalisation, then make certain that the
+factor is set to one.
+
+
