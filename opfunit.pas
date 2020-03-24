@@ -44,7 +44,8 @@ completed 4/2/2000
 5/2/2020   remove expiry check
 7//2/2020  fix save as file name error
            update statusbar messaging system and refactor
-           implemented login module}
+           implemented login module
+17/3/2020  add refresh linac list on beam module exit}
 
 {$mode DELPHI}{$H+}
 
@@ -264,6 +265,7 @@ type
      procedure OPFFormCloseQuery(Sender: TObject; var CanClose: boolean);
      procedure OpenMenuClick(Sender: TObject);
      procedure ReadLinac(FileName:string);
+     procedure ListLinacs;
      procedure OPFFormCreate(Sender: TObject);
      procedure PutData(var PatRec:TPatRec);
      function GetData(var PatRec:TPatRec):boolean;
@@ -421,14 +423,26 @@ end;
 
 
 procedure TOPFForm.miManageClick(Sender: TObject);
-var BeamForm:  TBeamForm;
+var BeamForm   :TBeamForm;
+    Current    :string;
+
 begin
+ClearStatus;
+Current := cbMachine.Text;
 try
    BeamForm := TBeamForm.Create(self);
    BeamForm.ShowModal;
    finally
    BeamForm.Free;
    end;
+ListLinacs;
+cbMachine.ItemIndex := cbMachine.Items.IndexOf(Current);
+if cbMachine.ItemIndex < 0 then
+   begin
+   OPFError('Could not find previous machine.');
+   cbMachine.ItemIndex := 0;
+   end;
+ReadLinac(cbMachine.Items[cbMachine.ItemIndex]);
 end;
 
 
@@ -642,6 +656,22 @@ with Linac.LinacRec do
       EnableFields;
       end;
    end;
+end;
+
+
+procedure TOPFForm.ListLinacs;
+var SearchRec  :TSearchRec;
+    FileName   :string;
+
+begin
+CBMachine.Items.Clear;
+if FindFirst('*.bdf',0,SearchRec)=0 then
+   repeat
+   FileName := ExtractFileName(SearchRec.Name);
+   FileName := Copy(FileName,1,length(FileName) - 4);
+   CBMachine.Items.Add(FileName);
+   until FindNext(SearchRec)<>0;
+FindClose(SearchRec);
 end;
 
 
@@ -921,9 +951,7 @@ end;
 
 
 procedure TOPFForm.OPFFormCreate(Sender: TObject);
-var SearchRec:  TSearchRec;
-    FileName,
-    sExePath:   string;
+var     sExePath:   string;
 
 begin
 Linac := nil;
@@ -976,14 +1004,7 @@ FileHandler.DirIndexList.Add('index.php');
 FileHandler.DirIndexList.Add('index.cgi');
 FileHandler.RegisterHandler(PHPCGIHandler);
 
-CBMachine.Items.Clear;
-if FindFirst('*.bdf',0,SearchRec)=0 then
-   repeat
-   FileName := ExtractFileName(SearchRec.Name);
-   FileName := Copy(FileName,1,length(FileName) - 4);
-   CBMachine.Items.Add(FileName);
-   until FindNext(SearchRec)<>0;
-FindClose(SearchRec);
+ListLinacs;
 if CBMachine.Items.Count <> 0 then
    begin
    cbMachine.ItemIndex := 0;
@@ -991,8 +1012,9 @@ if CBMachine.Items.Count <> 0 then
    end
   else
    begin
-   ShowMessage('No beam data files exist! Please create a file using Beam.');
-   Halt;
+   Fault := true;
+   OPFError('No beam data files exist! Please create a file using Beam.');
+   {Halt};
    end;
 
 {check if server is running}
