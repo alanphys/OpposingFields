@@ -509,14 +509,6 @@ object BeamForm: TBeamForm
     ShowHint = True
     TabOrder = 6
   end
-  object SaveDialog: TSaveDialog
-    Title = 'Save Beam Data Ffile as'
-    DefaultExt = '.bdf'
-    Filter = 'Beam Data Files | *.bdf'
-    FilterIndex = 0
-    left = 552
-    top = 136
-  end
   object OpenDialog: TOpenDialog
     Title = 'Open Beam Data File'
     DefaultExt = '.bdf'

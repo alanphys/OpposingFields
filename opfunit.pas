@@ -45,7 +45,9 @@ completed 4/2/2000
 7//2/2020  fix save as file name error
            update statusbar messaging system and refactor
            implemented login module
-17/3/2020  add refresh linac list on beam module exit}
+17/3/2020  add refresh linac list on beam module exit
+24/3/2020  look in program data config dir first for beam file
+16/4/2020  fix various mem leaks}
 
 {$mode DELPHI}{$H+}
 
@@ -515,17 +517,23 @@ var I,J,K,
     TMRL,
     TMRW       :integer;
     CRCValue   :dword;
-    sExePath   :string;
+    sExePath,
+    sDataPath  :string;
     Infile     :TextFile;
 
 begin
 {Set directory path to program files}
+{$ifdef WINDOWS}
+sDataPath := GetAppConfigDir(true);
+{$else}
+sDataPath := GetAppConfigDir(false);
+{$endif}
+sDataPath := AppendPathDelim(sDataPath) + FileName + '.bdf';
 sExePath := ExtractFilePath(Application.ExeName);
-SetCurrentDir(sExePath);
+sExePath := AppendPathDelim(sExePath) + FileName + '.bdf';
 
 {create and read linac data}
 Fault := false;
-FileName := FileName + '.bdf';
 if Linac <> nil then
    begin
    Linac.Free;
@@ -538,7 +546,10 @@ with Linac.LinacRec do
 
    {read data from disk}
       try
-      AssignFile(Infile,FileName);
+      if FileExists(sDataPath) then
+         AssignFile(Infile,sDataPath)
+        else
+         AssignFile(Infile,sExePath);
       Reset(Infile);
       Readln(Infile,Checksum);
       Readln(Infile,Title);
@@ -572,7 +583,7 @@ with Linac.LinacRec do
    end;
 
 
-if copy(FileName,1,length(FileName) - 4) <> Linac.LinacRec.Name then
+if FileName <> Linac.LinacRec.Name then
    begin
    Fault := true;
    OPFError('Integrity of the beam data file has been'
@@ -661,16 +672,36 @@ end;
 
 procedure TOPFForm.ListLinacs;
 var SearchRec  :TSearchRec;
+    sExePath,
+    sDataPath,
     FileName   :string;
 
 begin
 CBMachine.Items.Clear;
-if FindFirst('*.bdf',0,SearchRec)=0 then
+{first look in data dir where config files should be stored}
+{$ifdef WINDOWS}
+sDataPath := GetAppConfigDir(true);
+{$else}
+sDataPath := GetAppConfigDir(false);
+{$endif}
+sDataPath := AppendPathDelim(sDataPath) + '*.bdf';
+if FindFirst(sDataPath,0,SearchRec) = 0 then
    repeat
    FileName := ExtractFileName(SearchRec.Name);
    FileName := Copy(FileName,1,length(FileName) - 4);
    CBMachine.Items.Add(FileName);
-   until FindNext(SearchRec)<>0;
+   until FindNext(SearchRec)<>0
+  else
+   begin {else look in exe dir where beam files were stored}
+   sExePath := ExtractFilePath(Application.ExeName);
+   sExePath := AppendPathDelim(sExePath) + '*.bdf';
+   if FindFirst('*.bdf',0,SearchRec) = 0 then
+      repeat
+      FileName := ExtractFileName(SearchRec.Name);
+      FileName := Copy(FileName,1,length(FileName) - 4);
+      CBMachine.Items.Add(FileName);
+      until FindNext(SearchRec) <> 0;
+   end;
 FindClose(SearchRec);
 end;
 
@@ -682,6 +713,8 @@ FileHandler.Free;
 CGIHandler.Free;
 PHPCGIHandler.Free;
 OpenDialog.Destroy;
+StatusMessages.Free;
+Linac.Free;
 end;
 
 

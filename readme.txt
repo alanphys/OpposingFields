@@ -27,8 +27,11 @@ Click on the 'Add/Remove' button
 Click on the 'OK' button and close the Control Panel
 
 3.2) Installing
-Logon to Windows using an account with administrator privileges. Open Windows Explorer and navigate to the appropriate directory. Select "setup.exe" and double click.
-Press the 'OK' button. Complete the installation by responding to the instructions onscreen. When the installation is complete, enter and print the same treatment plan that was printed previously. The results must be the same.
+Logon to Windows using an account with administrator privileges. Open Windows Explorer and navigate to the appropriate directory. Select "OPFsetup.exe" and double click. Press the 'OK' button. Complete the installation by responding to the instructions onscreen. When the installation is complete, enter and print the same treatment plan that was printed previously. The results must be the same.
+
+Note: From version 3.0 beam data files are no longer distributed with the Opposing Fields program. If you are upgrading an existing installation your beam data files will still be available in the installation directory. However, it is strongly recommended to copy the data files into the program data directory by opening the beam module by selecting 'Settings, Manage machines', opening the appropriate beam data file and clicking 'Finish'.
+
+For new installations the beam data file must be created or imported if one is provided. Select 'Settings, Manage machines', open the appropriate beam data file and click 'Finish'.
 
 4) Running the Opposing Field program.
 Select 'Start', 'Programs', 'Opposing Fields'. Alternatively, double click the Opposing Fields icon on the Windows desktop.
@@ -41,6 +44,9 @@ There are of course no bugs. However, should the program behave in a way that yo
 
 7) Release notes
 These detail new or changed functionality in the software. Please see the History for bug fixes.
+
+Version 3.1
+Beam data files are no longer stored with the executable but in the appropriate program data director. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
 
 Version 3.0 (2020)
 This version is characterised by a conceptual change in the way the Opposing Fields program is distributed. Although it has always been freely available it was in the past restricted to areas overwhich the author had personal oversight. The code and executables of this version are now released as open source. The author will no longer distribute data files and maintenance of the data is the sole responsibility of the user.
@@ -113,4 +119,12 @@ Core elements of the opposing fields program have been around since 1994 when th
 24/4/2019  fixed beam empty cell and data errors
 10/7/2019  fix spelling Normalisation 
            added standard about unit
-           
+5/2/2020   remove expiry check
+7//2/2020  fix save as file name error
+           update statusbar messaging system and refactor
+           implemented login module
+28/2/2020  remove definitions from beam unit and use from opfunit
+17/3/2020  add refresh linac list on beam module exit
+24/3/2020  store all beam config files automatically in program config dir
+           look in program data confid dir first for beam file
+16/4/2020  fix various memory leaks

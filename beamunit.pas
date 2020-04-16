@@ -8,7 +8,8 @@ alignment problem. Removed text import and export.beamunit
 1/2/2011 fixed dynamic array reference problem for CRC
 1/2/2011 fixed date format problem
 24/5/2019 fixed empty cell and data bugs
-28/2/2020 remove definitions and use from opfunit}
+28/2/2020 remove definitions and use from opfunit
+24/3/2020 store all beam config files automatically in program config dir}
 
 {$mode DELPHI}{$H+}
 
@@ -53,7 +54,6 @@ type
      OpenDialog: TOpenDialog;
      PageControl: TPageControl;
      PrintDialog: TPrintDialog;
-     SaveDialog: TSaveDialog;
      sgTable: TStringGrid;
      sgTray: TStringGrid;
      sgOPF: TStringGrid;
@@ -86,7 +86,7 @@ var
 
 implementation
 
-uses CRC32;
+uses CRC32, LazFileUtils;
 
 { TBeamForm }
 
@@ -156,7 +156,7 @@ var Outfile,Lst:   Textfile;           {text file for output}
     I,J,K:     integer;            {loop variables}
     CRCValue   :dword;             {holder for checksum}
     Size       :integer;           {size of field}
-    sExePath   :string;            {program directory}
+    sDataPath  :string;            {program data dir}
     CellVal    :double;            {value of the cell}
 
 begin
@@ -228,43 +228,44 @@ with Linac.LinacRec do
          end;
    Linac.LinacRec.Checksum := CRCValue;
 
-   {Set directory path to program files}
-   sExePath := ExtractFilePath(Application.ExeName);
-   SetCurrentDir(sExePath);
+   {get path to program config data}
+   {$ifdef WINDOWS}
+   sDataPath := GetAppConfigDir(true);
+   {$else}
+   sDataPath := GetAppConfigDir(false);
+   {$endif}
 
    {write data to text file}
-   SaveDialog.FileName := Linac.LinacRec.Name + '.bdf';
-   if SaveDialog.Execute then
+   sDataPath := AppendPathDelim(sDataPath) + Linac.LinacRec.Name + '.bdf';
+   AssignFile(OutFile,sDataPath);
+   Rewrite(Outfile);
+   Writeln(Outfile,Checksum);
+   Writeln(Outfile,Title);
+   Writeln(Outfile,Name);
+   Writeln(Outfile,Noe);
+   Writeln(Outfile,EDate);
+   for I:=1 to NoE do
       begin
-      AssignFile(OutFile,SaveDialog.Filename);
-      Rewrite(Outfile);
-      Writeln(Outfile,Checksum);
-      Writeln(Outfile,Title);
-      Writeln(Outfile,Name);
-      Writeln(Outfile,Noe);
-      Writeln(Outfile,EDate);
-      for I:=1 to NoE do
+      Writeln(Outfile,Energy[I]);
+      Writeln(Outfile,DM[I]:4:3);
+      Writeln(Outfile,Table[I]:4:3);
+      for J:=1 to 5 do Write(Outfile,Tray[I,J]:4:3,' ');
+      writeln(Outfile);
+      for J:=1 to 6 do Write(Outfile,S[I,J]:9:8,' ');
+      writeln(Outfile,S[I,7]:9:8);
+      writeln(Outfile,Length(TMR[I]));
+      if length(TMR[I]) > 0 then writeln(Outfile,Length(TMR[I,0]))
+         else writeln(Outfile,0);
+      for J:=0 to Length(TMR[I]) - 1 do
          begin
-         Writeln(Outfile,Energy[I]);
-         Writeln(Outfile,DM[I]:4:3);
-         Writeln(Outfile,Table[I]:4:3);
-         for J:=1 to 5 do Write(Outfile,Tray[I,J]:4:3,' ');
-         writeln(Outfile);
-         for J:=1 to 6 do Write(Outfile,S[I,J]:9:8,' ');
-         writeln(Outfile,S[I,7]:9:8);
-         writeln(Outfile,Length(TMR[I]));
-         if length(TMR[I]) > 0 then writeln(Outfile,Length(TMR[I,0]))
-            else writeln(Outfile,0);
-         for J:=0 to Length(TMR[I]) - 1 do
-            begin
-            for K:=0 to Length(TMR[I,J]) - 1 do
-                Write(Outfile,TMR[I,J,K]:5:3,'  ');
-            Writeln(Outfile);
-            end;
+         for K:=0 to Length(TMR[I,J]) - 1 do
+             Write(Outfile,TMR[I,J,K]:5:3,'  ');
+         Writeln(Outfile);
          end;
-      Closefile(Outfile);
-      Close;
       end;
+   Closefile(Outfile);
+   Linac.Free;
+   Close;
    end;
 end;
 

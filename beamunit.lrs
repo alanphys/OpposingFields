@@ -98,11 +98,9 @@ LazarusResources.Add('TBeamForm','FORMDATA',[
   +'bOrder'#2#1#0#0#7'TBitBtn'#8'bbFinish'#4'Left'#3#180#1#6'Height'#2#25#4'Hin'
   +'t'#6#14'Save and Close'#3'Top'#3#0#1#5'Width'#2'K'#25'BorderSpacing.InnerBo'
   +'rder'#2#2#7'Caption'#6#6'Finish'#7'OnClick'#7#13'bbExportClick'#14'ParentSh'
-  +'owHint'#8#8'ShowHint'#9#8'TabOrder'#2#6#0#0#11'TSaveDialog'#10'SaveDialog'#5
-  +'Title'#6#23'Save Beam Data Ffile as'#10'DefaultExt'#6#4'.bdf'#6'Filter'#6#23
-  +'Beam Data Files | *.bdf'#11'FilterIndex'#2#0#4'left'#3'('#2#3'top'#3#136#0#0
-  +#0#11'TOpenDialog'#10'OpenDialog'#5'Title'#6#19'Open Beam Data File'#10'Defa'
-  +'ultExt'#6#4'.bdf'#6'Filter'#6'6Beam Data Files | *.bdf|Text Files|*.txt|All'
-  +' files|*.*'#11'FilterIndex'#2#0#4'left'#3'('#2#3'top'#3#176#0#0#0#12'TPrint'
-  +'Dialog'#11'PrintDialog'#4'left'#3'('#2#3'top'#3#216#0#0#0#0
+  +'owHint'#8#8'ShowHint'#9#8'TabOrder'#2#6#0#0#11'TOpenDialog'#10'OpenDialog'#5
+  +'Title'#6#19'Open Beam Data File'#10'DefaultExt'#6#4'.bdf'#6'Filter'#6'6Beam'
+  +' Data Files | *.bdf|Text Files|*.txt|All files|*.*'#11'FilterIndex'#2#0#4'l'
+  +'eft'#3'('#2#3'top'#3#176#0#0#0#12'TPrintDialog'#11'PrintDialog'#4'left'#3'('
+  +#2#3'top'#3#216#0#0#0#0
 ]);

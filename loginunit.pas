@@ -57,6 +57,7 @@ Hash.Final(Digest);               // produce the digest
 Result:= '';
 for I:= 0 to 31 do
   Result:= Result + IntToHex(Digest[I],2);
+Hash.Free;
 end;
 
 { TLoginForm }
