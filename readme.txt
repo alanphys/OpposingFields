@@ -46,7 +46,7 @@ There are of course no bugs. However, should the program behave in a way that yo
 These detail new or changed functionality in the software. Please see the History for bug fixes.
 
 Version 3.1
-Beam data files are no longer stored with the executable but in the appropriate program data director. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
+Beam data files are no longer stored with the executable but in the appropriate program data directory. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
 
 Version 3.0 (2020)
 This version is characterised by a conceptual change in the way the Opposing Fields program is distributed. Although it has always been freely available it was in the past restricted to areas overwhich the author had personal oversight. The code and executables of this version are now released as open source. The author will no longer distribute data files and maintenance of the data is the sole responsibility of the user.
