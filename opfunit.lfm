@@ -14,7 +14,7 @@ object OPFForm: TOPFForm
   OnClose = OPFFormClose
   OnCloseQuery = OPFFormCloseQuery
   OnCreate = OPFFormCreate
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.0.8.0'
   object gbParticulars: TGroupBox
     Left = 0
     Height = 146
@@ -146,7 +146,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 10
-      Width = 37
+      Width = 35
       Caption = 'Type:'
       ParentColor = False
     end
@@ -154,7 +154,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 39
-      Width = 70
+      Width = 68
       Caption = 'Total Dose'
       ParentColor = False
     end
@@ -162,7 +162,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 68
-      Width = 137
+      Width = 136
       Caption = 'Number of Fractions:'
       ParentColor = False
     end
@@ -234,7 +234,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 10
-      Width = 112
+      Width = 110
       Caption = 'Treatment fields:'
       ParentColor = False
     end
@@ -250,7 +250,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 70
-      Width = 87
+      Width = 86
       Caption = 'Presentation:'
       ParentColor = False
     end
@@ -258,7 +258,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 99
-      Width = 141
+      Width = 140
       Caption = 'Field size: Length (Y):'
       ParentColor = False
     end
@@ -266,7 +266,7 @@ object OPFForm: TOPFForm
       Left = 2
       Height = 17
       Top = 129
-      Width = 114
+      Width = 113
       Caption = 'Patient diameter:'
       ParentColor = False
     end
@@ -282,7 +282,7 @@ object OPFForm: TOPFForm
       Left = 505
       Height = 17
       Top = 10
-      Width = 142
+      Width = 140
       Caption = 'Treatment technique:'
       ParentColor = False
     end
@@ -290,7 +290,7 @@ object OPFForm: TOPFForm
       Left = 594
       Height = 17
       Top = 40
-      Width = 51
+      Width = 49
       Caption = 'Energy:'
       ParentColor = False
     end
@@ -298,7 +298,7 @@ object OPFForm: TOPFForm
       Left = 564
       Height = 17
       Top = 99
-      Width = 80
+      Width = 79
       Caption = 'Breadth (X):'
       ParentColor = False
     end
@@ -314,7 +314,7 @@ object OPFForm: TOPFForm
       Left = 554
       Height = 17
       Top = 159
-      Width = 92
+      Width = 91
       Caption = 'Wedge factor:'
       ParentColor = False
     end
@@ -322,7 +322,7 @@ object OPFForm: TOPFForm
       Left = 300
       Height = 17
       Top = 129
-      Width = 115
+      Width = 113
       Caption = 'Treatment depth:'
       ParentColor = False
     end
@@ -330,7 +330,7 @@ object OPFForm: TOPFForm
       Left = 333
       Height = 17
       Top = 159
-      Width = 83
+      Width = 80
       Caption = 'Table factor:'
       ParentColor = False
     end
@@ -659,8 +659,8 @@ object OPFForm: TOPFForm
     end
   end
   object MainMenu1: TMainMenu
-    left = 632
-    top = 192
+    Left = 632
+    Top = 192
     object MenuItem1: TMenuItem
       Caption = '&File'
       object NewMenu: TMenuItem
@@ -738,41 +738,41 @@ object OPFForm: TOPFForm
     Filter = 'Patient Files | *.pnt'
     FilterIndex = 0
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
-    left = 672
-    top = 192
+    Left = 672
+    Top = 192
   end
   object OpenDialog: TOpenDialog
     Title = 'Open patient file'
     DefaultExt = '.pnt'
     Filter = 'Patient Files | *.pnt'
     FilterIndex = 0
-    left = 712
-    top = 192
+    Left = 712
+    Top = 192
   end
   object HTMLHelpDatabase: THTMLHelpDatabase
     BaseURL = 'http://127.0.0.1:3880/'
     AutoRegister = True
     KeywordPrefix = 'HTML/'
-    left = 480
-    top = 192
+    Left = 480
+    Top = 192
   end
   object HTMLBrowserHelpViewer: THTMLBrowserHelpViewer
     BrowserParams = '%s'
     AutoRegister = True
-    left = 552
-    top = 192
+    Left = 552
+    Top = 192
   end
   object Server: TLHTTPServerComponent
     Host = 'localhost'
     Port = 3880
     ServerSoftware = 'fpHTTPd/0.4'
     Timeout = 0
-    left = 400
-    top = 192
+    Left = 400
+    Top = 192
   end
   object ImageList: TImageList
-    left = 592
-    top = 192
+    Left = 592
+    Top = 192
     Bitmap = {
       4C69050000001000000010000000FFFFFF00C17D4460C88B4DBBC88C4FEEC88C
       4FF6C88C4FF7C88C4FF7C88D4FF7C98C4FF7C78B4FF7C5894BD4C4763B91B368

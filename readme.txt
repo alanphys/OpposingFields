@@ -40,7 +40,7 @@ Select 'Start', 'Programs', 'Opposing Fields'. Alternatively, double click the O
 Enter the appropriate data into each field. Press <Tab> to move from one field to the next. When the information has been entered click on 'Calculate' to display the treatment plan. Click on 'Print' or the print button to print the plan. Click on the close button to exit.  For further information please refer to the manual or on-line help.
 
 6) Bugs
-There are of course no bugs. However, should the program behave in a way that you do not understand or deliver results that you do not expect I would like to know about it. You can report bugs to alanphys@yenzakahle.co.za.
+There are, of course, no bugs. However, should the program behave in a way that you do not understand or deliver results that you do not expect I would like to know about it. You can report issues at https://github.com/alanphys/OpposingFields/issues.
 
 7) Release notes
 These detail new or changed functionality in the software. Please see the History for bug fixes.
@@ -49,7 +49,7 @@ Version 3.1
 Beam data files are no longer stored with the executable but in the appropriate program data directory. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
 
 Version 3.0 (2020)
-This version is characterised by a conceptual change in the way the Opposing Fields program is distributed. Although it has always been freely available it was in the past restricted to areas overwhich the author had personal oversight. The code and executables of this version are now released as open source. The author will no longer distribute data files and maintenance of the data is the sole responsibility of the user.
+This version is characterised by a conceptual change in the way the Opposing Fields program is distributed. Although it has always been freely available it was in the past restricted to areas over which the author had personal oversight. The code and executables of this version are now released as open source. The author will no longer distribute data files and maintenance of the data is the sole responsibility of the user.
 
 This version incorporates the beam definition module which was previously available as a separate program. An authorisation module has also been added to control access to the beam definition module and to provide user identification on the plan.
 
@@ -128,3 +128,4 @@ Core elements of the opposing fields program have been around since 1994 when th
 24/3/2020  store all beam config files automatically in program config dir
            look in program data confid dir first for beam file
 16/4/2020  fix various memory leaks
+3/8/2020   correct title of login module

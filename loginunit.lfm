@@ -8,7 +8,7 @@ object LoginForm: TLoginForm
   ClientWidth = 317
   DesignTimePPI = 95
   OnCreate = FormCreate
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.0.8.0'
   object ebPass: TEdit
     Left = 13
     Height = 25
@@ -35,11 +35,11 @@ object LoginForm: TLoginForm
     ParentColor = False
   end
   object Label3: TLabel
-    Left = 13
+    Left = 32
     Height = 17
     Top = 10
-    Width = 292
-    Caption = 'Welcome to the Eye Plaque Planning System'
+    Width = 248
+    Caption = 'Welcome to Opposing Fields Planning '
     ParentColor = False
   end
   object Label4: TLabel

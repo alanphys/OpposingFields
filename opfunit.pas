@@ -47,7 +47,8 @@ completed 4/2/2000
            implemented login module
 17/3/2020  add refresh linac list on beam module exit
 24/3/2020  look in program data config dir first for beam file
-16/4/2020  fix various mem leaks}
+16/4/2020  fix various mem leaks
+3/8/2020   correct title of login module}
 
 {$mode DELPHI}{$H+}
 
