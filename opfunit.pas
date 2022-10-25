@@ -725,6 +725,7 @@ ebPName.Enabled := True;
 ebPName.Color := clWindow;
 ebDate.Enabled := True;
 ebDate.Color := clWindow;
+ebDate.Text := FormatDateTime('d mmmm yyyy', Now);
 ebDRNo.Enabled := true;
 ebDRNo.Color := clWindow;
 ebDiag.Enabled := True;

@@ -1,60 +1,59 @@
 object LoginForm: TLoginForm
-  Left = 313
-  Height = 199
-  Top = 121
-  Width = 317
+  Left = 2233
+  Height = 201
+  Top = 84
+  Width = 320
   Caption = 'Login'
-  ClientHeight = 199
-  ClientWidth = 317
-  DesignTimePPI = 95
+  ClientHeight = 201
+  ClientWidth = 320
   OnCreate = FormCreate
-  LCLVersion = '2.0.8.0'
+  LCLVersion = '2.2.2.0'
   object ebPass: TEdit
     Left = 13
-    Height = 25
-    Top = 145
-    Width = 180
+    Height = 32
+    Top = 147
+    Width = 182
     EchoMode = emPassword
     PasswordChar = '*'
     TabOrder = 1
   end
   object Label1: TLabel
     Left = 13
-    Height = 17
-    Top = 68
-    Width = 43
+    Height = 18
+    Top = 69
+    Width = 41
     Caption = 'Name:'
     ParentColor = False
   end
   object Label2: TLabel
     Left = 13
-    Height = 17
-    Top = 125
-    Width = 66
+    Height = 18
+    Top = 126
+    Width = 63
     Caption = 'Password:'
     ParentColor = False
   end
   object Label3: TLabel
     Left = 32
-    Height = 17
+    Height = 18
     Top = 10
-    Width = 248
+    Width = 234
     Caption = 'Welcome to Opposing Fields Planning '
     ParentColor = False
   end
   object Label4: TLabel
-    Left = 79
-    Height = 17
+    Left = 80
+    Height = 18
     Top = 34
-    Width = 160
+    Width = 150
     Caption = 'Please log in to continue'
     ParentColor = False
   end
   object bbEnter: TBitBtn
-    Left = 225
-    Height = 80
-    Top = 88
-    Width = 80
+    Left = 227
+    Height = 81
+    Top = 89
+    Width = 81
     Caption = 'Log in'
     Default = True
     OnClick = ebPassClick
@@ -62,25 +61,25 @@ object LoginForm: TLoginForm
   end
   object StatusBar: TStatusBar
     Left = 0
-    Height = 22
-    Top = 177
-    Width = 317
+    Height = 23
+    Top = 178
+    Width = 320
     Panels = <    
       item
         Style = psOwnerDraw
-        Width = 50
+        Width = 51
       end>
     SimplePanel = False
     OnDrawPanel = StatusBarDrawPanel
   end
   object cbName: TComboBox
     Left = 13
-    Height = 25
-    Top = 88
-    Width = 180
+    Height = 32
+    Top = 89
+    Width = 182
     AutoComplete = True
     AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
-    ItemHeight = 17
+    ItemHeight = 24
     TabOrder = 0
   end
 end

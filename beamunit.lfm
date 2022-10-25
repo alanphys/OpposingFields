@@ -1,22 +1,21 @@
 object BeamForm: TBeamForm
-  Left = 412
-  Height = 288
-  Top = 176
-  Width = 604
+  Left = 2332
+  Height = 291
+  Top = 135
+  Width = 610
   HorzScrollBar.Page = 603
   VertScrollBar.Page = 299
   ActiveControl = PageControl
   Caption = 'Edit Beam Files'
-  ClientHeight = 288
-  ClientWidth = 604
-  DesignTimePPI = 95
+  ClientHeight = 291
+  ClientWidth = 610
   OnCreate = BeamFormCreate
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.2.2.0'
   object PageControl: TPageControl
     Left = 0
     Height = 256
     Top = 0
-    Width = 604
+    Width = 610
     ActivePage = tsEnergies
     Align = alTop
     TabIndex = 0
@@ -24,92 +23,92 @@ object BeamForm: TBeamForm
     OnChange = PageControlChange
     object tsEnergies: TTabSheet
       Caption = 'Energies'
-      ClientHeight = 224
-      ClientWidth = 600
+      ClientHeight = 222
+      ClientWidth = 606
       OnExit = tsEnergiesExit
       OnHide = tsEnergiesExit
       object Label1: TLabel
         Left = 7
-        Height = 17
+        Height = 18
         Top = 16
-        Width = 33
+        Width = 30
         Caption = 'Title:'
         Layout = tlCenter
         ParentColor = False
       end
       object Label2: TLabel
         Left = 6
-        Height = 17
-        Top = 51
-        Width = 79
+        Height = 18
+        Top = 52
+        Width = 73
         Caption = 'Accelerator:'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 6
-        Height = 17
-        Top = 108
-        Width = 184
+        Height = 18
+        Top = 109
+        Width = 174
         Caption = 'Number of photon energies:'
         ParentColor = False
       end
       object Label4: TLabel
         Left = 6
-        Height = 17
-        Top = 172
-        Width = 138
+        Height = 18
+        Top = 174
+        Width = 129
         Caption = 'Program expiry date:'
         ParentColor = False
       end
       object Label5: TLabel
-        Left = 182
-        Height = 17
-        Top = 51
-        Width = 111
+        Left = 184
+        Height = 18
+        Top = 52
+        Width = 104
         Caption = 'Photon Energies:'
         ParentColor = False
       end
       object Label6: TLabel
-        Left = 350
-        Height = 17
-        Top = 50
-        Width = 183
+        Left = 354
+        Height = 18
+        Top = 51
+        Width = 172
         Caption = 'Depth at Maximum Buildup:'
         ParentColor = False
       end
       object ebTitle: TEdit
-        Left = 62
-        Height = 25
+        Left = 63
+        Height = 32
         Top = 12
-        Width = 524
+        Width = 530
         TabOrder = 0
       end
       object ebMName: TEdit
         Left = 7
-        Height = 25
-        Top = 68
-        Width = 80
+        Height = 32
+        Top = 69
+        Width = 81
         TabOrder = 1
       end
       object ebNoE: TEdit
         Left = 7
-        Height = 25
-        Top = 123
-        Width = 80
+        Height = 32
+        Top = 124
+        Width = 81
         TabOrder = 2
       end
       object ebEDate: TEdit
         Left = 7
-        Height = 25
-        Top = 188
-        Width = 80
+        Height = 32
+        Top = 190
+        Width = 81
         TabOrder = 3
       end
       object sgEnergy: TStringGrid
-        Left = 182
-        Height = 135
-        Top = 68
-        Width = 136
+        Left = 184
+        Height = 136
+        Top = 69
+        Width = 137
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
@@ -149,10 +148,10 @@ object BeamForm: TBeamForm
         )
       end
       object sgDmax: TStringGrid
-        Left = 382
-        Height = 130
-        Top = 75
-        Width = 138
+        Left = 386
+        Height = 131
+        Top = 76
+        Width = 139
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
@@ -194,77 +193,77 @@ object BeamForm: TBeamForm
     end
     object tsFactors: TTabSheet
       Caption = 'Factors'
-      ClientHeight = 225
-      ClientWidth = 600
+      ClientHeight = 222
+      ClientWidth = 606
       object Label7: TLabel
         Left = 22
-        Height = 13
+        Height = 18
         Top = 12
-        Width = 44
+        Width = 46
         Caption = 'Energy:'
         ParentColor = False
       end
       object Label8: TLabel
-        Left = 78
-        Height = 13
+        Left = 79
+        Height = 18
         Top = 12
-        Width = 81
+        Width = 84
         Caption = 'Table Factors:'
         ParentColor = False
       end
       object Label9: TLabel
-        Left = 230
-        Height = 13
+        Left = 232
+        Height = 18
         Top = 12
-        Width = 75
+        Width = 77
         Caption = 'Tray Factors:'
         ParentColor = False
       end
       object Label10: TLabel
-        Left = 50
-        Height = 13
-        Top = 64
+        Left = 51
+        Height = 18
+        Top = 65
         Width = 11
         Caption = '1:'
         ParentColor = False
       end
       object Label11: TLabel
-        Left = 50
-        Height = 13
-        Top = 85
+        Left = 51
+        Height = 18
+        Top = 86
         Width = 11
         Caption = '2:'
         ParentColor = False
       end
       object Label12: TLabel
-        Left = 50
-        Height = 13
-        Top = 101
+        Left = 51
+        Height = 18
+        Top = 102
         Width = 11
         Caption = '3:'
         ParentColor = False
       end
       object Label13: TLabel
-        Left = 50
-        Height = 13
-        Top = 121
+        Left = 51
+        Height = 18
+        Top = 122
         Width = 11
         Caption = '4:'
         ParentColor = False
       end
       object Label14: TLabel
-        Left = 50
-        Height = 13
-        Top = 139
+        Left = 51
+        Height = 18
+        Top = 140
         Width = 11
         Caption = '5:'
         ParentColor = False
       end
       object sgTable: TStringGrid
-        Left = 78
-        Height = 146
+        Left = 79
+        Height = 148
         Top = 40
-        Width = 130
+        Width = 131
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
@@ -304,10 +303,10 @@ object BeamForm: TBeamForm
         )
       end
       object sgTray: TStringGrid
-        Left = 230
-        Height = 146
+        Left = 232
+        Height = 148
         Top = 40
-        Width = 322
+        Width = 325
         Color = clWhite
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
@@ -357,21 +356,21 @@ object BeamForm: TBeamForm
     end
     object tsOutFact: TTabSheet
       Caption = 'Output Factors'
-      ClientHeight = 225
-      ClientWidth = 600
+      ClientHeight = 222
+      ClientWidth = 606
       object Label16: TLabel
-        Left = 221
-        Height = 13
+        Left = 223
+        Height = 18
         Top = 28
-        Width = 147
+        Width = 163
         Caption = 'Output Factor Parameters:'
         ParentColor = False
       end
       object sgOPF: TStringGrid
         Left = 42
-        Height = 146
-        Top = 57
-        Width = 514
+        Height = 148
+        Top = 58
+        Width = 519
         Color = clWhite
         ColCount = 8
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
@@ -431,11 +430,11 @@ object BeamForm: TBeamForm
     end
   end
   object bbBack: TBitBtn
-    Left = 361
+    Left = 365
     Height = 25
     Hint = 'Previous tab'
-    Top = 256
-    Width = 75
+    Top = 259
+    Width = 76
     BorderSpacing.InnerBorder = 2
     Caption = '<< Back'
     OnClick = bbBackClick
@@ -447,8 +446,8 @@ object BeamForm: TBeamForm
     Left = 8
     Height = 25
     Hint = 'Open beam data file'
-    Top = 256
-    Width = 75
+    Top = 259
+    Width = 76
     BorderSpacing.InnerBorder = 2
     Caption = 'Open'
     OnClick = bbImportClick
@@ -457,11 +456,11 @@ object BeamForm: TBeamForm
     TabOrder = 3
   end
   object bbPrint: TBitBtn
-    Left = 83
+    Left = 84
     Height = 25
     Hint = 'Print data'
-    Top = 256
-    Width = 74
+    Top = 259
+    Width = 75
     BorderSpacing.InnerBorder = 2
     Caption = 'Print'
     OnClick = bbPrintClick
@@ -470,11 +469,11 @@ object BeamForm: TBeamForm
     TabOrder = 4
   end
   object bbImportTMR: TBitBtn
-    Left = 157
+    Left = 159
     Height = 25
     Hint = 'Import TMRs from csv file'
-    Top = 256
-    Width = 82
+    Top = 259
+    Width = 83
     BorderSpacing.InnerBorder = 2
     Caption = 'ImportTMR'
     OnClick = bbImportTMRClick
@@ -483,11 +482,11 @@ object BeamForm: TBeamForm
     TabOrder = 5
   end
   object bbNext: TBitBtn
-    Left = 511
+    Left = 516
     Height = 25
     Hint = 'Next tab'
-    Top = 256
-    Width = 75
+    Top = 259
+    Width = 76
     BorderSpacing.InnerBorder = 2
     Caption = 'Next >>'
     OnClick = bbNextClick
@@ -496,11 +495,11 @@ object BeamForm: TBeamForm
     TabOrder = 1
   end
   object bbFinish: TBitBtn
-    Left = 436
+    Left = 441
     Height = 25
     Hint = 'Save and Close'
-    Top = 256
-    Width = 75
+    Top = 259
+    Width = 76
     BorderSpacing.InnerBorder = 2
     Caption = 'Finish'
     OnClick = bbExportClick
@@ -513,11 +512,11 @@ object BeamForm: TBeamForm
     DefaultExt = '.bdf'
     Filter = 'Beam Data Files | *.bdf|Text Files|*.txt|All files|*.*'
     FilterIndex = 0
-    left = 552
-    top = 176
+    Left = 558
+    Top = 178
   end
   object PrintDialog: TPrintDialog
-    left = 552
-    top = 216
+    Left = 558
+    Top = 218
   end
 end
