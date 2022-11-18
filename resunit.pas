@@ -543,7 +543,7 @@ if not DirectoryExists(sDataDir) then CreateDir(sDataDir);
 sDataDir := AppendPathdelim(sDataDir) + FormatDateTime('mmMMMM',Date);
 if not DirectoryExists(sDataDir) then CreateDir(sDataDir);
 SaveDialog.InitialDir := sDataDir;
-SaveDialog.FileName := DelSpace(Pat.PatRec.Pname) + DelSpace(Pat.PatRec.DRNo) + '.pdf';
+SaveDialog.FileName := ToAlphaNum(Pat.PatRec.Pname) + ToAlphaNum(Pat.PatRec.DRNo) + '.pdf';
 
 if SaveDialog.Execute then with PReport do
    begin
@@ -589,7 +589,7 @@ if not DirectoryExists(sDataDir) then CreateDir(sDataDir);
 with PReport do
    begin
    Filename := AppendPathDelim(sDataDir) + FormatDateTime('yyyymmddHHMMss',Now) +
-      DelSpace(Pat.PatRec.Pname) + DelSpace(Pat.PatRec.DRNo) + '.pdf';
+      ToAlphaNum(Pat.PatRec.Pname) + ToAlphaNum(Pat.PatRec.DRNo) + '.pdf';
    prlFileName.Caption := FileName;
    BeginDoc;
    Print(PRPage);

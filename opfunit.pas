@@ -48,7 +48,9 @@ completed 4/2/2000
 17/3/2020  add refresh linac list on beam module exit
 24/3/2020  look in program data config dir first for beam file
 16/4/2020  fix various mem leaks
-3/8/2020   correct title of login module}
+3/8/2020   correct title of login module
+18/11/2022 fix double free causing exception on new patient
+           special characters in filenames}
 
 {$mode DELPHI}{$H+}
 
@@ -297,6 +299,8 @@ type
     { public declarations }
   end; 
 
+function ToAlphaNum(TheString:string):string;
+
 var
    OPFForm     :TOPFForm;
    Pat         :TPatient;
@@ -307,6 +311,17 @@ var
 implementation
 
 uses beamunit, loginunit, CRC32,resunit, helpintfs, aboutunit, LazFileUtils;
+
+function ToAlphaNum(TheString:string):string;
+{Eliminates everthing except alphanumeric characters from a string}
+var Character: char;
+begin
+Result := '';
+for Character in TheString do
+   if Character in ['0'..'9','A'..'Z','a'..'z'] then
+      Result := Result + Character;
+end;
+
 
 {TPatient}
 
@@ -842,7 +857,7 @@ if (Pat <> nil) and GetData(Pat.PatRec) then
 
       sTemp := Pat.PatRec.FName;
       Pat.PatRec.FName := AppendPathDelim(sDataDir) + FormatDateTime('yyyymmddHHMMss',Now) +
-         DelSpace(Pat.PatRec.Pname) + DelSpace(Pat.PatRec.DRNo) + '.pnt';
+         ToAlphaNum(Pat.PatRec.Pname) + ToAlphaNum(Pat.PatRec.DRNo) + '.pnt';
       Pat.Save;
       Pat.PatRec.FName := sTemp;
    except
@@ -894,7 +909,7 @@ if Pat <> nil then
          mrYes:begin
                Action := SaveAsMenuClick(Sender);
                end;
-         mrNo :Pat.Free;
+         mrNo :;
          mrCancel :Action := False;
          end;
 if Action then
@@ -1229,7 +1244,7 @@ if Pat <> nil then
       if not DirectoryExists(sDataDir) then CreateDir(sDataDir);
       SaveDialog.InitialDir := sDataDir;
       if Pat.PatRec.Fname = '' then
-         SaveDialog.FileName := DelSpace(ebPName.Text) + DelSpace(ebDRNo.Text) + '.pnt'
+         SaveDialog.FileName := ToAlphaNum(ebPName.Text) + ToAlphaNum(ebDRNo.Text) + '.pnt'
         else
          SaveDialog.FileName := ExtractFileName(Pat.PatRec.FName);
 
