@@ -50,7 +50,8 @@ completed 4/2/2000
 16/4/2020  fix various mem leaks
 3/8/2020   correct title of login module
 18/11/2022 fix double free causing exception on new patient
-           special characters in filenames}
+           special characters in filenames
+23/11/2022 convert resunit to form2pdf}
 
 {$mode DELPHI}{$H+}
 
@@ -310,7 +311,7 @@ var
 
 implementation
 
-uses beamunit, loginunit, CRC32,resunit, helpintfs, aboutunit, LazFileUtils;
+uses beamunit, loginunit, CRC32,resunit2, helpintfs, aboutunit, LazFileUtils;
 
 function ToAlphaNum(TheString:string):string;
 {Eliminates everthing except alphanumeric characters from a string}
@@ -837,7 +838,7 @@ end;
 
 
 procedure TOPFForm.CalcMenuClick(Sender: TObject);
-var ResForm     :TResForm;
+var ResForm     :TResForm2;
     sDataDir,
     sTemp       :string;
 begin
@@ -863,7 +864,7 @@ if (Pat <> nil) and GetData(Pat.PatRec) then
    except
       OPFError('Could not write temp file!');
       end;
-   ResForm := TResForm.Create(Self);
+   ResForm := TResForm2.Create(Self);
    ResForm.ShowModal;
    ResForm.Free;
    end;

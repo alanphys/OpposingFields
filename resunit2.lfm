@@ -1,0 +1,1033 @@
+object ResForm2: TResForm2
+  Left = 2182
+  Height = 835
+  Top = 68
+  Width = 530
+  Caption = 'ResForm2'
+  ClientHeight = 805
+  ClientWidth = 530
+  Menu = MainMenu
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object ToolBar: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 530
+    Caption = 'ToolBar'
+    Images = ImageList
+    TabOrder = 0
+    object tbSavePDF: TToolButton
+      Left = 1
+      Top = 2
+      Caption = 'tbSavePDF'
+      ImageIndex = 0
+      OnClick = miSavePDFClick
+    end
+    object ToolButton1: TToolButton
+      Left = 24
+      Height = 22
+      Top = 2
+      Caption = 'ToolButton1'
+      Style = tbsSeparator
+    end
+    object tbExit: TToolButton
+      Left = 32
+      Top = 2
+      Caption = 'tbExit'
+      ImageIndex = 1
+      OnClick = miExitClick
+    end
+  end
+  object ScrollBox: TScrollBox
+    Left = 0
+    Height = 779
+    Top = 26
+    Width = 530
+    HorzScrollBar.Page = 523
+    VertScrollBar.Page = 770
+    Align = alClient
+    AutoSize = True
+    ClientHeight = 775
+    ClientWidth = 526
+    TabOrder = 1
+    object pPage: TPanel
+      Left = 0
+      Height = 770
+      Top = 0
+      Width = 523
+      BevelOuter = bvNone
+      ClientHeight = 770
+      ClientWidth = 523
+      TabOrder = 0
+      object pHeader: TPanel
+        Left = 0
+        Height = 60
+        Top = 0
+        Width = 523
+        Align = alTop
+        BorderStyle = bsSingle
+        ClientHeight = 56
+        ClientWidth = 519
+        Color = clCream
+        ParentColor = False
+        TabOrder = 0
+        object lTitle: TLabel
+          Left = 0
+          Height = 18
+          Top = 29
+          Width = 538
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Site name here'
+          ParentColor = False
+        end
+        object Label1: TLabel
+          Left = 0
+          Height = 23
+          Top = 5
+          Width = 538
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Opposing Fields v3.2'
+          Font.Height = -19
+          Font.Name = 'Arial'
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object gbPatientP: TGroupBox
+        Left = 0
+        Height = 110
+        Top = 60
+        Width = 523
+        Align = alTop
+        Caption = 'Patient Particulars'
+        ClientHeight = 80
+        ClientWidth = 519
+        TabOrder = 1
+        object Label2: TLabel
+          Left = 20
+          Height = 16
+          Top = 0
+          Width = 34
+          Caption = 'Name:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 20
+          Height = 16
+          Top = 15
+          Width = 64
+          Caption = 'DR Number:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label4: TLabel
+          Left = 20
+          Height = 16
+          Top = 30
+          Width = 69
+          Caption = 'Date of birth:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label5: TLabel
+          Left = 20
+          Height = 16
+          Top = 45
+          Width = 54
+          Caption = 'Diagnosis:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label6: TLabel
+          Left = 20
+          Height = 16
+          Top = 60
+          Width = 55
+          Caption = 'Comment:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lName: TLabel
+          Left = 125
+          Height = 18
+          Top = 0
+          Width = 390
+          AutoSize = False
+          Caption = 'lName'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDRNo: TLabel
+          Left = 125
+          Height = 18
+          Top = 15
+          Width = 390
+          AutoSize = False
+          Caption = 'lDRNo'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lBDate: TLabel
+          Left = 125
+          Height = 18
+          Top = 30
+          Width = 390
+          AutoSize = False
+          Caption = 'lBDate'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDiagnosis: TLabel
+          Left = 125
+          Height = 18
+          Top = 45
+          Width = 390
+          AutoSize = False
+          Caption = 'lDiagnosis'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lComment: TLabel
+          Left = 125
+          Height = 18
+          Top = 60
+          Width = 390
+          AutoSize = False
+          Caption = 'lComment'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object gbPrescription: TGroupBox
+        Left = 0
+        Height = 110
+        Top = 170
+        Width = 523
+        Align = alTop
+        Caption = 'Prescription'
+        ClientHeight = 80
+        ClientWidth = 519
+        TabOrder = 2
+        object Label7: TLabel
+          Left = 20
+          Height = 16
+          Top = 0
+          Width = 57
+          Caption = 'Total Dose:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label8: TLabel
+          Left = 20
+          Height = 16
+          Top = 15
+          Width = 93
+          Caption = 'Dose per fraction:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 20
+          Height = 16
+          Top = 30
+          Width = 91
+          Caption = 'Prescription type:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label10: TLabel
+          Left = 20
+          Height = 16
+          Top = 45
+          Width = 33
+          Caption = 'Fields:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label11: TLabel
+          Left = 20
+          Height = 16
+          Top = 60
+          Width = 82
+          Caption = 'Treatment type:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTDose: TLabel
+          Left = 125
+          Height = 16
+          Top = 0
+          Width = 36
+          Caption = 'lTDose'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDPF: TLabel
+          Left = 125
+          Height = 16
+          Top = 15
+          Width = 24
+          Caption = 'lDPF'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lPType: TLabel
+          Left = 125
+          Height = 16
+          Top = 30
+          Width = 34
+          Caption = 'lPType'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lFType: TLabel
+          Left = 125
+          Height = 16
+          Top = 45
+          Width = 33
+          Caption = 'lFType'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTType: TLabel
+          Left = 125
+          Height = 16
+          Top = 60
+          Width = 34
+          Caption = 'lTType'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object gbTreatment: TGroupBox
+        Left = 0
+        Height = 231
+        Top = 280
+        Width = 523
+        Align = alTop
+        Caption = 'Treatment Details'
+        ClientHeight = 201
+        ClientWidth = 519
+        TabOrder = 3
+        object lTULabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 0
+          Width = 81
+          Caption = 'Treatment Unit:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lEnergyLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 15
+          Width = 39
+          Caption = 'Energy:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lAPLATLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 30
+          Width = 69
+          Caption = 'Presentation:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lXYLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 45
+          Width = 50
+          Caption = 'Field size:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lEQSLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 60
+          Width = 93
+          Caption = 'Equivalent square'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDiamLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 75
+          Width = 90
+          Caption = 'Patient diameter:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDepthLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 90
+          Width = 90
+          Caption = 'Treatment depth:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lSSDLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 105
+          Width = 103
+          Caption = 'Treatment distance:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTMRLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 120
+          Width = 73
+          Caption = 'TMR at depth:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lOPFLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 135
+          Width = 73
+          Caption = 'Output factor:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lNormLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 150
+          Width = 77
+          Caption = 'Normalisation:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTableLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 165
+          Width = 64
+          Caption = 'Table factor:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lWedgeLabel: TLabel
+          Left = 20
+          Height = 16
+          Top = 180
+          Width = 73
+          Caption = 'Wedge factor:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMachine: TLabel
+          Left = 125
+          Height = 16
+          Top = 0
+          Width = 47
+          Caption = 'lMachine'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lEnergy: TLabel
+          Left = 125
+          Height = 16
+          Top = 15
+          Width = 39
+          Caption = 'lEnergy'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lAPLAT: TLabel
+          Left = 125
+          Height = 16
+          Top = 30
+          Width = 35
+          Caption = 'lAPLAT'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lXY: TLabel
+          Left = 125
+          Height = 16
+          Top = 45
+          Width = 17
+          Caption = 'lXY'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lEQS: TLabel
+          Left = 125
+          Height = 16
+          Top = 60
+          Width = 24
+          Caption = 'lEQS'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDiam: TLabel
+          Left = 125
+          Height = 16
+          Top = 75
+          Width = 31
+          Caption = 'lDiam'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDepth: TLabel
+          Left = 125
+          Height = 16
+          Top = 90
+          Width = 35
+          Caption = 'lDepth'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lSSD: TLabel
+          Left = 125
+          Height = 16
+          Top = 105
+          Width = 23
+          Caption = 'lSSD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTMR: TLabel
+          Left = 125
+          Height = 16
+          Top = 120
+          Width = 26
+          Caption = 'lTMR'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lOPF: TLabel
+          Left = 125
+          Height = 16
+          Top = 135
+          Width = 24
+          Caption = 'lOPF'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lNorm: TLabel
+          Left = 125
+          Height = 16
+          Top = 150
+          Width = 33
+          Caption = 'lNorm'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTable: TLabel
+          Left = 125
+          Height = 16
+          Top = 165
+          Width = 30
+          Caption = 'lTable'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lWedge: TLabel
+          Left = 125
+          Height = 16
+          Top = 180
+          Width = 39
+          Caption = 'lWedge'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object gbResults: TGroupBox
+        Left = 0
+        Height = 194
+        Top = 511
+        Width = 523
+        Align = alTop
+        Caption = 'Results'
+        ClientHeight = 164
+        ClientWidth = 519
+        TabOrder = 4
+        object Label12: TLabel
+          Left = 20
+          Height = 16
+          Top = 0
+          Width = 103
+          Caption = '% approx skin dose:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label13: TLabel
+          Left = 20
+          Height = 16
+          Top = 15
+          Width = 82
+          Caption = '% tumour dose:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label14: TLabel
+          Left = 20
+          Height = 16
+          Top = 30
+          Width = 96
+          Caption = '% maximum dose:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label15: TLabel
+          Left = 0
+          Height = 18
+          Top = 50
+          Width = 24
+          Caption = 'Day'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label16: TLabel
+          Left = 51
+          Height = 18
+          Top = 50
+          Width = 29
+          Caption = 'Field'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label17: TLabel
+          Left = 107
+          Height = 18
+          Top = 50
+          Width = 85
+          Caption = 'Monitor Units'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDose1: TLabel
+          Left = 219
+          Height = 18
+          Top = 50
+          Width = 83
+          Caption = 'Tumour Dose'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDose2: TLabel
+          Left = 329
+          Height = 18
+          Top = 50
+          Width = 61
+          Caption = 'Max Dose'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label20: TLabel
+          Left = 417
+          Height = 18
+          Top = 50
+          Width = 96
+          Caption = 'Reference Dose'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDay1: TLabel
+          Left = 0
+          Height = 18
+          Top = 70
+          Width = 35
+          Caption = 'lDay1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lField1: TLabel
+          Left = 51
+          Height = 18
+          Top = 70
+          Width = 40
+          Caption = 'lField1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMU1: TLabel
+          Left = 107
+          Height = 18
+          Top = 70
+          Width = 33
+          Caption = 'lMU1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTD1: TLabel
+          Left = 219
+          Height = 18
+          Top = 70
+          Width = 28
+          Caption = 'lTD1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMaxD1: TLabel
+          Left = 329
+          Height = 18
+          Top = 70
+          Width = 47
+          Caption = 'lMaxD1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lRD1: TLabel
+          Left = 417
+          Height = 18
+          Top = 70
+          Width = 29
+          Caption = 'lRD1'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDay2: TLabel
+          Left = -1
+          Height = 18
+          Top = 90
+          Width = 35
+          Caption = 'lDay2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lField2: TLabel
+          Left = 51
+          Height = 18
+          Top = 90
+          Width = 40
+          Caption = 'lField2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMU2: TLabel
+          Left = 107
+          Height = 18
+          Top = 90
+          Width = 33
+          Caption = 'lMU2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTD2: TLabel
+          Left = 219
+          Height = 18
+          Top = 90
+          Width = 28
+          Caption = 'lTD2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMaxD2: TLabel
+          Left = 329
+          Height = 18
+          Top = 90
+          Width = 47
+          Caption = 'lMaxD2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lRD2: TLabel
+          Left = 417
+          Height = 18
+          Top = 90
+          Width = 29
+          Caption = 'lRD2'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lPASD: TLabel
+          Left = 125
+          Height = 16
+          Top = 0
+          Width = 30
+          Caption = 'lPASD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lPTD: TLabel
+          Left = 125
+          Height = 16
+          Top = 15
+          Width = 24
+          Caption = 'lPTD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lPMD: TLabel
+          Left = 125
+          Height = 16
+          Top = 30
+          Width = 28
+          Caption = 'lPMD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lIso: TLabel
+          Left = 0
+          Height = 16
+          Top = 125
+          Width = 167
+          Caption = 'Total dose at maximum buildup:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label22: TLabel
+          Left = 0
+          Height = 16
+          Top = 140
+          Width = 181
+          Caption = 'Total approximate dose at the skin:'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lMD: TLabel
+          Left = 189
+          Height = 16
+          Top = 125
+          Width = 21
+          Caption = 'lMD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTSD: TLabel
+          Left = 189
+          Height = 16
+          Top = 140
+          Width = 23
+          Caption = 'lTSD'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Shape1: TShape
+          Left = 0
+          Height = 1
+          Top = 70
+          Width = 519
+        end
+        object Shape2: TShape
+          Left = 0
+          Height = 1
+          Top = 110
+          Width = 519
+        end
+      end
+      object pFooter: TPanel
+        Left = 0
+        Height = 70
+        Top = 700
+        Width = 523
+        Align = alBottom
+        ClientHeight = 70
+        ClientWidth = 523
+        TabOrder = 5
+        object lUser: TLabel
+          Left = 0
+          Height = 18
+          Top = 10
+          Width = 250
+          Caption = 'Calculated by: ____________________________'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label23: TLabel
+          Left = 260
+          Height = 18
+          Top = 10
+          Width = 256
+          Caption = 'Controlled by: _____________________________'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lDate: TLabel
+          Left = 0
+          Height = 18
+          Top = 30
+          Width = 33
+          Caption = 'Date:'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lTime: TLabel
+          Left = 260
+          Height = 18
+          Top = 30
+          Width = 34
+          Caption = 'Time:'
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object lFileName: TLabel
+          Left = 0
+          Height = 16
+          Top = 47
+          Width = 304
+          AutoSize = False
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label27: TLabel
+          Left = 314
+          Height = 16
+          Top = 47
+          Width = 203
+          Caption = '(c) Yenzakahle Medical Physics Inc 2022'
+          Font.Height = -11
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object MainMenu: TMainMenu
+    Left = 448
+    Top = 48
+    object miSavePDF: TMenuItem
+      Caption = '&Save PDF'
+      OnClick = miSavePDFClick
+    end
+    object miExit: TMenuItem
+      Caption = 'E&xit'
+      OnClick = miExitClick
+    end
+  end
+  object ImageList: TImageList
+    Left = 448
+    Top = 104
+    Bitmap = {
+      4C7A0200000010000000100000007C0400000000000078DAA5D35B4C53771CC0
+      71F7BE654B963D2C31EEC1111743746ECCCB18687158E5B28A23A332C6AA20CA
+      2222978A40292838284D2945505AEE376F28882014913181818A176ED1881428
+      A57809CC873DE80BF9EE9CF3D0CCE88C6C4DBE394D4E3EE7F73BFFB4C0928585
+      85654EA793CECE4EBABABAFE35F1BEB5AD93F9B9671B80778496CC3A17964D4E
+      3C5F5F53DD414AB28993450DAFCD62BE802EC7C0AA9539444556E0987EBA5E9C
+      FBE9D279DE261FCFA718F4ED7CFD55354B3FBAC29E8802EC76078BF1270BBB09
+      0D3986CC3B17B7E50ADADADAF1707FC697EE7FB27AC55356AD78C29A9573AEDC
+      DDE658B97C9ECF3F9B2350FE046BEB1413B671294D6A2A1D1D1D14999ED7990C
+      7F5D8C8F192126FA2E99E933AEA22367090B794CB2DA49419E839B37265EF1E2
+      19BE78F162D955E17BF3A54BAEFB620DF576E1F90E06FEE116E34FD7DAC9CBFD
+      7F3E277386BEDEC5FB876336CACCD344A91E71FEAC9DF187B645F9DEEE498C7A
+      07FA6C07BAAC199A2F4E31F6C0F6565E9C7DB6CE4EEEAF3354954D7328CEC9BE
+      885954A18F89D9374BB6F04EF1719AD7FA71C15A2F4FA14D76526874F05BC724
+      7FF44CD2295CCF08CFCCCA98215CF988C8DD69AFF853B5CD1C17CCFEBDB31417
+      4D333C687B696771AFE1211BFD7D13241D7A797FABF52A47D35BD9EEF784F454
+      27F7EFD95E39F3379DDFF9FA06B6CA5504FA1FE660AC1A7562E21B93C96458AD
+      5696FC874F4CE928BF5886893A797751FE60F93D447BAC698C50533BAAE3032E
+      9F91918156AB45A3D1909292425252126AB59AF8F878E2CA4789156CF6A571EA
+      471E7376701665BE959D797D2E9F969686D96C96B2582C5225252552B165239C
+      1B7A44BD5071BF1D53F7043F18DBD8A1BBE6F2E24CD1EE30EDC46C314BAEB4B4
+      546ABF6590D3779C18AF4DA2EB1C472FF4BDA115FFACAB2E2FEE2BCEF4CAF565
+      5BAE42726565655251276E513DE0906C66FB18594241FACB6CD6B6F26D61203E
+      267F361AB6E2A5F3E5A7DA3D8456EEC237D39FF2F2722955C10DCAFBA7C9B48E
+      91D6721F6DF37D14BA163C939B90E5FB51385C8169D082E1F609740305645D37
+      1054AC44A6D942454505A179BD14F74CA1115C62E33DC27BE7F1CF69C623A11E
+      6FFD168C77CCA4F56573B8E70809BF6B48144AEE3EC2B67C05C1E92104EBBA28
+      ECB2A1BE304A84D58EFF28F8E8ADB81F388567B68F6B66465F0EA93D99245D4B
+      476E0CC433712355555504645DC1D0F190036786883A35C4CF2D93C88F35E116
+      5DC5BAA3DE78683D5993BC8E556A0FB699B6B3C518C086042FC9565757E3AB6D
+      21A7ED017B6BEEB2ABFC161115B784F369E293C852D7F9AB542A2A2B2BF13A24
+      636DDC06C989D5D4D4E0957C91A3C2BBEF165CA8E506E12537D97CA4918F55C5
+      2E1F161626CDFB26611395C2557462B5B5B5AC4D3C475AE3283F0A36B8A81FE5
+      89EBC8321AF830ACD0E5954AE54B334527565757C7EAD83A0ED70F0B8D90707A
+      88E8CADB6C4A6FE0FD9D26E9371717174770703041414128140A020202F0F3F3
+      432E97E3EBEB8BDBDE32BE483C8397A61179D665BECBBD82B7F602EF861817FD
+      FFFD20B480F794F9C2EE0592FF1B12860F24
+    }
+  end
+  object SaveDialog: TSaveDialog
+    Filter = 'PDF|*.pdf|All files|*'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 448
+    Top = 160
+  end
+end
