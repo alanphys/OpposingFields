@@ -1,13 +1,13 @@
 object OPFForm: TOPFForm
   Left = 2080
-  Height = 585
+  Height = 608
   Top = 28
   Width = 769
   HorzScrollBar.Page = 760
   VertScrollBar.Page = 438
   ActiveControl = ebPName
   Caption = 'Opposing Fields'
-  ClientHeight = 555
+  ClientHeight = 578
   ClientWidth = 769
   Menu = MainMenu1
   OnClose = OPFFormClose
@@ -16,12 +16,12 @@ object OPFForm: TOPFForm
   LCLVersion = '2.2.2.0'
   object gbParticulars: TGroupBox
     Left = 0
-    Height = 158
+    Height = 166
     Top = 26
     Width = 769
     Align = alTop
     Caption = 'Patient Particulars:'
-    ClientHeight = 128
+    ClientHeight = 136
     ClientWidth = 765
     ParentFont = False
     TabOrder = 0
@@ -146,12 +146,12 @@ object OPFForm: TOPFForm
   end
   object gbPrescription: TGroupBox
     Left = 0
-    Height = 131
-    Top = 184
+    Height = 138
+    Top = 192
     Width = 769
     Align = alClient
     Caption = 'Prescription:'
-    ClientHeight = 101
+    ClientHeight = 108
     ClientWidth = 765
     ParentFont = False
     TabOrder = 1
@@ -242,12 +242,12 @@ object OPFForm: TOPFForm
   end
   object gbParameters: TGroupBox
     Left = 0
-    Height = 217
-    Top = 315
+    Height = 225
+    Top = 330
     Width = 769
     Align = alBottom
     Caption = 'Treatment Parameters:'
-    ClientHeight = 187
+    ClientHeight = 195
     ClientWidth = 765
     ParentFont = False
     TabOrder = 2
@@ -621,7 +621,7 @@ object OPFForm: TOPFForm
   object StatusBar: TStatusBar
     Left = 0
     Height = 23
-    Top = 532
+    Top = 555
     Width = 769
     Panels = <    
       item

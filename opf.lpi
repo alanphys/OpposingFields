@@ -8,7 +8,7 @@
         <CompatibilityMode Value="True"/>
       </Flags>
       <Title Value="opf"/>
-      <UseXPManifest Value="True"/>
+      <Scaled Value="True"/>
       <Icon Value="0"/>
     </General>
     <MacroValues Count="1">
@@ -57,12 +57,12 @@
         <MinVersion Build="1" Valid="True"/>
       </Item5>
     </RequiredPackages>
-    <Units Count="84">
+    <Units Count="85">
       <Unit0>
         <Filename Value="opf.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
-        <CursorPos X="27" Y="26"/>
+        <CursorPos X="27" Y="27"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -624,8 +624,8 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="193"/>
-        <CursorPos X="32" Y="212"/>
+        <TopLine Value="490"/>
+        <CursorPos X="70" Y="498"/>
         <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -639,127 +639,135 @@
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit83>
+      <Unit84>
+        <Filename Value="resunit2.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="312"/>
+        <CursorPos X="27" Y="329"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit84>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="117" Column="16" TopLine="83"/>
+        <Caret Line="118" Column="16" TopLine="84"/>
       </Position1>
       <Position2>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="118" Column="16" TopLine="84"/>
+        <Caret Line="119" Column="16" TopLine="84"/>
       </Position2>
       <Position3>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="119" Column="16" TopLine="85"/>
+        <Caret Line="120" Column="16" TopLine="85"/>
       </Position3>
       <Position4>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="118" Column="16" TopLine="84"/>
+        <Caret Line="121" Column="16" TopLine="86"/>
       </Position4>
       <Position5>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="119" Column="16" TopLine="84"/>
+        <Caret Line="122" Column="16" TopLine="87"/>
       </Position5>
       <Position6>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="120" Column="16" TopLine="85"/>
+        <Caret Line="123" Column="16" TopLine="88"/>
       </Position6>
       <Position7>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="121" Column="16" TopLine="86"/>
+        <Caret Line="124" Column="16" TopLine="89"/>
       </Position7>
       <Position8>
-        <Filename Value="resunit2.pas"/>
-        <Caret Line="122" Column="16" TopLine="87"/>
+        <Filename Value="opfunit.pas"/>
+        <Caret Line="53" Column="43" TopLine="37"/>
       </Position8>
       <Position9>
-        <Filename Value="resunit2.pas"/>
-        <Caret Line="123" Column="16" TopLine="88"/>
+        <Filename Value="opfunit.pas"/>
+        <Caret Line="313" Column="41" TopLine="287"/>
       </Position9>
       <Position10>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="124" Column="16" TopLine="89"/>
+        <Caret Line="162" TopLine="126"/>
       </Position10>
       <Position11>
-        <Filename Value="opfunit.pas"/>
-        <Caret Line="53" Column="43" TopLine="37"/>
+        <Filename Value="resunit2.pas"/>
+        <Caret Line="158" TopLine="152"/>
       </Position11>
       <Position12>
-        <Filename Value="opfunit.pas"/>
-        <Caret Line="313" Column="41" TopLine="287"/>
+        <Filename Value="resunit2.pas"/>
+        <Caret Line="511" Column="8" TopLine="482"/>
       </Position12>
       <Position13>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="162" TopLine="126"/>
+        <Caret Line="453" Column="31" TopLine="432"/>
       </Position13>
       <Position14>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="158" TopLine="152"/>
+        <Caret Line="513" Column="60" TopLine="493"/>
       </Position14>
       <Position15>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="511" Column="8" TopLine="482"/>
+        <Caret Line="155" Column="36" TopLine="141"/>
       </Position15>
       <Position16>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="453" Column="31" TopLine="432"/>
+        <Caret Line="542" Column="28" TopLine="522"/>
       </Position16>
       <Position17>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="513" Column="60" TopLine="493"/>
+        <Caret Line="524" TopLine="518"/>
       </Position17>
       <Position18>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="155" Column="36" TopLine="141"/>
+        <Caret Line="546" Column="22" TopLine="516"/>
       </Position18>
       <Position19>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="542" Column="28" TopLine="522"/>
+        <Caret Line="547" Column="22" TopLine="517"/>
       </Position19>
       <Position20>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="524" TopLine="518"/>
+        <Caret Line="548" Column="22" TopLine="518"/>
       </Position20>
       <Position21>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="546" Column="22" TopLine="516"/>
+        <Caret Line="547" Column="22" TopLine="517"/>
       </Position21>
       <Position22>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="547" Column="22" TopLine="517"/>
+        <Caret Line="548" Column="22" TopLine="518"/>
       </Position22>
       <Position23>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="548" Column="22" TopLine="518"/>
+        <Caret Line="549" Column="22" TopLine="519"/>
       </Position23>
       <Position24>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="547" Column="22" TopLine="517"/>
+        <Caret Line="550" Column="22" TopLine="520"/>
       </Position24>
       <Position25>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="548" Column="22" TopLine="518"/>
+        <Caret Line="549" Column="22" TopLine="519"/>
       </Position25>
       <Position26>
-        <Filename Value="resunit2.pas"/>
-        <Caret Line="549" Column="22" TopLine="519"/>
+        <Filename Value="opfunit.pas"/>
+        <Caret Line="866" Column="24" TopLine="478"/>
       </Position26>
       <Position27>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="550" Column="22" TopLine="520"/>
+        <Caret Line="548" Column="15" TopLine="134"/>
       </Position27>
       <Position28>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="549" Column="22" TopLine="519"/>
+        <Caret Line="207" Column="41" TopLine="194"/>
       </Position28>
       <Position29>
-        <Filename Value="opfunit.pas"/>
-        <Caret Line="866" Column="24" TopLine="478"/>
+        <Filename Value="resunit2.pas"/>
+        <Caret Line="208" Column="41" TopLine="195"/>
       </Position29>
       <Position30>
         <Filename Value="resunit2.pas"/>
-        <Caret Line="548" Column="15" TopLine="134"/>
+        <Caret Line="207" Column="41" TopLine="194"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>

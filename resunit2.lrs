@@ -74,9 +74,9 @@ LazarusResources.Add('TResForm2','FORMDATA',[
   +'!'#7'Caption'#6#6'lFType'#11'Font.Height'#2#245#11'ParentColor'#8#10'Parent'
   +'Font'#8#0#0#6'TLabel'#6'lTType'#4'Left'#2'}'#6'Height'#2#16#3'Top'#2'<'#5'W'
   +'idth'#2'"'#7'Caption'#6#6'lTType'#11'Font.Height'#2#245#11'ParentColor'#8#10
-  +'ParentFont'#8#0#0#0#9'TGroupBox'#11'gbTreatment'#4'Left'#2#0#6'Height'#3#231
+  +'ParentFont'#8#0#0#0#9'TGroupBox'#11'gbTreatment'#4'Left'#2#0#6'Height'#3#228
   +#0#3'Top'#3#24#1#5'Width'#3#11#2#5'Align'#7#5'alTop'#7'Caption'#6#17'Treatme'
-  +'nt Details'#12'ClientHeight'#3#201#0#11'ClientWidth'#3#7#2#8'TabOrder'#2#3#0
+  +'nt Details'#12'ClientHeight'#3#198#0#11'ClientWidth'#3#7#2#8'TabOrder'#2#3#0
   +#6'TLabel'#8'lTULabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#0#5'Width'#2'Q'#7
   +'Caption'#6#15'Treatment Unit:'#11'Font.Height'#2#245#11'ParentColor'#8#10'P'
   +'arentFont'#8#0#0#6'TLabel'#12'lEnergyLabel'#4'Left'#2#20#6'Height'#2#16#3'T'
@@ -134,7 +134,7 @@ LazarusResources.Add('TResForm2','FORMDATA',[
   +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lWedge'#4'Left'#2'}'#6'Heig'
   +'ht'#2#16#3'Top'#3#180#0#5'Width'#2''''#7'Caption'#6#6'lWedge'#11'Font.Heigh'
   +'t'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#0#9'TGroupBox'#9'gbResults'
-  +#4'Left'#2#0#6'Height'#3#194#0#3'Top'#3#255#1#5'Width'#3#11#2#5'Align'#7#5'a'
+  +#4'Left'#2#0#6'Height'#3#194#0#3'Top'#3#252#1#5'Width'#3#11#2#5'Align'#7#5'a'
   +'lTop'#7'Caption'#6#7'Results'#12'ClientHeight'#3#164#0#11'ClientWidth'#3#7#2
   +#8'TabOrder'#2#4#0#6'TLabel'#7'Label12'#4'Left'#2#20#6'Height'#2#16#3'Top'#2
   +#0#5'Width'#2'g'#7'Caption'#6#19'% approx skin dose:'#11'Font.Height'#2#245
@@ -198,8 +198,8 @@ LazarusResources.Add('TResForm2','FORMDATA',[
   +'on'#6#4'lTSD'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6
   +'TShape'#6'Shape1'#4'Left'#2#0#6'Height'#2#1#3'Top'#2'F'#5'Width'#3#7#2#0#0#6
   +'TShape'#6'Shape2'#4'Left'#2#0#6'Height'#2#1#3'Top'#2'n'#5'Width'#3#7#2#0#0#0
-  +#6'TPanel'#7'pFooter'#4'Left'#2#0#6'Height'#2'F'#3'Top'#3#188#2#5'Width'#3#11
-  +#2#5'Align'#7#8'alBottom'#12'ClientHeight'#2'F'#11'ClientWidth'#3#11#2#8'Tab'
+  +#6'TPanel'#7'pFooter'#4'Left'#2#0#6'Height'#2'D'#3'Top'#3#190#2#5'Width'#3#11
+  +#2#5'Align'#7#8'alClient'#12'ClientHeight'#2'D'#11'ClientWidth'#3#11#2#8'Tab'
   +'Order'#2#5#0#6'TLabel'#5'lUser'#4'Left'#2#0#6'Height'#2#18#3'Top'#2#10#5'Wi'
   +'dth'#3#250#0#7'Caption'#6'+Calculated by: ____________________________'#11
   +'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'Label'

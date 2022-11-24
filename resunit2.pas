@@ -367,40 +367,40 @@ with Pat.PatRec do with Linac.LinacRec do
       {print machine parameters}
       L := 0;
       lMachine.Caption := Linac.LinacRec.Name;
-      lMachine.Top := L*15 + 20;
-      lTULabel.Top := L*15 + 20;
+      lMachine.Top := L*15;
+      lTULabel.Top := L*15;
       Inc(L);
 
       lEnergy.Caption := Linac.LinacRec.Energy[Energy];
-      lEnergy.Top := L*15 + 20;
-      lEnergyLabel.Top := L*15 + 20;
+      lEnergy.Top := L*15;
+      lEnergyLabel.Top := L*15;
       Inc(L);
 
       case Present of
          AP:  lAPLAT.Caption := 'Anterior/Posterior';
          Lat: lAPLAT.Caption := 'Lateral';
         end;
-      lAPLAT.Top := L*15 + 20;
-      lAPLATLabel.Top := L*15 + 20;
+      lAPLAT.Top := L*15;
+      lAPLATLabel.Top := L*15;
       Inc(L);
 
       lXY.Caption := 'Length(Y): ' + FloatToStrF(FSY,ffFixed,4,1) + ' cm, Breadth(X): ' +
          FloatToStrF(FSX,ffFixed,4,1) + ' cm';
-      lXY.Top := L*15 + 20;
-      lXYLabel.Top := L*15 + 20;
+      lXY.Top := L*15;
+      lXYLabel.Top := L*15;
       Inc(L);
 
       lEQS.Caption :=  FloatToStrF(EQ*4,ffFixed,4,1) + ' cm';
-      lEQS.Top := L*15 + 20;
-      lEQSLabel.Top := L*15 + 20;
+      lEQS.Top := L*15;
+      lEQSLabel.Top := L*15;
       Inc(L);
 
       if Fields = Opposing then
          begin
          lDiamLabel.Caption := 'Patient diameter:';
          lDiam.Caption := FloatToStrF(Diam,ffFixed,4,1) + ' cm';
-         lDiam.Top := L*15 + 20;
-         lDiamLabel.Top := L*15 + 20;
+         lDiam.Top := L*15;
+         lDiamLabel.Top := L*15;
          Inc(L);
          end
         else
@@ -410,38 +410,38 @@ with Pat.PatRec do with Linac.LinacRec do
         end;
 
       lDepth.Caption := FloatToStrF(Depth,ffFixed,4,1) + ' cm';
-      lDepth.Top := L*15 + 20;
-      lDepthLabel.Top := L*15 + 20;
+      lDepth.Top := L*15;
+      lDepthLabel.Top := L*15;
       Inc(L);
 
       lSSD.Caption := FloatToStrF(SSD,ffFixed,5,1) + ' cm';
-      lSSD.Top := L*15 + 20;
-      lSSDLabel.Top := L*15 + 20;
+      lSSD.Top := L*15;
+      lSSDLabel.Top := L*15;
       Inc(L);
 
       lTMR.Caption := FloatToStrF(TmrD,ffFixed,7,3);
-      lTMR.Top := L*15 + 20;
-      lTMRLabel.Top := L*15 + 20;
+      lTMR.Top := L*15;
+      lTMRLabel.Top := L*15;
       Inc(L);
 
       lOPF.Caption := FloatToStrF(ST,ffFixed,7,3);
-      lOPF.Top := L*15 + 20;
-      lOPFLabel.Top := L*15 + 20;
+      lOPF.Top := L*15;
+      lOPFLabel.Top := L*15;
       Inc(L);
 
       lNorm.Caption :=  FloatToStrF(TrayFac,ffFixed,7,3);
-      lNorm.Top := L*15 + 20;
-      lNormLabel.Top := L*15 + 20;
+      lNorm.Top := L*15;
+      lNormLabel.Top := L*15;
       Inc(L);
 
       lTable.Caption := FloatToStrF(TableFac,ffFixed,7,3);
-      lTable.Top := L*15 + 20;
-      lTableLabel.Top := L*15 + 20;
+      lTable.Top := L*15;
+      lTableLabel.Top := L*15;
       Inc(L);
 
       lWedge.Caption := FloatToStrF(CFac,ffFixed,7,3);
-      lWedge.Top := L*15 + 20;
-      lWedgeLabel.Top := L*15 + 20;
+      lWedge.Top := L*15;
+      lWedgeLabel.Top := L*15;
       Inc(L);
 
       {print dose results}

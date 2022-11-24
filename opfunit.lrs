@@ -1,14 +1,14 @@
 { This is an automatically generated lazarus resource file }
 
 LazarusResources.Add('TOPFForm','FORMDATA',[
-  'TPF0'#8'TOPFForm'#7'OPFForm'#4'Left'#3' '#8#6'Height'#3'I'#2#3'Top'#2#28#5'W'
+  'TPF0'#8'TOPFForm'#7'OPFForm'#4'Left'#3' '#8#6'Height'#3'`'#2#3'Top'#2#28#5'W'
   +'idth'#3#1#3#18'HorzScrollBar.Page'#3#248#2#18'VertScrollBar.Page'#3#182#1#13
   +'ActiveControl'#7#7'ebPName'#7'Caption'#6#15'Opposing Fields'#12'ClientHeigh'
-  +'t'#3'+'#2#11'ClientWidth'#3#1#3#4'Menu'#7#9'MainMenu1'#7'OnClose'#7#12'OPFF'
+  +'t'#3'B'#2#11'ClientWidth'#3#1#3#4'Menu'#7#9'MainMenu1'#7'OnClose'#7#12'OPFF'
   +'ormClose'#12'OnCloseQuery'#7#17'OPFFormCloseQuery'#8'OnCreate'#7#13'OPFForm'
   +'Create'#10'LCLVersion'#6#7'2.2.2.0'#0#9'TGroupBox'#13'gbParticulars'#4'Left'
-  +#2#0#6'Height'#3#158#0#3'Top'#2#26#5'Width'#3#1#3#5'Align'#7#5'alTop'#7'Capt'
-  +'ion'#6#20'Patient Particulars:'#12'ClientHeight'#3#128#0#11'ClientWidth'#3
+  +#2#0#6'Height'#3#166#0#3'Top'#2#26#5'Width'#3#1#3#5'Align'#7#5'alTop'#7'Capt'
+  +'ion'#6#20'Patient Particulars:'#12'ClientHeight'#3#136#0#11'ClientWidth'#3
   +#253#2#10'ParentFont'#8#8'TabOrder'#2#0#0#6'TLabel'#6'Label1'#4'Left'#2#2#6
   +'Height'#2#18#3'Top'#2#9#5'Width'#2'W'#7'Caption'#6#13'Patient Name:'#11'Par'
   +'entColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#2#6'Height'#2
@@ -37,9 +37,9 @@ LazarusResources.Add('TOPFForm','FORMDATA',[
   +'<'#7'Caption'#6#9'DR/ID no:'#11'ParentColor'#8#10'ParentFont'#8#0#0#5'TEdit'
   +#6'ebDRNo'#4'Left'#3#148#0#6'Height'#2' '#3'Top'#2'#'#5'Width'#3'v'#1#8'OnCh'
   +'ange'#7#13'ebPNameChange'#10'ParentFont'#8#8'TabOrder'#2#2#0#0#0#9'TGroupBo'
-  +'x'#14'gbPrescription'#4'Left'#2#0#6'Height'#3#131#0#3'Top'#3#184#0#5'Width'
+  +'x'#14'gbPrescription'#4'Left'#2#0#6'Height'#3#138#0#3'Top'#3#192#0#5'Width'
   +#3#1#3#5'Align'#7#8'alClient'#7'Caption'#6#13'Prescription:'#12'ClientHeight'
-  +#2'e'#11'ClientWidth'#3#253#2#10'ParentFont'#8#8'TabOrder'#2#1#0#6'TLabel'#6
+  +#2'l'#11'ClientWidth'#3#253#2#10'ParentFont'#8#8'TabOrder'#2#1#0#6'TLabel'#6
   +'Label6'#4'Left'#2#2#6'Height'#2#18#3'Top'#2#10#5'Width'#2'!'#7'Caption'#6#5
   +'Type:'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label7'#4'Left'#2
   +#2#6'Height'#2#18#3'Top'#2''''#5'Width'#2'@'#7'Caption'#6#10'Total Dose'#11
@@ -61,9 +61,9 @@ LazarusResources.Add('TOPFForm','FORMDATA',[
   +'ndex'#2#0#13'Items.Strings'#1#6#6'Tumour'#6#7'Maximum'#0#8'OnChange'#7#13'e'
   +'bPNameChange'#6'OnExit'#7#10'cbTypeExit'#10'ParentFont'#8#5'Style'#7#14'csD'
   +'ropDownList'#8'TabOrder'#2#0#4'Text'#6#6'Tumour'#0#0#0#9'TGroupBox'#12'gbPa'
-  +'rameters'#4'Left'#2#0#6'Height'#3#217#0#3'Top'#3';'#1#5'Width'#3#1#3#5'Alig'
+  +'rameters'#4'Left'#2#0#6'Height'#3#225#0#3'Top'#3'J'#1#5'Width'#3#1#3#5'Alig'
   +'n'#7#8'alBottom'#7'Caption'#6#21'Treatment Parameters:'#12'ClientHeight'#3
-  +#187#0#11'ClientWidth'#3#253#2#10'ParentFont'#8#8'TabOrder'#2#2#0#6'TLabel'#7
+  +#195#0#11'ClientWidth'#3#253#2#10'ParentFont'#8#8'TabOrder'#2#2#0#6'TLabel'#7
   +'Label10'#4'Left'#2#2#6'Height'#2#18#3'Top'#2#10#5'Width'#2'g'#7'Caption'#6
   ,#17'Treatment fields:'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'La'
   +'bel11'#4'Left'#2#2#6'Height'#2#18#3'Top'#2'('#5'Width'#2'I'#7'Caption'#6#12
@@ -158,7 +158,7 @@ LazarusResources.Add('TOPFForm','FORMDATA',[
   +#9'htKeyword'#11'HelpKeyword'#6#21'HTML/OPFHelp9314.html'#8'OnChange'#7#13'e'
   +'bPNameChange'#6'OnExit'#7#11'ebWedgeExit'#10'ParentFont'#8#8'TabOrder'#2#12
   +#4'Text'#6#1'1'#0#0#0#10'TStatusBar'#9'StatusBar'#4'Left'#2#0#6'Height'#2#23
-  +#3'Top'#3#20#2#5'Width'#3#1#3#6'Panels'#14#1#5'Width'#2'3'#0#0#10'ParentFont'
+  +#3'Top'#3'+'#2#5'Width'#3#1#3#6'Panels'#14#1#5'Width'#2'3'#0#0#10'ParentFont'
   +#8#14'ParentShowHint'#8#11'SimplePanel'#8#8'ShowHint'#9#0#0#8'TToolBar'#8'To'
   +'olBar1'#4'Left'#2#0#6'Height'#2#26#3'Top'#2#0#5'Width'#3#1#3#7'Caption'#6#8
   +'ToolBar1'#6'Images'#7#9'ImageList'#10'ParentFont'#8#14'ParentShowHint'#8#8

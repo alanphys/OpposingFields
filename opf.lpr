@@ -20,6 +20,7 @@ begin
      DeleteFile('heap.trc');
   SetHeapTraceOutput('heap.trc');
   {$ENDIF}
+   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TOPFForm, OPFForm);
    Application.CreateForm(TResForm2, ResForm2);

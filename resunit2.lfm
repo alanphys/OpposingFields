@@ -325,12 +325,12 @@ object ResForm2: TResForm2
       end
       object gbTreatment: TGroupBox
         Left = 0
-        Height = 231
+        Height = 228
         Top = 280
         Width = 523
         Align = alTop
         Caption = 'Treatment Details'
-        ClientHeight = 201
+        ClientHeight = 198
         ClientWidth = 519
         TabOrder = 3
         object lTULabel: TLabel
@@ -597,7 +597,7 @@ object ResForm2: TResForm2
       object gbResults: TGroupBox
         Left = 0
         Height = 194
-        Top = 511
+        Top = 508
         Width = 523
         Align = alTop
         Caption = 'Results'
@@ -899,11 +899,11 @@ object ResForm2: TResForm2
       end
       object pFooter: TPanel
         Left = 0
-        Height = 70
-        Top = 700
+        Height = 68
+        Top = 702
         Width = 523
-        Align = alBottom
-        ClientHeight = 70
+        Align = alClient
+        ClientHeight = 68
         ClientWidth = 523
         TabOrder = 5
         object lUser: TLabel
