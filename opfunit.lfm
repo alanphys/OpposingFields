@@ -53,7 +53,7 @@ object OPFForm: TOPFForm
       ParentFont = False
     end
     object Label4: TLabel
-      Left = 612
+      Left = 569
       Height = 18
       Top = 9
       Width = 33
@@ -62,7 +62,7 @@ object OPFForm: TOPFForm
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 584
+      Left = 541
       Height = 18
       Top = 39
       Width = 61
@@ -104,10 +104,10 @@ object OPFForm: TOPFForm
       TabOrder = 5
     end
     object ebDate: TEdit
-      Left = 657
+      Left = 615
       Height = 32
       Top = 5
-      Width = 101
+      Width = 142
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp912.html'
       OnChange = ebPNameChange
@@ -115,10 +115,10 @@ object OPFForm: TOPFForm
       TabOrder = 1
     end
     object ebBdate: TEdit
-      Left = 657
+      Left = 615
       Height = 32
       Top = 35
-      Width = 101
+      Width = 142
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp914.html'
       OnChange = ebPNameChange

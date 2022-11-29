@@ -266,7 +266,8 @@ LazarusResources.Add('TResForm2','FORMDATA',[
   +#202#219'lJo'#224#253#157'&'#233'7'#23#23#23'Gpp0AAA('#20#10#2#2#2#240#243
   +#243'C.'#151#227#235#235#139#219#222'2'#190'H<'#131#151#166#17'y'#214'e'#190
   +#203#189#130#183#246#2#239#134#24#23#253#255#253' '#180#128#247#148#249#194
-  +#238#5#146#255#27#18#134#15'$'#0#0#11'TSaveDialog'#10'SaveDialog'#6'Filter'#6
-  +#21'PDF|*.pdf|All files|*'#7'Options'#11#17'ofOverwritePrompt'#14'ofEnableSi'
-  +'zing'#12'ofViewDetail'#0#4'Left'#3#192#1#3'Top'#3#160#0#0#0#0
+  +#238#5#146#255#27#18#134#15'$'#0#0#11'TSaveDialog'#10'SaveDialog'#10'Default'
+  +'Ext'#6#4'.pdf'#6'Filter'#6#21'PDF|*.pdf|All files|*'#7'Options'#11#17'ofOve'
+  +'rwritePrompt'#14'ofEnableSizing'#12'ofViewDetail'#0#4'Left'#3#192#1#3'Top'#3
+  +#160#0#0#0#0
 ]);

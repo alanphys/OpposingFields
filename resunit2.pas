@@ -348,7 +348,7 @@ with Pat.PatRec do with Linac.LinacRec do
       lComment.Caption := Comment;
 
       {print prescription}
-      lTDose.Caption := FloatToStr(TDose) + 'Gy in ' + FloatToStr(Frac) + ' fractions';
+      lTDose.Caption := FloatToStr(TDose) + ' Gy in ' + FloatToStr(Frac) + ' fractions';
       lDPF.Caption := FloatToStrF(TDose/Frac,ffFixed,4,2) + ' Gy';
       case Prescript of
          Tumour: lPType.Caption := 'Dose to tumour';
@@ -547,6 +547,8 @@ SaveDialog.FileName := ToAlphaNum(Pat.PatRec.Pname) + ToAlphaNum(Pat.PatRec.DRNo
 
 if SaveDialog.Execute then
    begin
+   FormToPDF;
+   FDoc.SetMargins(0,0,36,36,36,36);
    lFileName.Caption := SaveDialog.FileName;
    Error := FormToPDF(Self.pPage,SaveDialog.FileName);
    if Error > 0 then

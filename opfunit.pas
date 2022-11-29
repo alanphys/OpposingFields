@@ -50,8 +50,9 @@ completed 4/2/2000
 16/4/2020  fix various mem leaks
 3/8/2020   correct title of login module
 18/11/2022 fix double free causing exception on new patient
-           special characters in filenames
-23/11/2022 convert resunit to form2pdf}
+           fix special characters in filenames
+23/11/2022 convert resunit to form2pdf
+29/11/2022 use Form2PDF to print beamform}
 
 {$mode DELPHI}{$H+}
 

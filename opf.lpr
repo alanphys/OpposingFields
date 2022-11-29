@@ -8,7 +8,7 @@ uses
    {$IFDEF DEBUG}
    , SysUtils              //delete SysUtils if not using heaptrc
    {$ENDIF}
-  { add your units here }, opfunit, Printer4Lazarus,
+  { add your units here }, opfunit,
 		lnetvisual, aboutunit, loginunit, beamunit, resunit2, form2pdf;
 
 {$R *.res}
@@ -23,7 +23,6 @@ begin
    Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TOPFForm, OPFForm);
-   Application.CreateForm(TResForm2, ResForm2);
   Application.Run;
 end.
 

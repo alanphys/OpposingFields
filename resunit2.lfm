@@ -1025,6 +1025,7 @@ object ResForm2: TResForm2
     }
   end
   object SaveDialog: TSaveDialog
+    DefaultExt = '.pdf'
     Filter = 'PDF|*.pdf|All files|*'
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
     Left = 448

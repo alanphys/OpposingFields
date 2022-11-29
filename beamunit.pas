@@ -9,15 +9,15 @@ alignment problem. Removed text import and export.beamunit
 1/2/2011 fixed date format problem
 24/5/2019 fixed empty cell and data bugs
 28/2/2020 remove definitions and use from opfunit
-24/3/2020 store all beam config files automatically in program config dir}
+24/3/2020 store all beam config files automatically in program config dir
+24/11/2022 use form2pdf to print}
 
 {$mode DELPHI}{$H+}
-
 interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  StdCtrls, Grids, Buttons, Printer, PrintersDlgs, StrUtils, opfunit;
+  StdCtrls, Grids, Buttons, Printer, StrUtils, opfunit;
 
 const NE = 5;                      {number of energies}
       NFS = 15;                    {number of field sizes}
@@ -53,7 +53,7 @@ type
      Label9: TLabel;
      OpenDialog: TOpenDialog;
      PageControl: TPageControl;
-     PrintDialog: TPrintDialog;
+     SaveDialog: TSaveDialog;
      sgTable: TStringGrid;
      sgTray: TStringGrid;
      sgOPF: TStringGrid;
@@ -86,7 +86,7 @@ var
 
 implementation
 
-uses CRC32, LazFileUtils;
+uses form2pdf, CRC32, LazFileUtils;
 
 { TBeamForm }
 
@@ -152,7 +152,7 @@ if PageControl.ActivePageIndex > 0 then
 end;
 
 procedure TBeamForm.bbExportClick(Sender: TObject);
-var Outfile,Lst:   Textfile;           {text file for output}
+var Outfile    :Textfile;          {text file for output}
     I,J,K:     integer;            {loop variables}
     CRCValue   :dword;             {holder for checksum}
     Size       :integer;           {size of field}
@@ -396,7 +396,7 @@ if OpenDialog.Execute then
             begin
             Name := 'sg' + tsEnergy.Name;
             Visible := True;
-            SetBounds(0,0,580,200);
+            SetBounds(0,0,PageControl.ClientWidth,PageControl.ClientHeight);
             ColCount := TMRW;
             RowCount := TMRL;
             Parent := PageControl.ActivePage;
@@ -485,8 +485,8 @@ end;
 procedure TBeamForm.bbPrintClick(Sender: TObject);
 {This procedure prints the beam file data}
 
-var I,J        :integer;           {counters for loops}
-    Lst        :Textfile;
+var I,J,                           {counters for loops}
+    Error      :integer;
 
 begin
 Linac := Tlinac.Create;
@@ -509,63 +509,13 @@ with Linac.LinacRec do
    end;
 
 {send data to printer}
-if PrintDialog.Execute then with Linac.LinacRec do
+if SaveDialog.Execute then
    begin
-   try
-//      AssignPrn(Lst,'| kprinter');
-//      Rewrite(Lst);
-//      Writeln(Lst);
-//      Writeln(Lst);}
-{      Printer.Canvas.Font.Name := 'Courier New';
-      Printer.Canvas.Font.Size := 10; }
-//      Write(Lst,'          ');
-{      Printer.Canvas.Font.Name := 'Times New Roman';
-      Printer.Canvas.Font.Style := [fsUnderline];
-      Printer.Canvas.Font.Size := 28;       }
-//      Writeln(Lst,Title,' - ',Name);
-{      Printer.Canvas.Font.Name := 'Courier New';
-      Printer.Canvas.Font.Style := [];
-      Printer.Canvas.Font.Size := 10;        }
-//      Writeln(Lst);
-//      Writeln(Lst);
-//      Writeln(Lst,'          Program expiry date: ',DateToStr(EDate));
-//      Writeln(Lst,'          Number of photon energies: ',NoE);
-//      Writeln(Lst);
-//      Write(Lst,'          Beam number: ');
-//      for I:=1 to NoE do Write(Lst,I:12);
-//      Writeln(Lst);
-//      Write(Lst,'          Energy:      ');
-//      for I:=1 to NoE do Write(Lst,Energy[I]:12);
-//      Writeln(Lst);
-//      Write(Lst,'          Dmax:        ');
-//      for I:=1 to NoE do Write(Lst,DM[I]:12:1);
-//      Writeln(Lst);
-//      Write(Lst,'          Table Factors');
-//      for I:=1 to NoE do Write(Lst,Table[I]:12:4);
-//      Writeln(Lst);
-//      Writeln(Lst,'          Tray Factors ');
-//      for J:=1 to 5 do
-//         begin
-//         Write(Lst,'          Tray: ',J:2);
-//         for I:=1 to NoE do Write(Lst,Tray[I,J]:12:4);
-//         Writeln(Lst);
-//         end;
-//      Writeln(Lst);
-//      Writeln(Lst);
-//      Writeln(Lst,'          Regression parameters for Output factors');
-//      Write(Lst,'          Beam number: ');
-//      for I:=1 to NoE do Write(Lst,I:12);
-//      Writeln(Lst);
-//      for J:=1 to 7 do
-//         begin
-//         Write(Lst,'          Parameter: ',J:2);
-//         for I:=1 to NoE do Write(Lst,S[I,J]:12:8);
-//         Writeln(Lst);
-//         end;
-//      Writeln(Lst);
-   finally
-//      CloseFile(Lst);
-      end;
+   Error := FormToPDF(Self,SaveDialog.FileName);
+   if Error > 0 then
+      OPFForm.OPFMessage(IntToStr(Error) + ' objects printed to PDF.')
+     else
+      OPFForm.OPFWarning('Could not create PDF. Error no: ' + IntToStr(Error));
    end;
 Linac.Free;
 end;
