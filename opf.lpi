@@ -73,7 +73,6 @@
         <ComponentName Value="OPFForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="52"/>
         <CursorPos X="42" Y="55"/>
@@ -595,8 +594,8 @@
         <ComponentName Value="BeamForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="488"/>
-        <CursorPos X="39" Y="500"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="35" Y="8"/>
         <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -626,8 +625,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="532"/>
-        <CursorPos Y="552"/>
+        <TopLine Value="534"/>
+        <CursorPos X="16" Y="530"/>
         <UsageCount Value="32"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

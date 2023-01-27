@@ -526,7 +526,9 @@ end;
 
 
 procedure TResForm2.miSavePDFClick(Sender: TObject);
-var sDataDir   :string;
+var sDataDir,
+    Dummy      :string;
+    I,
     Error      :integer;
 
 begin
@@ -549,7 +551,12 @@ if SaveDialog.Execute then
    begin
    FormToPDF;
    FDoc.SetMargins(0,0,36,36,36,36);
-   lFileName.Caption := SaveDialog.FileName;
+   Dummy := SaveDialog.FileName;
+   I := lFileName.Canvas.TextWidth(Dummy);
+   if I >= lFileName.Width then
+      Dummy := leftStr(Dummy, round(Length(Dummy)*lFileName.Width/(2*I) - 1)) + '...'
+         + RightStr(Dummy, round(Length(Dummy)*lFileName.Width/(2*I) - 1));
+   lFileName.Caption := Dummy;
    Error := FormToPDF(Self.pPage,SaveDialog.FileName);
    if Error > 0 then
       OPFForm.OPFMessage(IntToStr(Error) + ' objects printed to PDF.')
