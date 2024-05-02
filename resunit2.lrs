@@ -1,20 +1,18 @@
-{ This is an automatically generated lazarus resource file }
-
 LazarusResources.Add('TResForm2','FORMDATA',[
-  'TPF0'#9'TResForm2'#8'ResForm2'#4'Left'#3'N'#2#6'Height'#3'D'#3#3'Top'#2'V'#5
-  +'Width'#3#18#2#7'Caption'#6#8'ResForm2'#12'ClientHeight'#3'&'#3#11'ClientWid'
+  'TPF0'#9'TResForm2'#8'ResForm2'#4'Left'#3'J'#2#6'Height'#3'D'#3#3'Top'#2'a'#5
+  +'Width'#3#18#2#7'Caption'#6#8'ResForm2'#12'ClientHeight'#3'0'#3#11'ClientWid'
   +'th'#3#18#2#4'Menu'#7#8'MainMenu'#8'OnCreate'#7#10'FormCreate'#17'SessionPro'
-  +'perties'#6#8'Left;Top'#10'LCLVersion'#6#7'2.2.6.0'#0#8'TToolBar'#7'ToolBar'
+  +'perties'#6#8'Left;Top'#10'LCLVersion'#6#7'2.2.0.4'#0#8'TToolBar'#7'ToolBar'
   +#4'Left'#2#0#6'Height'#2#26#3'Top'#2#0#5'Width'#3#18#2#7'Caption'#6#7'ToolBa'
   +'r'#6'Images'#7#9'ImageList'#8'TabOrder'#2#0#0#11'TToolButton'#9'tbSavePDF'#4
   +'Left'#2#1#3'Top'#2#2#7'Caption'#6#9'tbSavePDF'#10'ImageIndex'#2#0#7'OnClick'
   +#7#14'miSavePDFClick'#0#0#11'TToolButton'#11'ToolButton1'#4'Left'#2#24#6'Hei'
   +'ght'#2#22#3'Top'#2#2#7'Caption'#6#11'ToolButton1'#5'Style'#7#12'tbsSeparato'
-  +'r'#0#0#11'TToolButton'#6'tbExit'#4'Left'#2#29#3'Top'#2#2#7'Caption'#6#6'tbE'
+  +'r'#0#0#11'TToolButton'#6'tbExit'#4'Left'#2' '#3'Top'#2#2#7'Caption'#6#6'tbE'
   +'xit'#10'ImageIndex'#2#1#7'OnClick'#7#11'miExitClick'#0#0#0#10'TScrollBox'#9
-  +'ScrollBox'#4'Left'#2#0#6'Height'#3#12#3#3'Top'#2#26#5'Width'#3#18#2#18'Horz'
+  +'ScrollBox'#4'Left'#2#0#6'Height'#3#22#3#3'Top'#2#26#5'Width'#3#18#2#18'Horz'
   +'ScrollBar.Page'#3#11#2#18'VertScrollBar.Page'#3#2#3#5'Align'#7#8'alClient'#8
-  +'AutoSize'#9#12'ClientHeight'#3#8#3#11'ClientWidth'#3#14#2#8'TabOrder'#2#1#0
+  +'AutoSize'#9#12'ClientHeight'#3#18#3#11'ClientWidth'#3#14#2#8'TabOrder'#2#1#0
   +#6'TPanel'#5'pPage'#4'Left'#2#0#6'Height'#3#2#3#3'Top'#2#0#5'Width'#3#11#2#10
   +'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#2#3#11'ClientWidth'#3#11#2#8'Tab'
   +'Order'#2#0#0#6'TPanel'#7'pHeader'#4'Left'#2#0#6'Height'#2'<'#3'Top'#2#0#5'W'
@@ -22,254 +20,234 @@ LazarusResources.Add('TResForm2','FORMDATA',[
   +'ght'#2'8'#11'ClientWidth'#3#7#2#5'Color'#7#7'clCream'#11'ParentColor'#8#8'T'
   +'abOrder'#2#0#0#6'TLabel'#6'lTitle'#4'Left'#2#0#6'Height'#2#18#3'Top'#2#29#5
   +'Width'#3#26#2#9'Alignment'#7#8'taCenter'#8'AutoSize'#8#7'Caption'#6#14'Site'
-  +' name here'#11'ParentColor'#8#0#0#6'TLabel'#6'Label1'#4'Left'#2#0#6'Height'
-  +#2#23#3'Top'#2#5#5'Width'#3#26#2#9'Alignment'#7#8'taCenter'#8'AutoSize'#8#7
-  +'Caption'#6#20'Opposing Fields v3.2'#11'Font.Height'#2#237#9'Font.Name'#6#5
-  +'Arial'#11'ParentColor'#8#10'ParentFont'#8#0#0#0#9'TGroupBox'#10'gbPatientP'
-  +#4'Left'#2#0#6'Height'#2'n'#3'Top'#2'<'#5'Width'#3#11#2#5'Align'#7#5'alTop'#7
-  +'Caption'#6#19'Patient Particulars'#12'ClientHeight'#2'P'#11'ClientWidth'#3#7
-  +#2#8'TabOrder'#2#1#0#6'TLabel'#6'Label2'#4'Left'#2#20#6'Height'#2#16#3'Top'#2
-  +#0#5'Width'#2'"'#7'Caption'#6#5'Name:'#11'Font.Height'#2#245#11'ParentColor'
-  +#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#20#6'Height'#2#16#3'To'
-  +'p'#2#15#5'Width'#2'@'#7'Caption'#6#10'DR Number:'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2#20#6'Heig'
-  +'ht'#2#16#3'Top'#2#30#5'Width'#2'E'#7'Caption'#6#14'Date of birth:'#11'Font.'
-  +'Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label5'#4
-  +'Left'#2#20#6'Height'#2#16#3'Top'#2'-'#5'Width'#2'6'#7'Caption'#6#10'Diagnos'
-  +'is:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'
-  +#6'Label6'#4'Left'#2#20#6'Height'#2#16#3'Top'#2'<'#5'Width'#2'7'#7'Caption'#6
-  +#8'Comment:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6
-  +'TLabel'#5'lName'#4'Left'#2'}'#6'Height'#2#18#3'Top'#2#0#5'Width'#3#134#1#8
-  +'AutoSize'#8#7'Caption'#6#5'lName'#11'Font.Height'#2#245#11'ParentColor'#8#10
-  +'ParentFont'#8#0#0#6'TLabel'#5'lDRNo'#4'Left'#2'}'#6'Height'#2#18#3'Top'#2#15
-  +#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#5'lDRNo'#11'Font.Height'#2#245
-  +#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lBDate'#4'Left'#2'}'#6'H'
-  +'eight'#2#18#3'Top'#2#30#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#6'lBDat'
-  +'e'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#10
-  +'lDiagnosis'#4'Left'#2'}'#6'Height'#2#18#3'Top'#2'-'#5'Width'#3#134#1#8'Auto'
-  +'Size'#8#7'Caption'#6#10'lDiagnosis'#11'Font.Height'#2#245#11'ParentColor'#8
-  +#10'ParentFont'#8#0#0#6'TLabel'#8'lComment'#4'Left'#2'}'#6'Height'#2#18#3'To'
-  +'p'#2'<'#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#8'lComment'#11'Font.Hei'
-  +'ght'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#0#9'TGroupBox'#14'gbPresc'
-  +'ription'#4'Left'#2#0#6'Height'#2'n'#3'Top'#3#170#0#5'Width'#3#11#2#5'Align'
-  +#7#5'alTop'#7'Caption'#6#12'Prescription'#12'ClientHeight'#2'P'#11'ClientWid'
-  +'th'#3#7#2#8'TabOrder'#2#2#0#6'TLabel'#6'Label7'#4'Left'#2#20#6'Height'#2#16
-  +#3'Top'#2#0#5'Width'#2'9'#7'Caption'#6#11'Total Dose:'#11'Font.Height'#2#245
-  +#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label8'#4'Left'#2#20#6'H'
-  +'eight'#2#16#3'Top'#2#15#5'Width'#2']'#7'Caption'#6#18'Dose per fraction:'#11
-  +'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label'
-  +'9'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#30#5'Width'#2'['#7'Caption'#6#18'Pr'
-  +'escription type:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0
-  +#0#6'TLabel'#7'Label10'#4'Left'#2#20#6'Height'#2#16#3'Top'#2'-'#5'Width'#2'!'
-  +#7'Caption'#6#7'Fields:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFo'
-  +'nt'#8#0#0#6'TLabel'#7'Label11'#4'Left'#2#20#6'Height'#2#16#3'Top'#2'<'#5'Wi'
-  +'dth'#2'R'#7'Caption'#6#15'Treatment type:'#11'Font.Height'#2#245#11'ParentC'
-  +'olor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lTDose'#4'Left'#2'}'#6'Height'#2#16
-  ,#3'Top'#2#0#5'Width'#2'$'#7'Caption'#6#6'lTDose'#11'Font.Height'#2#245#11'Pa'
-  +'rentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lDPF'#4'Left'#2'}'#6'Height'#2
-  +#16#3'Top'#2#15#5'Width'#2#24#7'Caption'#6#4'lDPF'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lPType'#4'Left'#2'}'#6'Heig'
-  +'ht'#2#16#3'Top'#2#30#5'Width'#2'"'#7'Caption'#6#6'lPType'#11'Font.Height'#2
-  +#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lFType'#4'Left'#2'}'
-  +#6'Height'#2#16#3'Top'#2'-'#5'Width'#2'!'#7'Caption'#6#6'lFType'#11'Font.Hei'
-  +'ght'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lTType'#4'Lef'
-  +'t'#2'}'#6'Height'#2#16#3'Top'#2'<'#5'Width'#2'"'#7'Caption'#6#6'lTType'#11
-  +'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#0#9'TGroupBox'#11
-  +'gbTreatment'#4'Left'#2#0#6'Height'#3#228#0#3'Top'#3#24#1#5'Width'#3#11#2#5
-  +'Align'#7#5'alTop'#7'Caption'#6#17'Treatment Details'#12'ClientHeight'#3#198
-  +#0#11'ClientWidth'#3#7#2#8'TabOrder'#2#3#0#6'TLabel'#8'lTULabel'#4'Left'#2#20
-  +#6'Height'#2#16#3'Top'#2#0#5'Width'#2'Q'#7'Caption'#6#15'Treatment Unit:'#11
-  +'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#12'lEne'
-  +'rgyLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#15#5'Width'#2''''#7'Caption'
-  +#6#7'Energy:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6
-  +'TLabel'#11'lAPLATLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#30#5'Width'#2
-  +'E'#7'Caption'#6#13'Presentation:'#11'Font.Height'#2#245#11'ParentColor'#8#10
-  +'ParentFont'#8#0#0#6'TLabel'#8'lXYLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2
-  +'-'#5'Width'#2'2'#7'Caption'#6#11'Field size:'#11'Font.Height'#2#245#11'Pare'
-  +'ntColor'#8#10'ParentFont'#8#0#0#6'TLabel'#9'lEQSLabel'#4'Left'#2#20#6'Heigh'
-  +'t'#2#16#3'Top'#2'<'#5'Width'#2']'#7'Caption'#6#17'Equivalent square'#11'Fon'
-  +'t.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#10'lDiamLa'
-  +'bel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2'K'#5'Width'#2'Z'#7'Caption'#6#17
-  +'Patient diameter:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8
-  +#0#0#6'TLabel'#11'lDepthLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#2'Z'#5'Wid'
-  +'th'#2'Z'#7'Caption'#6#16'Treatment depth:'#11'Font.Height'#2#245#11'ParentC'
-  +'olor'#8#10'ParentFont'#8#0#0#6'TLabel'#9'lSSDLabel'#4'Left'#2#20#6'Height'#2
-  +#16#3'Top'#2'i'#5'Width'#2'g'#7'Caption'#6#19'Treatment distance:'#11'Font.H'
-  +'eight'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#9'lTMRLabel'#4
-  +'Left'#2#20#6'Height'#2#16#3'Top'#2'x'#5'Width'#2'I'#7'Caption'#6#13'TMR at '
-  +'depth:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLab'
-  +'el'#9'lOPFLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#3#135#0#5'Width'#2'I'#7
-  +'Caption'#6#14'Output factor:'#11'Font.Height'#2#245#11'ParentColor'#8#10'Pa'
-  +'rentFont'#8#0#0#6'TLabel'#10'lNormLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'
-  +#3#150#0#5'Width'#2'M'#7'Caption'#6#14'Normalisation:'#11'Font.Height'#2#245
-  +#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#11'lTableLabel'#4'Left'#2
-  +#20#6'Height'#2#16#3'Top'#3#165#0#5'Width'#2'@'#7'Caption'#6#13'Table factor'
-  +':'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#11
-  +'lWedgeLabel'#4'Left'#2#20#6'Height'#2#16#3'Top'#3#180#0#5'Width'#2'I'#7'Cap'
-  +'tion'#6#13'Wedge factor:'#11'Font.Height'#2#245#11'ParentColor'#8#10'Parent'
-  +'Font'#8#0#0#6'TLabel'#8'lMachine'#4'Left'#2'}'#6'Height'#2#16#3'Top'#2#0#5
-  +'Width'#2'/'#7'Caption'#6#8'lMachine'#11'Font.Height'#2#245#11'ParentColor'#8
-  +#10'ParentFont'#8#0#0#6'TLabel'#7'lEnergy'#4'Left'#2'}'#6'Height'#2#16#3'Top'
-  +#2#15#5'Width'#2''''#7'Caption'#6#7'lEnergy'#11'Font.Height'#2#245#11'Parent'
-  +'Color'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lAPLAT'#4'Left'#2'}'#6'Height'#2
-  +#16#3'Top'#2#30#5'Width'#2'#'#7'Caption'#6#6'lAPLAT'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#3'lXY'#4'Left'#2'}'#6'Height'
-  +#2#16#3'Top'#2'-'#5'Width'#2#17#7'Caption'#6#3'lXY'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lEQS'#4'Left'#2'}'#6'Height'
-  +#2#16#3'Top'#2'<'#5'Width'#2#24#7'Caption'#6#4'lEQS'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#5'lDiam'#4'Left'#2'}'#6'Heigh'
-  +'t'#2#16#3'Top'#2'K'#5'Width'#2#31#7'Caption'#6#5'lDiam'#11'Font.Height'#2
-  +#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lDepth'#4'Left'#2'}'
-  +#6'Height'#2#16#3'Top'#2'Z'#5'Width'#2'#'#7'Caption'#6#6'lDepth'#11'Font.Hei'
-  +'ght'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lSSD'#4'Left'
-  +#2'}'#6'Height'#2#16#3'Top'#2'i'#5'Width'#2#23#7'Caption'#6#4'lSSD'#11'Font.'
-  +'Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lTMR'#4'Le'
-  +'ft'#2'}'#6'Height'#2#16#3'Top'#2'x'#5'Width'#2#26#7'Caption'#6#4'lTMR'#11'F'
-  +'ont.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lOPF'#4
-  +'Left'#2'}'#6'Height'#2#16#3'Top'#3#135#0#5'Width'#2#24#7'Caption'#6#4'lOPF'
-  +#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#5'lN'
-  +'orm'#4'Left'#2'}'#6'Height'#2#16#3'Top'#3#150#0#5'Width'#2'!'#7'Caption'#6#5
-  ,'lNorm'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabe'
-  +'l'#6'lTable'#4'Left'#2'}'#6'Height'#2#16#3'Top'#3#165#0#5'Width'#2#30#7'Cap'
-  +'tion'#6#6'lTable'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0
-  +#0#6'TLabel'#6'lWedge'#4'Left'#2'}'#6'Height'#2#16#3'Top'#3#180#0#5'Width'#2
-  +''''#7'Caption'#6#6'lWedge'#11'Font.Height'#2#245#11'ParentColor'#8#10'Paren'
-  +'tFont'#8#0#0#0#9'TGroupBox'#9'gbResults'#4'Left'#2#0#6'Height'#3#194#0#3'To'
-  +'p'#3#252#1#5'Width'#3#11#2#5'Align'#7#5'alTop'#7'Caption'#6#7'Results'#12'C'
-  +'lientHeight'#3#164#0#11'ClientWidth'#3#7#2#8'TabOrder'#2#4#0#6'TLabel'#7'La'
-  +'bel12'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#0#5'Width'#2'g'#7'Caption'#6#19
-  +'% approx skin dose:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'
-  +#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#20#6'Height'#2#16#3'Top'#2#15#5'Width'
-  +#2'R'#7'Caption'#6#14'% tumour dose:'#11'Font.Height'#2#245#11'ParentColor'#8
-  +#10'ParentFont'#8#0#0#6'TLabel'#7'Label14'#4'Left'#2#20#6'Height'#2#16#3'Top'
-  +#2#30#5'Width'#2'`'#7'Caption'#6#15'% maximum dose:'#11'Font.Height'#2#245#11
-  +'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'Label15'#4'Left'#2#0#6'Heig'
-  +'ht'#2#18#3'Top'#2'2'#5'Width'#2#24#7'Caption'#6#3'Day'#11'Font.Height'#2#243
-  +#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'Label16'#4'Left'#2'3'#6
-  +'Height'#2#18#3'Top'#2'2'#5'Width'#2#29#7'Caption'#6#5'Field'#11'Font.Height'
-  +#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'Label17'#4'Left'#2
-  +'k'#6'Height'#2#18#3'Top'#2'2'#5'Width'#2'U'#7'Caption'#6#13'Monitor Units'
-  +#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lD'
-  +'ose1'#4'Left'#3#219#0#6'Height'#2#18#3'Top'#2'2'#5'Width'#2'S'#7'Caption'#6
-  +#11'Tumour Dose'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0
-  +#6'TLabel'#6'lDose2'#4'Left'#3'I'#1#6'Height'#2#18#3'Top'#2'2'#5'Width'#2'='
-  +#7'Caption'#6#8'Max Dose'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentF'
-  +'ont'#8#0#0#6'TLabel'#7'Label20'#4'Left'#3#161#1#6'Height'#2#18#3'Top'#2'2'#5
-  +'Width'#2'`'#7'Caption'#6#14'Reference Dose'#11'Font.Height'#2#243#11'Parent'
-  +'Color'#8#10'ParentFont'#8#0#0#6'TLabel'#5'lDay1'#4'Left'#2#0#6'Height'#2#18
-  +#3'Top'#2'F'#5'Width'#2'#'#7'Caption'#6#5'lDay1'#11'Font.Height'#2#243#11'Pa'
-  +'rentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'lField1'#4'Left'#2'3'#6'Heigh'
-  +'t'#2#18#3'Top'#2'F'#5'Width'#2'('#7'Caption'#6#7'lField1'#11'Font.Height'#2
-  +#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lMU1'#4'Left'#2'k'#6
-  +'Height'#2#18#3'Top'#2'F'#5'Width'#2'!'#7'Caption'#6#4'lMU1'#11'Font.Height'
-  +#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lTD1'#4'Left'#3#219
-  +#0#6'Height'#2#18#3'Top'#2'F'#5'Width'#2#28#7'Caption'#6#4'lTD1'#11'Font.Hei'
-  +'ght'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'lMaxD1'#4'Lef'
-  +'t'#3'I'#1#6'Height'#2#18#3'Top'#2'F'#5'Width'#2'/'#7'Caption'#6#6'lMaxD1'#11
-  +'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lRD1'
-  +#4'Left'#3#161#1#6'Height'#2#18#3'Top'#2'F'#5'Width'#2#29#7'Caption'#6#4'lRD'
-  +'1'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#5
-  +'lDay2'#4'Left'#2#255#6'Height'#2#18#3'Top'#2'Z'#5'Width'#2'#'#7'Caption'#6#5
-  +'lDay2'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabe'
-  +'l'#7'lField2'#4'Left'#2'3'#6'Height'#2#18#3'Top'#2'Z'#5'Width'#2'('#7'Capti'
-  +'on'#6#7'lField2'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0
-  +#0#6'TLabel'#4'lMU2'#4'Left'#2'k'#6'Height'#2#18#3'Top'#2'Z'#5'Width'#2'!'#7
-  +'Caption'#6#4'lMU2'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8
-  +#0#0#6'TLabel'#4'lTD2'#4'Left'#3#219#0#6'Height'#2#18#3'Top'#2'Z'#5'Width'#2
-  +#28#7'Caption'#6#4'lTD2'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFo'
-  +'nt'#8#0#0#6'TLabel'#6'lMaxD2'#4'Left'#3'I'#1#6'Height'#2#18#3'Top'#2'Z'#5'W'
-  +'idth'#2'/'#7'Caption'#6#6'lMaxD2'#11'Font.Height'#2#243#11'ParentColor'#8#10
-  +'ParentFont'#8#0#0#6'TLabel'#4'lRD2'#4'Left'#3#161#1#6'Height'#2#18#3'Top'#2
-  +'Z'#5'Width'#2#29#7'Caption'#6#4'lRD2'#11'Font.Height'#2#243#11'ParentColor'
-  +#8#10'ParentFont'#8#0#0#6'TLabel'#5'lPASD'#4'Left'#2'}'#6'Height'#2#16#3'Top'
-  +#2#0#5'Width'#2#30#7'Caption'#6#5'lPASD'#11'Font.Height'#2#245#11'ParentColo'
-  +'r'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lPTD'#4'Left'#2'}'#6'Height'#2#16#3'T'
-  +'op'#2#15#5'Width'#2#24#7'Caption'#6#4'lPTD'#11'Font.Height'#2#245#11'Parent'
-  +'Color'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lPMD'#4'Left'#2'}'#6'Height'#2#16
-  +#3'Top'#2#30#5'Width'#2#28#7'Caption'#6#4'lPMD'#11'Font.Height'#2#245#11'Par'
-  +'entColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lIso'#4'Left'#2#0#6'Height'#2
-  +#16#3'Top'#2'}'#5'Width'#3#167#0#7'Caption'#6#30'Total dose at maximum build'
-  +'up:'#11'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'
-  +#7'Label22'#4'Left'#2#0#6'Height'#2#16#3'Top'#3#140#0#5'Width'#3#181#0#7'Cap'
-  +'tion'#6'#Total approximate dose at the skin:'#11'Font.Height'#2#245#11'Pare'
-  +'ntColor'#8#10'ParentFont'#8#0#0#6'TLabel'#3'lMD'#4'Left'#3#189#0#6'Height'#2
-  ,#16#3'Top'#2'}'#5'Width'#2#21#7'Caption'#6#3'lMD'#11'Font.Height'#2#245#11'P'
-  +'arentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lTSD'#4'Left'#3#189#0#6'Heig'
-  +'ht'#2#16#3'Top'#3#140#0#5'Width'#2#23#7'Caption'#6#4'lTSD'#11'Font.Height'#2
-  +#245#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TShape'#6'Shape1'#4'Left'#2#0#6
-  +'Height'#2#1#3'Top'#2'F'#5'Width'#3#7#2#0#0#6'TShape'#6'Shape2'#4'Left'#2#0#6
-  +'Height'#2#1#3'Top'#2'n'#5'Width'#3#7#2#0#0#0#6'TPanel'#7'pFooter'#4'Left'#2
-  +#0#6'Height'#2'D'#3'Top'#3#190#2#5'Width'#3#11#2#5'Align'#7#8'alClient'#12'C'
-  +'lientHeight'#2'D'#11'ClientWidth'#3#11#2#8'TabOrder'#2#5#0#6'TLabel'#5'lUse'
-  +'r'#4'Left'#2#0#6'Height'#2#18#3'Top'#2#10#5'Width'#3#250#0#7'Caption'#6'+Ca'
-  +'lculated by: ____________________________'#11'Font.Height'#2#243#11'ParentC'
-  +'olor'#8#10'ParentFont'#8#0#0#6'TLabel'#7'Label23'#4'Left'#3#4#1#6'Height'#2
-  +#18#3'Top'#2#10#5'Width'#3#0#1#7'Caption'#6',Controlled by: ________________'
-  +'_____________'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8#0#0
-  +#6'TLabel'#5'lDate'#4'Left'#2#0#6'Height'#2#18#3'Top'#2#30#5'Width'#2'!'#7'C'
-  +'aption'#6#5'Date:'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentFont'#8
-  +#0#0#6'TLabel'#5'lTime'#4'Left'#3#4#1#6'Height'#2#18#3'Top'#2#30#5'Width'#2
-  +'"'#7'Caption'#6#5'Time:'#11'Font.Height'#2#243#11'ParentColor'#8#10'ParentF'
-  +'ont'#8#0#0#6'TLabel'#9'lFileName'#4'Left'#2#0#6'Height'#2#16#3'Top'#2'/'#5
-  +'Width'#3'0'#1#8'AutoSize'#8#11'Font.Height'#2#245#11'ParentColor'#8#10'Pare'
-  +'ntFont'#8#0#0#6'TLabel'#7'Label27'#4'Left'#3':'#1#6'Height'#2#16#3'Top'#2'/'
-  +#5'Width'#3#203#0#7'Caption'#6'''(c) Yenzakahle Medical Physics Inc 2022'#11
-  +'Font.Height'#2#245#11'ParentColor'#8#10'ParentFont'#8#0#0#0#0#0#9'TMainMenu'
-  +#8'MainMenu'#4'Left'#3#192#1#3'Top'#2'0'#0#9'TMenuItem'#9'miSavePDF'#7'Capti'
-  +'on'#6#9'&Save PDF'#7'OnClick'#7#14'miSavePDFClick'#0#0#9'TMenuItem'#6'miExi'
-  +'t'#7'Caption'#6#5'E&xit'#7'OnClick'#7#11'miExitClick'#0#0#0#10'TImageList'#9
-  +'ImageList'#4'Left'#3#192#1#3'Top'#2'h'#6'Bitmap'#10#146#4#0#0'Lz'#2#0#0#0#16
-  +#0#0#0#16#0#0#0'|'#4#0#0#0#0#0#0'x'#218#165#211'[LSw'#28#192'q'#247#190'eK'
-  +#150'=,1'#238#193#17#23'Ctn'#204#203#24'hqX'#229#178#138'#'#163'2'#198#170' '
-  +#202'""'#151#138'@)(8(M)EPZ'#238'7o('#136' '#20#145'1'#129#129#138#23'n'#209
-  +#136#20'('#165'x'#9#204#135'='#232#11#249#238#156#243#208#204#232#140'lM'#190
-  +'9MN>'#231#247';'#255#180#192#146#133#133#133'eN'#167#147#206#206'N'#186#186
-  +#186#254'5'#241#190#181#173#147#249#185'g'#27#128'w'#132#150#204':'#23#150'M'
-  +'N<__S'#221'AJ'#178#137#147'E'#13#175#205'b'#190#128'.'#199#192#170#149'9DEV'
-  +#224#152'~'#186'^'#156#251#233#210'y'#222'&'#31#207#167#24#244#237'|'#253'U5'
-  +'K?'#186#194#158#136#2#236'v'#7#139#241''''#11#187#9#13'9'#134#204';'#23#183
-  +#229#10#218#218#218#241'p'#127#198#151#238#127#178'z'#197'SV'#173'x'#194#154
-  +#149's'#174#220#221#230'X'#185'|'#158#207'?'#155'#P'#254#4'k'#235#20#19#182
-  +'q)Mj*'#29#29#29#20#153#158#215#153#12#127']'#140#143#25'!&'#250'.'#153#233
-  +'3'#174#162'#g'#9#11'yL'#178#218'IA'#158#131#155'7&^'#241#226#25#190'x'#241
-  +'b'#217'U'#225'{'#243#165'K'#174#251'b'#13#245'v'#225#249#14#6#254#225#22#227
-  +'O'#215#218#201#203#253#127'>''s'#134#190#222#197#251#135'c6'#202#204#211'D'
-  +#169#30'q'#254#172#157#241#135#182'E'#249#222#238'I'#140'z'#7#250'l'#7#186
-  +#172#25#154'/N1'#246#192#246'V^'#156'}'#182#206'N'#238#175'3T'#149'Ms('#206
-  +#201#190#136'YT'#161#143#137#217'7K'#182#240'N'#241'q'#154#215#250'q'#193'Z/'
-  +'O'#161'MvRht'#240'['#199'$'#127#244'L'#210')\'#207#8#207#204#202#152'!\'#249
-  +#136#200#221'i'#175#248'S'#181#205#28#23#204#254#189#179#20#23'M3<h{igq'#175
-  +#225'!'#27#253'}'#19'$'#29'zy'#127#171#245'*G'#211'['#217#238#247#132#244'T'
-  +''''#247#239#217'^9'#243'7'#157#223#249#250#6#182#202'U'#4#250#31#230'`'#172
-  +#26'ub'#226#27#147#201'dX'#173'V'#150#252#135'OL'#233'('#191'X'#134#137':ywQ'
-  +#254'`'#249'=D{'#172'i'#140'PS;'#170#227#3'.'#159#145#145#129'V'#171'E'#163
-  +#209#144#146#146'BRR'#18'j'#181#154#248#248'x'#226#202'G'#137#21'l'#246#165
-  +'q'#234'G'#30'svp'#22'e'#190#149#157'y}.'#159#150#150#134#217'l'#150#178'X,R'
-  +'%%%R'#177'e#'#156#27'zD'#189'Pq'#191#29'S'#247#4'?'#24#219#216#161#187#230
-  +#242#226'L'#209#238'0'#237#196'l1K'#174#180#180'Tj'#191'e'#144#211'w'#156#24
-  +#175'M'#162#235#28'G/'#244#189#161#21#255#172#171'./'#238'+'#206#244#202#245
-  +'e['#174'BreeeRQ''nQ='#224#144'lf'#251#24'YBA'#250#203'l'#214#182#242'ma >&'
-  +#127'6'#26#182#226#165#243#229#167#218'='#132'V'#238#194'7'#211#159#242#242
-  +'r)U'#193#13#202#251#167#201#180#142#145#214'r'#31'm'#243'}'#20#186#22'<'#147
-  +#155#144#229#251'Q8\'#129'i'#208#130#225#246#9't'#3#5'd]7'#16'T'#172'D'#166
-  +#217'BEE'#5#161'y'#189#20#247'L'#161#17'\b'#227'='#194'{'#231#241#207'i'#198
-  +'#'#161#30'o'#253#22#140'w'#204#164#245'es'#184#231#8#9#191'kH'#20'J'#238'>'
-  +#194#182'|'#5#193#233'!'#4#235#186'('#236#178#161#190'0J'#132#213#142#255'('
-  +#248#232#173#184#31'8'#133'g'#182#143'kfF_'#14#169'='#153'$]KGn'#12#196'3q#U'
-  +'UU'#4'd]'#193#208#241#144#3'g'#134#136':5'#196#207'-'#147#200#143'5'#225#22
-  ,']'#197#186#163#222'xh=Y'#147#188#142'Uj'#15#182#153#182#179#197#24#192#134#4
-  +'/'#201'VWW'#227#171'm!'#167#237#1'{k'#238#178#171#252#22#17#21#183#132#243
-  +'i'#226#147#200'R'#215#249#171'T**++'#241':$cm'#220#6#201#137#213#212#212#224
-  +#149'|'#145#163#194#187#239#22'\'#168#229#6#225'%7'#217'|'#164#145#143'U'#197
-  +'.'#31#22#22'&'#205#251'&a'#19#149#194'Utb'#181#181#181#172'M<GZ'#227'(?'#10
-  +'6'#184#168#31#229#137#235#200'2'#26#248'0'#172#208#229#149'J'#229'K3E''VWW'
-  +#199#234#216':'#14#215#15#11#141#144'pz'#136#232#202#219'lJo'#224#253#157'&'
-  +#233'7'#23#23#23'Gpp0AAA('#20#10#2#2#2#240#243#243'C.'#151#227#235#235#139
-  +#219#222'2'#190'H<'#131#151#166#17'y'#214'e'#190#203#189#130#183#246#2#239
-  +#134#24#23#253#255#253' '#180#128#247#148#249#194#238#5#146#255#27#18#134#15
-  +'$'#0#0#11'TSaveDialog'#10'SaveDialog'#10'DefaultExt'#6#4'.pdf'#6'Filter'#6
-  +#21'PDF|*.pdf|All files|*'#7'Options'#11#17'ofOverwritePrompt'#14'ofEnableSi'
-  +'zing'#12'ofViewDetail'#0#4'Left'#3#192#1#3'Top'#3#160#0#0#0#15'TXMLPropStor'
-  +'age'#14'XMLPropStorage'#12'StoredValues'#14#0#4'Left'#3#187#1#3'Top'#3#240#0
-  +#0#0#0
+  +' name here'#0#0#6'TLabel'#8'lVersion'#4'Left'#2#0#6'Height'#2#23#3'Top'#2#5
+  +#5'Width'#3#26#2#9'Alignment'#7#8'taCenter'#8'AutoSize'#8#7'Caption'#6#20'Op'
+  +'posing Fields v3.2'#11'Font.Height'#2#237#9'Font.Name'#6#5'Arial'#10'Parent'
+  +'Font'#8#0#0#0#9'TGroupBox'#10'gbPatientP'#4'Left'#2#0#6'Height'#2'n'#3'Top'
+  +#2'<'#5'Width'#3#11#2#5'Align'#7#5'alTop'#7'Caption'#6#19'Patient Particular'
+  +'s'#12'ClientHeight'#2'Z'#11'ClientWidth'#3#7#2#8'TabOrder'#2#1#0#6'TLabel'#6
+  +'Label2'#4'Left'#2#20#6'Height'#2#13#3'Top'#2#0#5'Width'#2' '#7'Caption'#6#5
+  +'Name:'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label3'#4'Lef'
+  +'t'#2#20#6'Height'#2#13#3'Top'#2#15#5'Width'#2'>'#7'Caption'#6#10'DR Number:'
+  +#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2#20
+  +#6'Height'#2#13#3'Top'#2#30#5'Width'#2'E'#7'Caption'#6#14'Date of birth:'#11
+  +'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label5'#4'Left'#2#20#6
+  +'Height'#2#13#3'Top'#2'-'#5'Width'#2'6'#7'Caption'#6#10'Diagnosis:'#11'Font.'
+  +'Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#20#6'Heigh'
+  +'t'#2#13#3'Top'#2'<'#5'Width'#2'4'#7'Caption'#6#8'Comment:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#5'lName'#4'Left'#2'}'#6'Height'#2#18#3'T'
+  +'op'#2#0#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#5'lName'#11'Font.Height'
+  +#2#245#10'ParentFont'#8#0#0#6'TLabel'#5'lDRNo'#4'Left'#2'}'#6'Height'#2#18#3
+  +'Top'#2#15#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#5'lDRNo'#11'Font.Heig'
+  +'ht'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'lBDate'#4'Left'#2'}'#6'Height'#2
+  +#18#3'Top'#2#30#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#6'lBDate'#11'Fon'
+  +'t.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#10'lDiagnosis'#4'Left'#2'}'#6
+  +'Height'#2#18#3'Top'#2'-'#5'Width'#3#134#1#8'AutoSize'#8#7'Caption'#6#10'lDi'
+  +'agnosis'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#8'lComment'#4
+  +'Left'#2'}'#6'Height'#2#18#3'Top'#2'<'#5'Width'#3#134#1#8'AutoSize'#8#7'Capt'
+  +'ion'#6#8'lComment'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#0#9'TGroupBox'
+  +#14'gbPrescription'#4'Left'#2#0#6'Height'#2'n'#3'Top'#3#170#0#5'Width'#3#11#2
+  +#5'Align'#7#5'alTop'#7'Caption'#6#12'Prescription'#12'ClientHeight'#2'Z'#11
+  +'ClientWidth'#3#7#2#8'TabOrder'#2#2#0#6'TLabel'#6'Label7'#4'Left'#2#20#6'Hei'
+  +'ght'#2#13#3'Top'#2#0#5'Width'#2'9'#7'Caption'#6#11'Total Dose:'#11'Font.Hei'
+  +'ght'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label8'#4'Left'#2#20#6'Height'#2
+  +#13#3'Top'#2#15#5'Width'#2'\'#7'Caption'#6#18'Dose per fraction:'#11'Font.He'
+  +'ight'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'Label9'#4'Left'#2#20#6'Height'
+  +#2#13#3'Top'#2#30#5'Width'#2'Y'#7'Caption'#6#18'Prescription type:'#11'Font.'
+  +'Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label10'#4'Left'#2#20#6'Heig'
+  +'ht'#2#13#3'Top'#2'-'#5'Width'#2'!'#7'Caption'#6#7'Fields:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label11'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2'<'#5'Width'#2'O'#7'Caption'#6#15'Treatment type:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#6'lTDose'#4'Left'#2'}'#6'Height'#2#13#3
+  +'Top'#2#0#5'Width'#2'#'#7'Caption'#6#6'lTDose'#11'Font.Height'#2#245#10'Pare'
+  +'ntFont'#8#0#0#6'TLabel'#4'lDPF'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2#15#5'W'
+  +'idth'#2#23#7'Caption'#6#4'lDPF'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6
+  +'TLabel'#6'lPType'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2#30#5'Width'#2' '#7'C'
+  ,'aption'#6#6'lPType'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6
+  +'lFType'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2'-'#5'Width'#2' '#7'Caption'#6#6
+  +'lFType'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'lTType'#4'Le'
+  +'ft'#2'}'#6'Height'#2#13#3'Top'#2'<'#5'Width'#2' '#7'Caption'#6#6'lTType'#11
+  +'Font.Height'#2#245#10'ParentFont'#8#0#0#0#9'TGroupBox'#11'gbTreatment'#4'Le'
+  +'ft'#2#0#6'Height'#3#228#0#3'Top'#3#24#1#5'Width'#3#11#2#5'Align'#7#5'alTop'
+  +#7'Caption'#6#17'Treatment Details'#12'ClientHeight'#3#208#0#11'ClientWidth'
+  +#3#7#2#8'TabOrder'#2#3#0#6'TLabel'#8'lTULabel'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2#0#5'Width'#2'O'#7'Caption'#6#15'Treatment Unit:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#12'lEnergyLabel'#4'Left'#2#20#6'Height'#2
+  +#13#3'Top'#2#15#5'Width'#2'&'#7'Caption'#6#7'Energy:'#11'Font.Height'#2#245
+  +#10'ParentFont'#8#0#0#6'TLabel'#11'lAPLATLabel'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2#30#5'Width'#2'D'#7'Caption'#6#13'Presentation:'#11'Font.Height'#2#245
+  +#10'ParentFont'#8#0#0#6'TLabel'#8'lXYLabel'#4'Left'#2#20#6'Height'#2#13#3'To'
+  +'p'#2'-'#5'Width'#2'2'#7'Caption'#6#11'Field size:'#11'Font.Height'#2#245#10
+  +'ParentFont'#8#0#0#6'TLabel'#9'lEQSLabel'#4'Left'#2#20#6'Height'#2#13#3'Top'
+  +#2'<'#5'Width'#2'\'#7'Caption'#6#17'Equivalent square'#11'Font.Height'#2#245
+  +#10'ParentFont'#8#0#0#6'TLabel'#10'lDiamLabel'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2'K'#5'Width'#2'W'#7'Caption'#6#17'Patient diameter:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#11'lDepthLabel'#4'Left'#2#20#6'Height'#2
+  +#13#3'Top'#2'Z'#5'Width'#2'X'#7'Caption'#6#16'Treatment depth:'#11'Font.Heig'
+  +'ht'#2#245#10'ParentFont'#8#0#0#6'TLabel'#9'lSSDLabel'#4'Left'#2#20#6'Height'
+  +#2#13#3'Top'#2'i'#5'Width'#2'd'#7'Caption'#6#19'Treatment distance:'#11'Font'
+  +'.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#9'lTMRLabel'#4'Left'#2#20#6'H'
+  +'eight'#2#13#3'Top'#2'x'#5'Width'#2'I'#7'Caption'#6#13'TMR at depth:'#11'Fon'
+  +'t.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#9'lOPFLabel'#4'Left'#2#20#6
+  +'Height'#2#13#3'Top'#3#135#0#5'Width'#2'J'#7'Caption'#6#14'Output factor:'#11
+  +'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#10'lNormLabel'#4'Left'#2
+  +#20#6'Height'#2#13#3'Top'#3#150#0#5'Width'#2'K'#7'Caption'#6#14'Normalisatio'
+  +'n:'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#11'lTableLabel'#4
+  +'Left'#2#20#6'Height'#2#13#3'Top'#3#165#0#5'Width'#2'?'#7'Caption'#6#13'Tabl'
+  +'e factor:'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#11'lWedgeLa'
+  +'bel'#4'Left'#2#20#6'Height'#2#13#3'Top'#3#180#0#5'Width'#2'I'#7'Caption'#6
+  +#13'Wedge factor:'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#8'lM'
+  +'achine'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2#0#5'Width'#2'/'#7'Caption'#6#8
+  +'lMachine'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#7'lEnergy'#4
+  +'Left'#2'}'#6'Height'#2#13#3'Top'#2#15#5'Width'#2'&'#7'Caption'#6#7'lEnergy'
+  +#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'lAPLAT'#4'Left'#2'}'
+  +#6'Height'#2#13#3'Top'#2#30#5'Width'#2'!'#7'Caption'#6#6'lAPLAT'#11'Font.Hei'
+  +'ght'#2#245#10'ParentFont'#8#0#0#6'TLabel'#3'lXY'#4'Left'#2'}'#6'Height'#2#13
+  +#3'Top'#2'-'#5'Width'#2#14#7'Caption'#6#3'lXY'#11'Font.Height'#2#245#10'Pare'
+  +'ntFont'#8#0#0#6'TLabel'#4'lEQS'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2'<'#5'W'
+  +'idth'#2#23#7'Caption'#6#4'lEQS'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6
+  +'TLabel'#5'lDiam'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2'K'#5'Width'#2#29#7'Ca'
+  +'ption'#6#5'lDiam'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'lD'
+  +'epth'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2'Z'#5'Width'#2'#'#7'Caption'#6#6
+  +'lDepth'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#4'lSSD'#4'Left'
+  +#2'}'#6'Height'#2#13#3'Top'#2'i'#5'Width'#2#23#7'Caption'#6#4'lSSD'#11'Font.'
+  +'Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#4'lTMR'#4'Left'#2'}'#6'Height'
+  +#2#13#3'Top'#2'x'#5'Width'#2#26#7'Caption'#6#4'lTMR'#11'Font.Height'#2#245#10
+  +'ParentFont'#8#0#0#6'TLabel'#4'lOPF'#4'Left'#2'}'#6'Height'#2#13#3'Top'#3#135
+  +#0#5'Width'#2#24#7'Caption'#6#4'lOPF'#11'Font.Height'#2#245#10'ParentFont'#8
+  +#0#0#6'TLabel'#5'lNorm'#4'Left'#2'}'#6'Height'#2#13#3'Top'#3#150#0#5'Width'#2
+  +#31#7'Caption'#6#5'lNorm'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabe'
+  +'l'#6'lTable'#4'Left'#2'}'#6'Height'#2#13#3'Top'#3#165#0#5'Width'#2#30#7'Cap'
+  +'tion'#6#6'lTable'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#6'lW'
+  +'edge'#4'Left'#2'}'#6'Height'#2#13#3'Top'#3#180#0#5'Width'#2'('#7'Caption'#6
+  +#6'lWedge'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#0#9'TGroupBox'#9'gbRes'
+  +'ults'#4'Left'#2#0#6'Height'#3#194#0#3'Top'#3#252#1#5'Width'#3#11#2#5'Align'
+  +#7#5'alTop'#7'Caption'#6#7'Results'#12'ClientHeight'#3#174#0#11'ClientWidth'
+  +#3#7#2#8'TabOrder'#2#4#0#6'TLabel'#7'Label12'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2#0#5'Width'#2'g'#7'Caption'#6#19'% approx skin dose:'#11'Font.Height'
+  +#2#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#20#6'Height'#2#13
+  +#3'Top'#2#15#5'Width'#2'Q'#7'Caption'#6#14'% tumour dose:'#11'Font.Height'#2
+  ,#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label14'#4'Left'#2#20#6'Height'#2#13#3
+  +'Top'#2#30#5'Width'#2'['#7'Caption'#6#15'% maximum dose:'#11'Font.Height'#2
+  +#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label15'#4'Left'#2#0#6'Height'#2#17#3
+  +'Top'#2'2'#5'Width'#2#22#7'Caption'#6#3'Day'#11'Font.Height'#2#243#10'Parent'
+  +'Font'#8#0#0#6'TLabel'#7'Label16'#4'Left'#2'3'#6'Height'#2#17#3'Top'#2'2'#5
+  +'Width'#2#27#7'Caption'#6#5'Field'#11'Font.Height'#2#243#10'ParentFont'#8#0#0
+  +#6'TLabel'#7'Label17'#4'Left'#2'k'#6'Height'#2#17#3'Top'#2'2'#5'Width'#2'P'#7
+  +'Caption'#6#13'Monitor Units'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'T'
+  +'Label'#6'lDose1'#4'Left'#3#219#0#6'Height'#2#17#3'Top'#2'2'#5'Width'#2'O'#7
+  +'Caption'#6#11'Tumour Dose'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLa'
+  +'bel'#6'lDose2'#4'Left'#3'I'#1#6'Height'#2#17#3'Top'#2'2'#5'Width'#2';'#7'Ca'
+  +'ption'#6#8'Max Dose'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#7
+  +'Label20'#4'Left'#3#161#1#6'Height'#2#17#3'Top'#2'2'#5'Width'#2'\'#7'Caption'
+  +#6#14'Reference Dose'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#5
+  +'lDay1'#4'Left'#2#0#6'Height'#2#17#3'Top'#2'F'#5'Width'#2' '#7'Caption'#6#5
+  +'lDay1'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#7'lField1'#4'Le'
+  +'ft'#2'3'#6'Height'#2#17#3'Top'#2'F'#5'Width'#2'%'#7'Caption'#6#7'lField1'#11
+  +'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#4'lMU1'#4'Left'#2'k'#6'He'
+  +'ight'#2#17#3'Top'#2'F'#5'Width'#2#31#7'Caption'#6#4'lMU1'#11'Font.Height'#2
+  +#243#10'ParentFont'#8#0#0#6'TLabel'#4'lTD1'#4'Left'#3#219#0#6'Height'#2#17#3
+  +'Top'#2'F'#5'Width'#2#26#7'Caption'#6#4'lTD1'#11'Font.Height'#2#243#10'Paren'
+  +'tFont'#8#0#0#6'TLabel'#6'lMaxD1'#4'Left'#3'I'#1#6'Height'#2#17#3'Top'#2'F'#5
+  +'Width'#2','#7'Caption'#6#6'lMaxD1'#11'Font.Height'#2#243#10'ParentFont'#8#0
+  +#0#6'TLabel'#4'lRD1'#4'Left'#3#161#1#6'Height'#2#17#3'Top'#2'F'#5'Width'#2#27
+  +#7'Caption'#6#4'lRD1'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#5
+  +'lDay2'#4'Left'#2#255#6'Height'#2#17#3'Top'#2'Z'#5'Width'#2' '#7'Caption'#6#5
+  +'lDay2'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#7'lField2'#4'Le'
+  +'ft'#2'3'#6'Height'#2#17#3'Top'#2'Z'#5'Width'#2'%'#7'Caption'#6#7'lField2'#11
+  +'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#4'lMU2'#4'Left'#2'k'#6'He'
+  +'ight'#2#17#3'Top'#2'Z'#5'Width'#2#31#7'Caption'#6#4'lMU2'#11'Font.Height'#2
+  +#243#10'ParentFont'#8#0#0#6'TLabel'#4'lTD2'#4'Left'#3#219#0#6'Height'#2#17#3
+  +'Top'#2'Z'#5'Width'#2#26#7'Caption'#6#4'lTD2'#11'Font.Height'#2#243#10'Paren'
+  +'tFont'#8#0#0#6'TLabel'#6'lMaxD2'#4'Left'#3'I'#1#6'Height'#2#17#3'Top'#2'Z'#5
+  +'Width'#2','#7'Caption'#6#6'lMaxD2'#11'Font.Height'#2#243#10'ParentFont'#8#0
+  +#0#6'TLabel'#4'lRD2'#4'Left'#3#161#1#6'Height'#2#17#3'Top'#2'Z'#5'Width'#2#27
+  +#7'Caption'#6#4'lRD2'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TLabel'#5
+  +'lPASD'#4'Left'#2'}'#6'Height'#2#13#3'Top'#2#0#5'Width'#2#29#7'Caption'#6#5
+  +'lPASD'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#4'lPTD'#4'Left'
+  +#2'}'#6'Height'#2#13#3'Top'#2#15#5'Width'#2#23#7'Caption'#6#4'lPTD'#11'Font.'
+  +'Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#4'lPMD'#4'Left'#2'}'#6'Height'
+  +#2#13#3'Top'#2#30#5'Width'#2#27#7'Caption'#6#4'lPMD'#11'Font.Height'#2#245#10
+  +'ParentFont'#8#0#0#6'TLabel'#4'lIso'#4'Left'#2#0#6'Height'#2#13#3'Top'#2'}'#5
+  +'Width'#3#164#0#7'Caption'#6#30'Total dose at maximum buildup:'#11'Font.Heig'
+  +'ht'#2#245#10'ParentFont'#8#0#0#6'TLabel'#7'Label22'#4'Left'#2#0#6'Height'#2
+  +#13#3'Top'#3#140#0#5'Width'#3#180#0#7'Caption'#6'#Total approximate dose at '
+  +'the skin:'#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#3'lMD'#4'Le'
+  +'ft'#3#189#0#6'Height'#2#13#3'Top'#2'}'#5'Width'#2#21#7'Caption'#6#3'lMD'#11
+  +'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#4'lTSD'#4'Left'#3#189#0#6
+  +'Height'#2#13#3'Top'#3#140#0#5'Width'#2#23#7'Caption'#6#4'lTSD'#11'Font.Heig'
+  +'ht'#2#245#10'ParentFont'#8#0#0#6'TShape'#6'Shape1'#4'Left'#2#0#6'Height'#2#1
+  +#3'Top'#2'F'#5'Width'#3#7#2#0#0#6'TShape'#6'Shape2'#4'Left'#2#0#6'Height'#2#1
+  +#3'Top'#2'n'#5'Width'#3#7#2#0#0#0#6'TPanel'#7'pFooter'#4'Left'#2#0#6'Height'
+  +#2'D'#3'Top'#3#190#2#5'Width'#3#11#2#5'Align'#7#8'alClient'#12'ClientHeight'
+  +#2'D'#11'ClientWidth'#3#11#2#8'TabOrder'#2#5#0#6'TLabel'#5'lUser'#4'Left'#2#0
+  +#6'Height'#2#17#3'Top'#2#10#5'Width'#3#225#0#7'Caption'#6'+Calculated by: __'
+  +'__________________________'#11'Font.Height'#2#243#10'ParentFont'#8#0#0#6'TL'
+  +'abel'#7'Label23'#4'Left'#3#4#1#6'Height'#2#17#3'Top'#2#10#5'Width'#3#231#0#7
+  +'Caption'#6',Controlled by: _____________________________'#11'Font.Height'#2
+  +#243#10'ParentFont'#8#0#0#6'TLabel'#5'lDate'#4'Left'#2#0#6'Height'#2#17#3'To'
+  +'p'#2#30#5'Width'#2#30#7'Caption'#6#5'Date:'#11'Font.Height'#2#243#10'Parent'
+  +'Font'#8#0#0#6'TLabel'#5'lTime'#4'Left'#3#4#1#6'Height'#2#17#3'Top'#2#30#5'W'
+  +'idth'#2#31#7'Caption'#6#5'Time:'#11'Font.Height'#2#243#10'ParentFont'#8#0#0
+  +#6'TLabel'#9'lFileName'#4'Left'#2#0#6'Height'#2#16#3'Top'#2'/'#5'Width'#3'0'
+  +#1#8'AutoSize'#8#11'Font.Height'#2#245#10'ParentFont'#8#0#0#6'TLabel'#7'Labe'
+  ,'l27'#4'Left'#3':'#1#6'Height'#2#13#3'Top'#2'/'#5'Width'#3#197#0#7'Caption'#6
+  +'''(c) Yenzakahle Medical Physics Inc 2024'#11'Font.Height'#2#245#10'ParentF'
+  +'ont'#8#0#0#0#0#0#9'TMainMenu'#8'MainMenu'#4'Left'#3#192#1#3'Top'#2'0'#0#9'T'
+  +'MenuItem'#9'miSavePDF'#7'Caption'#6#9'&Save PDF'#7'OnClick'#7#14'miSavePDFC'
+  +'lick'#0#0#9'TMenuItem'#6'miExit'#7'Caption'#6#5'E&xit'#7'OnClick'#7#11'miEx'
+  +'itClick'#0#0#0#10'TImageList'#9'ImageList'#4'Left'#3#192#1#3'Top'#2'h'#6'Bi'
+  +'tmap'#10#146#4#0#0'Lz'#2#0#0#0#16#0#0#0#16#0#0#0'|'#4#0#0#0#0#0#0'x'#218#165
+  +#211'[LSw'#28#192'q'#247#190'eK'#150'=,1'#238#193#17#23'Ctn'#204#203#24'hqX'
+  +#229#178#138'#'#163'2'#198#170' '#202'""'#151#138'@)(8(M)EPZ'#238'7o('#136' '
+  +#20#145'1'#129#129#138#23'n'#209#136#20'('#165'x'#9#204#135'='#232#11#249#238
+  +#156#243#208#204#232#140'lM'#190'9MN>'#231#247';'#255#180#192#146#133#133#133
+  +'eN'#167#147#206#206'N'#186#186#186#254'5'#241#190#181#173#147#249#185'g'#27
+  +#128'w'#132#150#204':'#23#150'MN<__S'#221'AJ'#178#137#147'E'#13#175#205'b'
+  +#190#128'.'#199#192#170#149'9DEV'#224#152'~'#186'^'#156#251#233#210'y'#222'&'
+  +#31#207#167#24#244#237'|'#253'U5K?'#186#194#158#136#2#236'v'#7#139#241''''#11
+  +#187#9#13'9'#134#204';'#23#183#229#10#218#218#218#241'p'#127#198#151#238#127
+  +#178'z'#197'SV'#173'x'#194#154#149's'#174#220#221#230'X'#185'|'#158#207'?'
+  +#155'#P'#254#4'k'#235#20#19#182'q)Mj*'#29#29#29#20#153#158#215#153#12#127']'
+  +#140#143#25'!&'#250'.'#153#233'3'#174#162'#g'#9#11'yL'#178#218'IA'#158#131
+  +#155'7&^'#241#226#25#190'x'#241'b'#217'U'#225'{'#243#165'K'#174#251'b'#13#245
+  +'v'#225#249#14#6#254#225#22#227'O'#215#218#201#203#253#127'>''s'#134#190#222
+  +#197#251#135'c6'#202#204#211'D'#169#30'q'#254#172#157#241#135#182'E'#249#222
+  +#238'I'#140'z'#7#250'l'#7#186#172#25#154'/N1'#246#192#246'V^'#156'}'#182#206
+  +'N'#238#175'3T'#149'Ms('#206#201#190#136'YT'#161#143#137#217'7K'#182#240'N'
+  +#241'q'#154#215#250'q'#193'Z/O'#161'MvRht'#240'['#199'$'#127#244'L'#210')\'
+  +#207#8#207#204#202#152'!\'#249#136#200#221'i'#175#248'S'#181#205#28#23#204
+  +#254#189#179#20#23'M3<h{igq'#175#225'!'#27#253'}'#19'$'#29'zy'#127#171#245'*'
+  +'G'#211'['#217#238#247#132#244'T'''#247#239#217'^9'#243'7'#157#223#249#250#6
+  +#182#202'U'#4#250#31#230'`'#172#26'ub'#226#27#147#201'dX'#173'V'#150#252#135
+  +'OL'#233'('#191'X'#134#137':ywQ'#254'`'#249'=D{'#172'i'#140'PS;'#170#227#3'.'
+  +#159#145#145#129'V'#171'E'#163#209#144#146#146'BRR'#18'j'#181#154#248#248'x'
+  +#226#202'G'#137#21'l'#246#165'q'#234'G'#30'svp'#22'e'#190#149#157'y}.'#159
+  +#150#150#134#217'l'#150#178'X,R%%%R'#177'e#'#156#27'zD'#189'Pq'#191#29'S'#247
+  +#4'?'#24#219#216#161#187#230#242#226'L'#209#238'0'#237#196'l1K'#174#180#180
+  +'Tj'#191'e'#144#211'w'#156#24#175'M'#162#235#28'G/'#244#189#161#21#255#172
+  +#171'./'#238'+'#206#244#202#245'e['#174'BreeeRQ''nQ='#224#144'lf'#251#24'YBA'
+  +#250#203'l'#214#182#242'ma >&'#127'6'#26#182#226#165#243#229#167#218'='#132
+  +'V'#238#194'7'#211#159#242#242'r)U'#193#13#202#251#167#201#180#142#145#214'r'
+  +#31'm'#243'}'#20#186#22'<'#147#155#144#229#251'Q8\'#129'i'#208#130#225#246#9
+  +'t'#3#5'd]7'#16'T'#172'D'#166#217'BEE'#5#161'y'#189#20#247'L'#161#17'\b'#227
+  +'='#194'{'#231#241#207'i'#198'#'#161#30'o'#253#22#140'w'#204#164#245'es'#184
+  +#231#8#9#191'kH'#20'J'#238'>'#194#182'|'#5#193#233'!'#4#235#186'('#236#178
+  +#161#190'0J'#132#213#142#255'('#248#232#173#184#31'8'#133'g'#182#143'kfF_'#14
+  +#169'='#153'$]KGn'#12#196'3q#UUU'#4'd]'#193#208#241#144#3'g'#134#136':5'#196
+  +#207'-'#147#200#143'5'#225#22']'#197#186#163#222'xh=Y'#147#188#142'Uj'#15#182
+  +#153#182#179#197#24#192#134#4'/'#201'VWW'#227#171'm!'#167#237#1'{k'#238#178
+  +#171#252#22#17#21#183#132#243'i'#226#147#200'R'#215#249#171'T**++'#241':$cm'
+  +#220#6#201#137#213#212#212#224#149'|'#145#163#194#187#239#22'\'#168#229#6#225
+  +'%7'#217'|'#164#145#143'U'#197'.'#31#22#22'&'#205#251'&a'#19#149#194'Utb'#181
+  +#181#181#172'M<GZ'#227'(?'#10'6'#184#168#31#229#137#235#200'2'#26#248'0'#172
+  +#208#229#149'J'#229'K3E''VWW'#199#234#216':'#14#215#15#11#141#144'pz'#136#232
+  +#202#219'lJo'#224#253#157'&'#233'7'#23#23#23'Gpp0AAA('#20#10#2#2#2#240#243
+  +#243'C.'#151#227#235#235#139#219#222'2'#190'H<'#131#151#166#17'y'#214'e'#190
+  +#203#189#130#183#246#2#239#134#24#23#253#255#253' '#180#128#247#148#249#194
+  +#238#5#146#255#27#18#134#15'$'#0#0#11'TSaveDialog'#10'SaveDialog'#10'Default'
+  +'Ext'#6#4'.pdf'#6'Filter'#6#21'PDF|*.pdf|All files|*'#7'Options'#11#17'ofOve'
+  +'rwritePrompt'#14'ofEnableSizing'#12'ofViewDetail'#0#4'Left'#3#192#1#3'Top'#3
+  +#160#0#0#0#15'TXMLPropStorage'#14'XMLPropStorage'#12'StoredValues'#14#0#4'Le'
+  +'ft'#3#187#1#3'Top'#3#240#0#0#0#0
 ]);

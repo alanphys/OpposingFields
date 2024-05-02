@@ -56,7 +56,8 @@ completed 4/2/2000
 29/11/2022 use Form2PDF to print beamform
 27/1/2023  fix overprint of filename in results
 30/4/2024  add form location property storage
-}
+           remove web server
+2/5/2025   update about form with version info}
 
 {$mode DELPHI}{$H+}
 
@@ -65,7 +66,7 @@ interface
 uses
    Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Menus,
    ExtCtrls, Buttons, StdCtrls, LazHelpHTML, ComCtrls, XMLPropStorage,
-   lNetComponents, lwebserver, FileUtil, StrUtils;
+   lNetComponents, lwebserver, FileUtil;
 
 const NE = 5;                      {maximum number of energies}
       SCD = 100;                   {source calibration distance}

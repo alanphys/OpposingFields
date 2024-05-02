@@ -46,7 +46,7 @@ There are, of course, no bugs. However, should the program behave in a way that 
 These detail new or changed functionality in the software. Please see the History for bug fixes.
 
 Version 3.2 (2024)
-Output now uses Form2PDF. Form locations are saved.
+The results form now uses Form2PDF. Form locations are saved and restored on startup. The web server has been removed and help is served directly from file. This makes OPF more secure. The About module has been updated.
 
 Version 3.1
 Beam data files are no longer stored with the executable but in the appropriate program data directory. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
@@ -139,3 +139,5 @@ Core elements of the opposing fields program have been around since 1994 when th
 29/11/2022 use Form2PDF to print beamform
 27/1/2023  fix overprint of filename in results
 30/4/2024  add form location property storage
+           remove web server
+2/5/2025   update about form with version info

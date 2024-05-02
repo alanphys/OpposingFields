@@ -18,7 +18,7 @@ type
       gbTreatment: TGroupBox;
       gbResults: TGroupBox;
       ImageList: TImageList;
-      Label1: TLabel;
+      lVersion: TLabel;
       Label10: TLabel;
       Label11: TLabel;
       Label12: TLabel;
@@ -157,13 +157,12 @@ var
 
 implementation
 
-uses opfunit, loginunit, form2pdf, LazFileUtils;
+uses opfunit, loginunit, form2pdf, aboutunit, LazFileUtils;
 
 { TResForm2 }
 
 procedure TResForm2.FormCreate(Sender: TObject);
-var I,L,
-    LS         :integer;       {line spacing}
+var I,L        :integer;
 
 function EQF(X,Y:double):double;
 {Calculates the equivalent square of the field defined by X,Y.}
@@ -210,12 +209,6 @@ A := (Z1 + Z2 + Z3 + Z4)/4 - B*(X1 + X2)/2 - C*(Y1+Y2)/2;
 TmrF := A + B*Eq + C*d;
 end;
 
-function Attn(d,Eq:double):double;
-{Calculates the attenuation of tissue thickness d for field size Eq}
-begin
-with Linac.LinacRec do
-Attn := 0;
-end;
 
 function OutPutFac(En:Integer;EQ:double):double;
 {Calculates the Output or Relative Dose Factor using a logarithmic fit}
@@ -339,6 +332,7 @@ with Pat.PatRec do with Linac.LinacRec do
    end;
 
 {display results}
+   lVersion.Caption := 'Opposing Fields V' + GetAppVersionString(True,2,True,True);
    lTitle.Caption := Linac.LinacRec.Title;
    with Pat.PatRec do
       begin

@@ -1,7 +1,3 @@
 Opposing Fields (OPF) written and maintained by Alan Chamberlain
 
 OPF is compiled on Lazarus and Free Pascal. We gratefully acknowledge the contributions of the Lazarus and Free Pascal teams.
-
-We also wish to acknowledge the following:
-
-Lightweight Networking Library (lNet) written by Ales Katona and Micha Nelissen
