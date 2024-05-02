@@ -1,14 +1,15 @@
 object ResForm2: TResForm2
-  Left = 2182
-  Height = 835
-  Top = 68
+  Left = 590
+  Height = 836
+  Top = 86
   Width = 530
   Caption = 'ResForm2'
-  ClientHeight = 805
+  ClientHeight = 806
   ClientWidth = 530
   Menu = MainMenu
   OnCreate = FormCreate
-  LCLVersion = '2.2.2.0'
+  SessionProperties = 'Left;Top'
+  LCLVersion = '2.2.6.0'
   object ToolBar: TToolBar
     Left = 0
     Height = 26
@@ -32,7 +33,7 @@ object ResForm2: TResForm2
       Style = tbsSeparator
     end
     object tbExit: TToolButton
-      Left = 32
+      Left = 29
       Top = 2
       Caption = 'tbExit'
       ImageIndex = 1
@@ -41,14 +42,14 @@ object ResForm2: TResForm2
   end
   object ScrollBox: TScrollBox
     Left = 0
-    Height = 779
+    Height = 780
     Top = 26
     Width = 530
     HorzScrollBar.Page = 523
     VertScrollBar.Page = 770
     Align = alClient
     AutoSize = True
-    ClientHeight = 775
+    ClientHeight = 776
     ClientWidth = 526
     TabOrder = 1
     object pPage: TPanel
@@ -1030,5 +1031,10 @@ object ResForm2: TResForm2
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
     Left = 448
     Top = 160
+  end
+  object XMLPropStorage: TXMLPropStorage
+    StoredValues = <>
+    Left = 443
+    Top = 240
   end
 end

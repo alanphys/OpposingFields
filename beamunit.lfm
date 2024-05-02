@@ -1,21 +1,22 @@
 object BeamForm: TBeamForm
-  Left = 2126
-  Height = 296
-  Top = 154
-  Width = 909
+  Left = 512
+  Height = 444
+  Top = 685
+  Width = 1364
   HorzScrollBar.Page = 603
   VertScrollBar.Page = 299
   ActiveControl = PageControl
   Caption = 'Edit Beam Files'
-  ClientHeight = 296
-  ClientWidth = 909
+  ClientHeight = 444
+  ClientWidth = 1364
+  DesignTimePPI = 144
   OnCreate = BeamFormCreate
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '2.2.6.0'
   object PageControl: TPageControl
     Left = 0
     Height = 256
     Top = 0
-    Width = 909
+    Width = 1364
     ActivePage = tsOutFact
     Align = alTop
     TabIndex = 2
@@ -23,104 +24,104 @@ object BeamForm: TBeamForm
     OnChange = PageControlChange
     object tsEnergies: TTabSheet
       Caption = 'Energies'
-      ClientHeight = 221
-      ClientWidth = 905
+      ClientHeight = 215
+      ClientWidth = 1360
       OnExit = tsEnergiesExit
       OnHide = tsEnergiesExit
       object Label1: TLabel
-        Left = 7
-        Height = 18
-        Top = 16
-        Width = 30
+        Left = 10
+        Height = 28
+        Top = 24
+        Width = 46
         Caption = 'Title:'
         Layout = tlCenter
         ParentColor = False
       end
       object Label2: TLabel
-        Left = 6
-        Height = 18
-        Top = 52
-        Width = 73
+        Left = 9
+        Height = 28
+        Top = 78
+        Width = 112
         Caption = 'Accelerator:'
         ParentColor = False
       end
       object Label3: TLabel
-        Left = 6
-        Height = 18
-        Top = 109
-        Width = 174
+        Left = 9
+        Height = 28
+        Top = 164
+        Width = 268
         Caption = 'Number of photon energies:'
         ParentColor = False
       end
       object Label4: TLabel
-        Left = 6
-        Height = 18
-        Top = 166
-        Width = 129
+        Left = 9
+        Height = 28
+        Top = 249
+        Width = 198
         Caption = 'Program expiry date:'
         ParentColor = False
       end
       object Label5: TLabel
-        Left = 184
-        Height = 18
-        Top = 52
-        Width = 104
+        Left = 276
+        Height = 28
+        Top = 78
+        Width = 160
         Caption = 'Photon Energies:'
         ParentColor = False
       end
       object Label6: TLabel
-        Left = 354
-        Height = 18
-        Top = 51
-        Width = 172
+        Left = 531
+        Height = 28
+        Top = 76
+        Width = 265
         Caption = 'Depth at Maximum Buildup:'
         ParentColor = False
       end
       object ebTitle: TEdit
-        Left = 63
-        Height = 32
-        Top = 12
-        Width = 530
+        Left = 94
+        Height = 42
+        Top = 18
+        Width = 795
         TabOrder = 0
       end
       object ebMName: TEdit
-        Left = 7
-        Height = 32
-        Top = 69
-        Width = 81
+        Left = 10
+        Height = 42
+        Top = 104
+        Width = 122
         TabOrder = 1
       end
       object ebNoE: TEdit
-        Left = 7
-        Height = 32
-        Top = 126
-        Width = 81
+        Left = 10
+        Height = 42
+        Top = 189
+        Width = 122
         TabOrder = 2
       end
       object ebEDate: TEdit
-        Left = 7
-        Height = 32
-        Top = 185
-        Width = 81
+        Left = 10
+        Height = 42
+        Top = 278
+        Width = 122
         TabOrder = 3
       end
       object sgEnergy: TStringGrid
-        Left = 184
-        Height = 136
-        Top = 69
-        Width = 137
+        Left = 276
+        Height = 204
+        Top = 104
+        Width = 206
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
         TabOrder = 4
         RowHeights = (
-          19
-          19
-          19
-          19
-          19
-          19
+          28
+          28
+          28
+          28
+          28
+          28
         )
         Cells = (
           7
@@ -148,22 +149,22 @@ object BeamForm: TBeamForm
         )
       end
       object sgDmax: TStringGrid
-        Left = 354
-        Height = 131
-        Top = 69
-        Width = 139
+        Left = 531
+        Height = 196
+        Top = 104
+        Width = 208
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
         TabOrder = 5
         RowHeights = (
-          19
-          19
-          19
-          19
-          19
-          19
+          28
+          28
+          28
+          28
+          28
+          28
         )
         Cells = (
           7
@@ -193,89 +194,89 @@ object BeamForm: TBeamForm
     end
     object tsFactors: TTabSheet
       Caption = 'Factors'
-      ClientHeight = 221
-      ClientWidth = 905
+      ClientHeight = 215
+      ClientWidth = 1360
       object Label7: TLabel
-        Left = 22
-        Height = 18
-        Top = 12
-        Width = 46
+        Left = 33
+        Height = 28
+        Top = 18
+        Width = 71
         Caption = 'Energy:'
         ParentColor = False
       end
       object Label8: TLabel
-        Left = 79
-        Height = 18
-        Top = 12
-        Width = 84
+        Left = 118
+        Height = 28
+        Top = 18
+        Width = 129
         Caption = 'Table Factors:'
         ParentColor = False
       end
       object Label9: TLabel
-        Left = 232
-        Height = 18
-        Top = 12
-        Width = 77
+        Left = 348
+        Height = 28
+        Top = 18
+        Width = 119
         Caption = 'Tray Factors:'
         ParentColor = False
       end
       object Label10: TLabel
-        Left = 51
-        Height = 18
-        Top = 65
-        Width = 11
+        Left = 76
+        Height = 28
+        Top = 98
+        Width = 17
         Caption = '1:'
         ParentColor = False
       end
       object Label11: TLabel
-        Left = 51
-        Height = 18
-        Top = 86
-        Width = 11
+        Left = 76
+        Height = 28
+        Top = 129
+        Width = 17
         Caption = '2:'
         ParentColor = False
       end
       object Label12: TLabel
-        Left = 51
-        Height = 18
-        Top = 102
-        Width = 11
+        Left = 76
+        Height = 28
+        Top = 153
+        Width = 17
         Caption = '3:'
         ParentColor = False
       end
       object Label13: TLabel
-        Left = 51
-        Height = 18
-        Top = 122
-        Width = 11
+        Left = 76
+        Height = 28
+        Top = 183
+        Width = 17
         Caption = '4:'
         ParentColor = False
       end
       object Label14: TLabel
-        Left = 51
-        Height = 18
-        Top = 140
-        Width = 11
+        Left = 76
+        Height = 28
+        Top = 210
+        Width = 17
         Caption = '5:'
         ParentColor = False
       end
       object sgTable: TStringGrid
-        Left = 79
-        Height = 148
-        Top = 40
-        Width = 131
+        Left = 118
+        Height = 222
+        Top = 60
+        Width = 196
         Color = clWhite
         ColCount = 2
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
         TabOrder = 0
         RowHeights = (
-          19
-          19
-          19
-          19
-          19
-          19
+          28
+          28
+          28
+          28
+          28
+          28
         )
         Cells = (
           7
@@ -303,21 +304,21 @@ object BeamForm: TBeamForm
         )
       end
       object sgTray: TStringGrid
-        Left = 232
-        Height = 148
-        Top = 40
-        Width = 325
+        Left = 348
+        Height = 222
+        Top = 60
+        Width = 488
         Color = clWhite
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
         TabOrder = 1
         RowHeights = (
-          19
-          19
-          19
-          19
-          19
-          19
+          28
+          28
+          28
+          28
+          28
+          28
         )
         Cells = (
           10
@@ -356,34 +357,34 @@ object BeamForm: TBeamForm
     end
     object tsOutFact: TTabSheet
       Caption = 'Output Factors'
-      ClientHeight = 221
-      ClientWidth = 905
+      ClientHeight = 215
+      ClientWidth = 1360
       object Label16: TLabel
-        Left = 42
-        Height = 18
-        Top = 24
-        Width = 163
+        Left = 63
+        Height = 28
+        Top = 36
+        Width = 251
         Caption = 'Output Factor Parameters:'
         ParentColor = False
       end
       object sgOPF: TStringGrid
-        Left = 42
-        Height = 148
-        Top = 58
-        Width = 726
+        Left = 63
+        Height = 222
+        Top = 87
+        Width = 1089
         Color = clWhite
         ColCount = 8
-        DefaultColWidth = 90
+        DefaultColWidth = 135
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
         RowCount = 6
         TabOrder = 0
         RowHeights = (
-          19
-          19
-          19
-          19
-          19
-          19
+          28
+          28
+          28
+          28
+          28
+          28
         )
         Cells = (
           13
@@ -431,12 +432,12 @@ object BeamForm: TBeamForm
     end
   end
   object bbBack: TBitBtn
-    Left = 670
-    Height = 25
+    Left = 1005
+    Height = 38
     Hint = 'Previous tab'
-    Top = 259
-    Width = 76
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 114
+    BorderSpacing.InnerBorder = 3
     Caption = '<< Back'
     OnClick = bbBackClick
     ParentShowHint = False
@@ -444,12 +445,12 @@ object BeamForm: TBeamForm
     TabOrder = 2
   end
   object bbOpen: TBitBtn
-    Left = 8
-    Height = 25
+    Left = 12
+    Height = 38
     Hint = 'Open beam data file'
-    Top = 259
-    Width = 76
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 114
+    BorderSpacing.InnerBorder = 3
     Caption = 'Open'
     OnClick = bbImportClick
     ParentShowHint = False
@@ -457,12 +458,12 @@ object BeamForm: TBeamForm
     TabOrder = 3
   end
   object bbPrint: TBitBtn
-    Left = 84
-    Height = 25
+    Left = 126
+    Height = 38
     Hint = 'Print data'
-    Top = 259
-    Width = 75
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 112
+    BorderSpacing.InnerBorder = 3
     Caption = 'Print PDF'
     OnClick = bbPrintClick
     ParentShowHint = False
@@ -470,12 +471,12 @@ object BeamForm: TBeamForm
     TabOrder = 4
   end
   object bbImportTMR: TBitBtn
-    Left = 159
-    Height = 25
+    Left = 238
+    Height = 38
     Hint = 'Import TMRs from csv file'
-    Top = 259
-    Width = 83
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 124
+    BorderSpacing.InnerBorder = 3
     Caption = 'ImportTMR'
     OnClick = bbImportTMRClick
     ParentShowHint = False
@@ -483,12 +484,12 @@ object BeamForm: TBeamForm
     TabOrder = 5
   end
   object bbNext: TBitBtn
-    Left = 821
-    Height = 25
+    Left = 1232
+    Height = 38
     Hint = 'Next tab'
-    Top = 259
-    Width = 76
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 114
+    BorderSpacing.InnerBorder = 3
     Caption = 'Next >>'
     OnClick = bbNextClick
     ParentShowHint = False
@@ -496,12 +497,12 @@ object BeamForm: TBeamForm
     TabOrder = 1
   end
   object bbFinish: TBitBtn
-    Left = 746
-    Height = 25
+    Left = 1119
+    Height = 38
     Hint = 'Save and Close'
-    Top = 259
-    Width = 76
-    BorderSpacing.InnerBorder = 2
+    Top = 388
+    Width = 114
+    BorderSpacing.InnerBorder = 3
     Caption = 'Finish'
     OnClick = bbExportClick
     ParentShowHint = False
@@ -513,15 +514,15 @@ object BeamForm: TBeamForm
     DefaultExt = '.bdf'
     Filter = 'Beam Data Files | *.bdf|Text Files|*.txt|All files|*.*'
     FilterIndex = 0
-    Left = 824
-    Top = 176
+    Left = 1236
+    Top = 264
   end
   object SaveDialog: TSaveDialog
     Title = 'Save PDF as'
     DefaultExt = '.pdf'
     Filter = 'PDF|*.pdf|All files|*'
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
-    Left = 824
-    Top = 80
+    Left = 1236
+    Top = 120
   end
 end

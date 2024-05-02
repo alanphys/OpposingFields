@@ -1,31 +1,32 @@
 object AboutForm: TAboutForm
-  Left = 2202
-  Height = 252
-  Top = 83
-  Width = 430
+  Left = 711
+  Height = 378
+  Top = 755
+  Width = 645
   Caption = 'About'
-  ClientHeight = 252
-  ClientWidth = 430
+  ClientHeight = 378
+  ClientWidth = 645
+  DesignTimePPI = 144
   OnCreate = FormCreate
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '2.2.6.0'
   object PageControl: TPageControl
     Left = 0
-    Height = 252
+    Height = 378
     Top = 0
-    Width = 430
+    Width = 645
     ActivePage = TabSheet1
     Align = alClient
     TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'About'
-      ClientHeight = 218
-      ClientWidth = 426
+      ClientHeight = 337
+      ClientWidth = 641
       object mAbout: TMemo
         Left = 0
-        Height = 218
+        Height = 337
         Top = 0
-        Width = 426
+        Width = 641
         Align = alClient
         ScrollBars = ssAutoVertical
         TabOrder = 0
@@ -33,13 +34,13 @@ object AboutForm: TAboutForm
     end
     object TabSheet2: TTabSheet
       Caption = 'Licence'
-      ClientHeight = 218
-      ClientWidth = 426
+      ClientHeight = 337
+      ClientWidth = 641
       object mLicence: TMemo
         Left = 0
-        Height = 218
+        Height = 337
         Top = 0
-        Width = 426
+        Width = 641
         Align = alClient
         ScrollBars = ssAutoVertical
         TabOrder = 0
@@ -47,13 +48,13 @@ object AboutForm: TAboutForm
     end
     object TabSheet3: TTabSheet
       Caption = 'Credits'
-      ClientHeight = 218
-      ClientWidth = 426
+      ClientHeight = 337
+      ClientWidth = 641
       object mCredits: TMemo
         Left = 0
-        Height = 218
+        Height = 337
         Top = 0
-        Width = 426
+        Width = 641
         Align = alClient
         ScrollBars = ssAutoVertical
         TabOrder = 0

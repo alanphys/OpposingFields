@@ -10,8 +10,7 @@ alignment problem. Removed text import and export.beamunit
 24/5/2019 fixed empty cell and data bugs
 28/2/2020 remove definitions and use from opfunit
 24/3/2020 store all beam config files automatically in program config dir
-24/11/2022 use form2pdf to print
-27/1/2023 fix overprint of filename in results}
+}
 
 {$mode DELPHI}{$H+}
 interface

@@ -1,59 +1,60 @@
 object LoginForm: TLoginForm
-  Left = 2233
-  Height = 201
-  Top = 84
-  Width = 320
+  Left = 512
+  Height = 302
+  Top = 312
+  Width = 480
   Caption = 'Login'
-  ClientHeight = 201
-  ClientWidth = 320
+  ClientHeight = 302
+  ClientWidth = 480
+  DesignTimePPI = 144
   OnCreate = FormCreate
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '2.2.6.0'
   object ebPass: TEdit
-    Left = 13
-    Height = 32
-    Top = 147
-    Width = 182
+    Left = 20
+    Height = 42
+    Top = 220
+    Width = 273
     EchoMode = emPassword
     PasswordChar = '*'
     TabOrder = 1
   end
   object Label1: TLabel
-    Left = 13
-    Height = 18
-    Top = 69
-    Width = 41
+    Left = 20
+    Height = 28
+    Top = 104
+    Width = 62
     Caption = 'Name:'
     ParentColor = False
   end
   object Label2: TLabel
-    Left = 13
-    Height = 18
-    Top = 126
-    Width = 63
+    Left = 20
+    Height = 28
+    Top = 189
+    Width = 96
     Caption = 'Password:'
     ParentColor = False
   end
   object Label3: TLabel
-    Left = 32
-    Height = 18
-    Top = 10
-    Width = 234
+    Left = 48
+    Height = 28
+    Top = 15
+    Width = 361
     Caption = 'Welcome to Opposing Fields Planning '
     ParentColor = False
   end
   object Label4: TLabel
-    Left = 80
-    Height = 18
-    Top = 34
-    Width = 150
+    Left = 120
+    Height = 28
+    Top = 51
+    Width = 231
     Caption = 'Please log in to continue'
     ParentColor = False
   end
   object bbEnter: TBitBtn
-    Left = 227
-    Height = 81
-    Top = 89
-    Width = 81
+    Left = 340
+    Height = 122
+    Top = 134
+    Width = 122
     Caption = 'Log in'
     Default = True
     OnClick = ebPassClick
@@ -61,25 +62,25 @@ object LoginForm: TLoginForm
   end
   object StatusBar: TStatusBar
     Left = 0
-    Height = 23
-    Top = 178
-    Width = 320
+    Height = 33
+    Top = 269
+    Width = 480
     Panels = <    
       item
         Style = psOwnerDraw
-        Width = 51
+        Width = 76
       end>
     SimplePanel = False
     OnDrawPanel = StatusBarDrawPanel
   end
   object cbName: TComboBox
-    Left = 13
-    Height = 32
-    Top = 89
-    Width = 182
+    Left = 20
+    Height = 42
+    Top = 134
+    Width = 273
     AutoComplete = True
     AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
-    ItemHeight = 24
+    ItemHeight = 34
     TabOrder = 0
   end
 end

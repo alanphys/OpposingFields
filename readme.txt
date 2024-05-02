@@ -1,5 +1,5 @@
 Opposing Fields Readme file
-(c) Yenzakahle Medical Physics Inc 1994-2020
+(c) Yenzakahle Medical Physics Inc 1994-2024
 
 1) Licence
 Please read the file Licence.txt. This means that if as a result of using this program you fry your patients, trash your linac, nuke the cat, blow the city power in a ten block radius and generally cause global thermonuclear meltdown! Sorry, you were warned!
@@ -44,6 +44,9 @@ There are, of course, no bugs. However, should the program behave in a way that 
 
 7) Release notes
 These detail new or changed functionality in the software. Please see the History for bug fixes.
+
+Version 3.2 (2024)
+Output now uses Form2PDF. Form locations are saved.
 
 Version 3.1
 Beam data files are no longer stored with the executable but in the appropriate program data directory. If no data exists in the config directory the program will look in the executable dir to accommodate legacy installations. Edited beam files are automatically stored in the program data config dir.
@@ -129,3 +132,10 @@ Core elements of the opposing fields program have been around since 1994 when th
            look in program data confid dir first for beam file
 16/4/2020  fix various memory leaks
 3/8/2020   correct title of login module
+18/11/2022 fix double free causing exception on new patient
+           fix special characters in filenames
+23/11/2022 convert resunit to form2pdf
+24/11/2022 use form2pdf to print
+29/11/2022 use Form2PDF to print beamform
+27/1/2023  fix overprint of filename in results
+30/4/2024  add form location property storage

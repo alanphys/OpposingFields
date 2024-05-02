@@ -6,7 +6,7 @@ interface
 
 uses
    Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Menus,
-   ComCtrls, ExtCtrls, StdCtrls;
+   ComCtrls, ExtCtrls, StdCtrls, XMLPropStorage;
 
 type
 
@@ -114,6 +114,7 @@ type
       tbSavePDF: TToolButton;
       ToolButton1: TToolButton;
       tbExit: TToolButton;
+      XMLPropStorage: TXMLPropStorage;
       procedure FormCreate(Sender: TObject);
       procedure miExitClick(Sender: TObject);
       procedure miSavePDFClick(Sender: TObject);
@@ -161,7 +162,8 @@ uses opfunit, loginunit, form2pdf, LazFileUtils;
 { TResForm2 }
 
 procedure TResForm2.FormCreate(Sender: TObject);
-var I,L       :integer;
+var I,L,
+    LS         :integer;       {line spacing}
 
 function EQF(X,Y:double):double;
 {Calculates the equivalent square of the field defined by X,Y.}

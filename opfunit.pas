@@ -52,7 +52,11 @@ completed 4/2/2000
 18/11/2022 fix double free causing exception on new patient
            fix special characters in filenames
 23/11/2022 convert resunit to form2pdf
-29/11/2022 use Form2PDF to print beamform}
+24/11/2022 use form2pdf to print
+29/11/2022 use Form2PDF to print beamform
+27/1/2023  fix overprint of filename in results
+30/4/2024  add form location property storage
+}
 
 {$mode DELPHI}{$H+}
 
@@ -60,8 +64,8 @@ interface
 
 uses
    Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Menus,
-   ExtCtrls, Buttons, StdCtrls, LazHelpHTML, ComCtrls, lNetComponents,
-   lwebserver, FileUtil, StrUtils;
+   ExtCtrls, Buttons, StdCtrls, LazHelpHTML, ComCtrls, XMLPropStorage,
+   lNetComponents, lwebserver, FileUtil, StrUtils;
 
 const NE = 5;                      {maximum number of energies}
       SCD = 100;                   {source calibration distance}
@@ -220,7 +224,6 @@ type
      miResetP: TMenuItem;
      miAddUser: TMenuItem;
      miSettings: TMenuItem;
-     Server: TLHTTPServerComponent;
      FileHandler: TFileHandler;
      CGIHandler: TCGIHandler;
      PHPCGIHandler: TPHPFastCGIHandler;
@@ -252,6 +255,7 @@ type
      ToolButton7: TToolButton;
      ToolButton8: TToolButton;
      ToolButton9: TToolButton;
+     XMLPropStorage: TXMLPropStorage;
      procedure miAddUserClick(Sender: TObject);
      procedure miManageClick(Sender: TObject);
      procedure miResetPClick(Sender: TObject);
@@ -1029,33 +1033,6 @@ if User = 'Administrator' then
 sExePath := ExtractFilePath(Application.ExeName);
 SetCurrentDir(sExePath);
 
-{start web server for online help}
-FileHandler := TFileHandler.Create;
-FileHandler.MimeTypeFile := sExePath + 'html' + DirectorySeparator + 'mime.types';
-FileHandler.DocumentRoot := sExePath + 'html';
-
-CGIHandler := TCGIHandler.Create;
-CGIHandler.FCGIRoot := sExePath + 'html' + DirectorySeparator + 'cgi-bin';
-CGIHandler.FDocumentRoot := sExePath + 'html' + DirectorySeparator + 'cgi-bin';
-CGIHandler.FEnvPath := sExePath + 'html' + DirectorySeparator + 'cgi-bin';
-CGIHandler.FScriptPathPrefix := 'cgi-bin' + DirectorySeparator;
-
-PHPCGIHandler := TPHPFastCGIHandler.Create;
-PHPCGIHandler.Host := 'localhost';
-PHPCGIHandler.Port := 4665;
-PHPCGIHandler.AppEnv := 'PHP_FCGI_CHILDREN=5:PHP_FCGI_MAX_REQUESTS=10000';
-PHPCGIHandler.AppName := 'php-cgi.exe';
-PHPCGIHandler.EnvPath := sExePath + 'html' + DirectorySeparator + 'cgi-bin';
-
-Server.RegisterHandler(FileHandler);
-Server.RegisterHandler(CGIHandler);
-
-FileHandler.DirIndexList.Add('index.html');
-FileHandler.DirIndexList.Add('index.htm');
-FileHandler.DirIndexList.Add('index.php');
-FileHandler.DirIndexList.Add('index.cgi');
-FileHandler.RegisterHandler(PHPCGIHandler);
-
 ListLinacs;
 if CBMachine.Items.Count <> 0 then
    begin
@@ -1067,13 +1044,6 @@ if CBMachine.Items.Count <> 0 then
    Fault := true;
    OPFError('No beam data files exist! Please create a file using Beam.');
    {Halt};
-   end;
-
-{check if server is running}
-if not Server.Listen(3880) then
-   begin
-   Fault := true;
-   OPFWarning('Error starting help server. Online help may not be available.');
    end;
 
 if not Fault then

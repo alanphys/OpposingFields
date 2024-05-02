@@ -4,6 +4,4 @@ OPF is compiled on Lazarus and Free Pascal. We gratefully acknowledge the contri
 
 We also wish to acknowledge the following:
 
-PowerPDF package from Takeshi Kanno as ported by Stefan (Chtk) and Jesús Reyes Aguilar
-
 Lightweight Networking Library (lNet) written by Ales Katona and Micha Nelissen
