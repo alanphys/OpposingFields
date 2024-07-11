@@ -9,7 +9,7 @@ uses
    , SysUtils              //delete SysUtils if not using heaptrc
    {$ENDIF}
   { add your units here }, opfunit,
-		lnetvisual, aboutunit, loginunit, beamunit, resunit2, form2pdf;
+		aboutunit, loginunit, beamunit, resunit2, form2pdf;
 
 {$R *.res}
 

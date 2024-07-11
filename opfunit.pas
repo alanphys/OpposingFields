@@ -57,7 +57,8 @@ completed 4/2/2000
 27/1/2023  fix overprint of filename in results
 30/4/2024  add form location property storage
            remove web server
-2/5/2025   update about form with version info}
+2/5/2024   update about form with version info
+11/7/2024  delete webserver variables and hanging unit}
 
 {$mode DELPHI}{$H+}
 
@@ -66,7 +67,7 @@ interface
 uses
    Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Menus,
    ExtCtrls, Buttons, StdCtrls, LazHelpHTML, ComCtrls, XMLPropStorage,
-   lNetComponents, lwebserver, FileUtil;
+   FileUtil;
 
 const NE = 5;                      {maximum number of energies}
       SCD = 100;                   {source calibration distance}
@@ -225,9 +226,6 @@ type
      miResetP: TMenuItem;
      miAddUser: TMenuItem;
      miSettings: TMenuItem;
-     FileHandler: TFileHandler;
-     CGIHandler: TCGIHandler;
-     PHPCGIHandler: TPHPFastCGIHandler;
      MainMenu1: TMainMenu;
      MenuItem1: TMenuItem;
      ExitMenu: TMenuItem;
@@ -732,9 +730,6 @@ end;
 procedure TOPFForm.OPFFormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
 if Pat <> nil then Pat.Free;
-FileHandler.Free;
-CGIHandler.Free;
-PHPCGIHandler.Free;
 OpenDialog.Destroy;
 StatusMessages.Free;
 Linac.Free;

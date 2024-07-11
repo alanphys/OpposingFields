@@ -1,20 +1,20 @@
 object OPFForm: TOPFForm
   Left = 482
-  Height = 608
+  Height = 607
   Top = 301
   Width = 769
   HorzScrollBar.Page = 760
   VertScrollBar.Page = 438
   ActiveControl = ebPName
   Caption = 'Opposing Fields'
-  ClientHeight = 578
+  ClientHeight = 607
   ClientWidth = 769
   Menu = MainMenu1
   OnClose = OPFFormClose
   OnCloseQuery = OPFFormCloseQuery
   OnCreate = OPFFormCreate
   SessionProperties = 'Left;Top'
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.4.0.0'
   object gbParticulars: TGroupBox
     Left = 0
     Height = 166
@@ -78,9 +78,9 @@ object OPFForm: TOPFForm
       Width = 374
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp911.html'
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 0
+      OnChange = ebPNameChange
     end
     object ebDiag: TEdit
       Left = 148
@@ -89,9 +89,9 @@ object OPFForm: TOPFForm
       Width = 610
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp913.html'
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 4
+      OnChange = ebPNameChange
     end
     object ebComment: TEdit
       Left = 148
@@ -100,9 +100,9 @@ object OPFForm: TOPFForm
       Width = 610
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp915.html'
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 5
+      OnChange = ebPNameChange
     end
     object ebDate: TEdit
       Left = 615
@@ -111,9 +111,9 @@ object OPFForm: TOPFForm
       Width = 142
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp912.html'
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 1
+      OnChange = ebPNameChange
     end
     object ebBdate: TEdit
       Left = 615
@@ -122,9 +122,9 @@ object OPFForm: TOPFForm
       Width = 142
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp914.html'
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 3
+      OnChange = ebPNameChange
     end
     object Label18: TLabel
       Left = 2
@@ -140,19 +140,19 @@ object OPFForm: TOPFForm
       Height = 32
       Top = 35
       Width = 374
-      OnChange = ebPNameChange
       ParentFont = False
       TabOrder = 2
+      OnChange = ebPNameChange
     end
   end
   object gbPrescription: TGroupBox
     Left = 0
-    Height = 138
+    Height = 167
     Top = 192
     Width = 769
     Align = alClient
     Caption = 'Prescription:'
-    ClientHeight = 108
+    ClientHeight = 137
     ClientWidth = 765
     ParentFont = False
     TabOrder = 1
@@ -199,11 +199,11 @@ object OPFForm: TOPFForm
       Width = 81
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp922.html'
-      OnChange = ebPNameChange
-      OnExit = ebTDoseExit
       ParentFont = False
       TabOrder = 1
       Text = '0'
+      OnChange = ebPNameChange
+      OnExit = ebTDoseExit
     end
     object ebNFrac: TEdit
       Left = 148
@@ -212,11 +212,11 @@ object OPFForm: TOPFForm
       Width = 81
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp923.html'
-      OnChange = ebPNameChange
-      OnExit = ebNFracExit
       ParentFont = False
       TabOrder = 2
       Text = '0'
+      OnChange = ebPNameChange
+      OnExit = ebNFracExit
     end
     object cbType: TComboBox
       Left = 148
@@ -233,18 +233,18 @@ object OPFForm: TOPFForm
         'Tumour'
         'Maximum'
       )
-      OnChange = ebPNameChange
-      OnExit = cbTypeExit
       ParentFont = False
       Style = csDropDownList
       TabOrder = 0
       Text = 'Tumour'
+      OnChange = ebPNameChange
+      OnExit = cbTypeExit
     end
   end
   object gbParameters: TGroupBox
     Left = 0
     Height = 225
-    Top = 330
+    Top = 359
     Width = 769
     Align = alBottom
     Caption = 'Treatment Parameters:'
@@ -429,11 +429,11 @@ object OPFForm: TOPFForm
         'Opposing'
         'Single'
       )
-      OnChange = cbFieldsExit
       ParentFont = False
       Style = csDropDownList
       TabOrder = 0
       Text = 'Opposing'
+      OnChange = cbFieldsExit
     end
     object cbTTech: TComboBox
       Left = 657
@@ -451,11 +451,11 @@ object OPFForm: TOPFForm
         'Fixed SSD'
         'Variable SSD'
       )
-      OnChange = cbTTechChange
       ParentFont = False
       Style = csDropDownList
       TabOrder = 1
       Text = 'Isocentric'
+      OnChange = cbTTechChange
     end
     object cbMachine: TComboBox
       Left = 148
@@ -467,11 +467,11 @@ object OPFForm: TOPFForm
       AutoComplete = True
       AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
       ItemHeight = 18
-      OnChange = cbMachineChange
       ParentFont = False
       Sorted = True
       Style = csDropDownList
       TabOrder = 2
+      OnChange = cbMachineChange
     end
     object cbEnergy: TComboBox
       Left = 657
@@ -483,10 +483,10 @@ object OPFForm: TOPFForm
       AutoComplete = True
       AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
       ItemHeight = 18
-      OnChange = cbEnergyChange
       ParentFont = False
       Style = csDropDownList
       TabOrder = 3
+      OnChange = cbEnergyChange
     end
     object cbPresentation: TComboBox
       Left = 148
@@ -503,12 +503,12 @@ object OPFForm: TOPFForm
         'Ant/Post'
         'Lateral'
       )
-      OnChange = cbPresentationExit
-      OnExit = cbPresentationExit
       ParentFont = False
       Style = csDropDownList
       TabOrder = 4
       Text = 'Ant/Post'
+      OnChange = cbPresentationExit
+      OnExit = cbPresentationExit
     end
     object ebFSY: TEdit
       Left = 148
@@ -517,10 +517,10 @@ object OPFForm: TOPFForm
       Width = 81
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp938.html'
-      OnExit = ebFSYExit
       ParentFont = False
       TabOrder = 5
       Text = '0'
+      OnExit = ebFSYExit
     end
     object ebFSX: TEdit
       Left = 657
@@ -529,10 +529,10 @@ object OPFForm: TOPFForm
       Width = 81
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp938.html'
-      OnExit = ebFSXExit
       ParentFont = False
       TabOrder = 6
       Text = '0'
+      OnExit = ebFSXExit
     end
     object ebDiam: TEdit
       Left = 148
@@ -541,11 +541,11 @@ object OPFForm: TOPFForm
       Width = 81
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp939.html'
-      OnChange = ebPNameChange
-      OnExit = ebDiamExit
       ParentFont = False
       TabOrder = 7
       Text = '0'
+      OnChange = ebPNameChange
+      OnExit = ebDiamExit
     end
     object ebTDepth: TEdit
       Left = 422
@@ -556,11 +556,11 @@ object OPFForm: TOPFForm
       HelpKeyword = 'HTML/OPFHelp9310.html'
       Color = clInactiveCaption
       Enabled = False
-      OnChange = ebPNameChange
-      OnExit = ebTDepthExit
       ParentFont = False
       TabOrder = 8
       Text = '0'
+      OnChange = ebPNameChange
+      OnExit = ebTDepthExit
     end
     object ebSSD: TEdit
       Left = 657
@@ -571,11 +571,11 @@ object OPFForm: TOPFForm
       HelpKeyword = 'HTML/OPFHelp9311.html'
       Color = clInactiveCaption
       Enabled = False
-      OnChange = ebPNameChange
-      OnExit = ebSSDExit
       ParentFont = False
       TabOrder = 9
       Text = '100'
+      OnChange = ebPNameChange
+      OnExit = ebSSDExit
     end
     object cbTrayFac: TComboBox
       Left = 148
@@ -585,11 +585,11 @@ object OPFForm: TOPFForm
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp9312.html'
       ItemHeight = 24
-      OnChange = ebPNameChange
-      OnExit = cbTrayFacExit
       ParentFont = False
       TabOrder = 10
       Text = '1'
+      OnChange = ebPNameChange
+      OnExit = cbTrayFacExit
     end
     object cbTableFac: TComboBox
       Left = 422
@@ -599,11 +599,11 @@ object OPFForm: TOPFForm
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp9313.html'
       ItemHeight = 24
-      OnChange = ebPNameChange
-      OnExit = cbTableFacExit
       ParentFont = False
       TabOrder = 11
       Text = '1'
+      OnChange = ebPNameChange
+      OnExit = cbTableFacExit
     end
     object ebWedge: TEdit
       Left = 657
@@ -612,17 +612,17 @@ object OPFForm: TOPFForm
       Width = 101
       HelpType = htKeyword
       HelpKeyword = 'HTML/OPFHelp9314.html'
-      OnChange = ebPNameChange
-      OnExit = ebWedgeExit
       ParentFont = False
       TabOrder = 12
       Text = '1'
+      OnChange = ebPNameChange
+      OnExit = ebWedgeExit
     end
   end
   object StatusBar: TStatusBar
     Left = 0
     Height = 23
-    Top = 555
+    Top = 584
     Width = 769
     Panels = <    
       item
