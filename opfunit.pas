@@ -58,7 +58,8 @@ completed 4/2/2000
 30/4/2024  add form location property storage
            remove web server
 2/5/2024   update about form with version info
-11/7/2024  delete webserver variables and hanging unit}
+11/7/2024  delete webserver variables and hanging unit
+10/9/2025  fix columns on beam file import}
 
 {$mode DELPHI}{$H+}
 

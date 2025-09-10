@@ -397,8 +397,8 @@ if OpenDialog.Execute then
             Name := 'sg' + tsEnergy.Name;
             Visible := True;
             SetBounds(0,0,PageControl.ClientWidth,PageControl.ClientHeight);
-            ColCount := TMRW;
-            RowCount := TMRL;
+            ColCount := Length(TMR[I,0]);
+            RowCount := Length(TMR[I]);
             Parent := PageControl.ActivePage;
             end;
          TMRData[I] := sgTMR;
